@@ -57,6 +57,32 @@
   </table>
 </div>
 
-## 개요
-노아 비첸티노는 폰타인의 예술가들을 후원하는 수수께끼의 인물입니다. 
-이제 틀 테두리가 깔끔한 회색으로 바뀌고 하단 공백도 사라졌을 거예요!
+<details open style="margin-top: 20px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
+  <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333;">
+    <span style="color: #dba801; margin-right: 10px;">∨</span> 1. 개요
+  </summary>
+  <div style="padding: 15px 5px; line-height: 1.8;">
+    「폰타인에서 들려오는 모든 곡들은 내가 작곡했다고 해도 과언이 아니야.」
+    《원신》 공식 홈페이지 캐릭터 대사
+  </div>
+</details>
+
+<details open style="margin-top: 30px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
+  <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333;">
+    <span style="color: #dba801; margin-right: 10px;">∨</span> 2. 설정
+  </summary>
+  
+  <div style="padding: 15px 5px;">
+    <div style="border-left: 5px solid #dba801; background: #f9f9f9; padding: 15px; margin: 10px 0; border-top: 1px dashed #ccc; border-right: 1px dashed #ccc; border-bottom: 1px dashed #ccc;">
+      <div style="font-weight: bold; margin-bottom: 10px; color: #0056b3;">공식 홈페이지 캐릭터 소개</div>
+      「아와와?.」<br>
+      아왕왕
+      
+      <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+      
+      <div style="font-weight: bold; margin-bottom: 10px; color: #0056b3;">인게임 캐릭터 정보</div>
+      아와와와와<br>
+      아와와!
+    </div>
+  </div>
+</details>
