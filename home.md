@@ -29,6 +29,7 @@
     <div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
       <span style="color: #0056b3; margin-right: 10px;">∨</span> 1. 개요
     </div>
+
     <div style="border: 1px solid #ccc; border-left: 5px solid #0056b3; background: #f9f9f9; padding: 15px; margin: 15px 0; position: relative; overflow: hidden; font-weight: normal;">
       <div style="position: absolute; top: 0; left: 0; right: 0; border-top: 1px dashed #ccc;"></div>
       <div style="line-height: 1.8; color: #333;">
@@ -40,7 +41,8 @@
       <div style="position: absolute; bottom: 0; left: 0; right: 0; border-bottom: 1px dashed #ccc;"></div>
     </div>
   </summary>
-  <div style="padding: 5px 5px 15px 5px; line-height: 1.8;">
+
+  <div style="padding: 5px 5px 15px 5px; line-height: 1.8; border-bottom: 1px solid #eee;">
     온라인 게임 《원신》에 등장하는 폰타인성 소속 바위 원소 장병기 캐릭터.
   </div>
 </details>
@@ -57,6 +59,10 @@
       <div style="font-weight: bold; margin-bottom: 10px; color: #0056b3;">인게임 캐릭터 정보</div>
       아와와와와<br>아와와!
     </div>
+  </div>
+</details>
+
+<div style="clear: both;"></div>
   </div>
 </details>
 
