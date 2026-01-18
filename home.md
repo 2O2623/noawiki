@@ -68,6 +68,13 @@
     </div>
   </summary>
 
+<details open style="margin-top: 25px; padding-left: 10px;">
+  <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px;">
+    <div style="font-size: 1.3em; font-weight: bold; display: flex; align-items: center; color: #333;">
+      <span style="color: #757575; margin-right: 8px; font-size: 0.8em;">∨</span> 2.1. 공식 미디어
+    </div>
+  </summary>
+
   <div style="padding-top: 5px;">
     <div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
@@ -86,7 +93,7 @@
       </details>
     </div>
 
-    <div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff;">
+    <div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
         <iframe src="https://www.youtube.com/embed/플레이_영상_ID" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
       </div>
@@ -102,8 +109,22 @@
         </div>
       </details>
     </div>
+
+    <div style="width: 100%; max-width: 600px; margin: 0 auto 10px auto; border: 1px solid #a8a8a8; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
+        <iframe src="https://www.youtube.com/embed/데인여담_ID" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+      </div>
+      <div style="background: #a8a8a8; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">
+        데인 여담 - 「 」
+      </div>
+      <details style="background: #f9f9f9; border-top: 1px solid #ddd;">
+        <summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none; outline: none;">기타 언어 버전 ▼</summary>
+        <div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
+          <a href="#" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
+          <a href="#" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
+          <a href="#" style="color: #0056b3; text-decoration: none;">[ 영어 ]</a>
+        </div>
+      </details>
+    </div>
   </div>
 </details>
-</details>
-
-<div style="clear: both;"></div>
