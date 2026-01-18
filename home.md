@@ -1,47 +1,44 @@
 # 자백 (Zibai)
 
-<div style="float: right; width: 300px; border: 1px solid #dba801; margin-left: 15px; font-size: 0.85em; line-height: 1.5; background: white;">
-  <div style="background: #dba801; color: white; padding: 8px; text-align: center; font-weight: bold;">
-    <span style="font-size: 1.1em;">샘물에 숨은 세월 · 자백</span><br>
-    <span style="font-size: 0.8em; font-weight: normal;">Zibai: White Horse's Fleeting Spring</span>
-  </div>
-  
-  <div style="text-align: center; background: #fff; padding: 0; border-bottom: 1px solid #dba801;">
-    <div style="padding: 50px 0; background: #f9f9f9; color: #999;">(이미지 업로드 후 변경)</div>
+<div style="float: right; width: 320px; border: 2px solid #dba801; margin-left: 15px; font-size: 0.85em; background: #fff; line-height: 1.6;">
+  <div style="background: #dba801; color: #ffffff; padding: 10px; text-align: center;">
+    <div style="font-size: 1.1em; font-weight: bold;">샘물에 숨은 세월 · 자백</div>
+    <div style="font-size: 0.8em;">Zibai: White Horse's Fleeting Spring</div>
   </div>
 
-  <div style="background: #a87e4c; color: white; padding: 6px; text-align: center; font-size: 0.75em;">
-    리월의 전설 속 백마 선인, 이름하여 자백. 리월의 선인 중에서도 특히 신비로운 인물이다
+  <div style="background: #a87e4c; color: #ffffff; padding: 8px; text-align: center; font-size: 0.8em;">
+    리월의 전설 속 백마 선인, 이름하여 자백.
   </div>
 
   <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <colgroup>
+      <col style="width: 80px;"> <col> </colgroup>
+    
     <tr>
-      <td style="background: #dba801; color: white; width: 35%; padding: 4px 8px; font-weight: bold; border: 1px solid #ddd;">본명</td>
-      <td style="padding: 4px 8px; border: 1px solid #ddd;">자백</td>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">본명</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">자백</td>
     </tr>
     <tr>
-      <td style="background: #dba801; color: white; padding: 4px 8px; font-weight: bold; border: 1px solid #ddd;">성별</td>
-      <td style="padding: 4px 8px; border: 1px solid #ddd;">여성</td>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">성별</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">여성</td>
     </tr>
     <tr>
-      <td style="background: #dba801; color: white; padding: 4px 8px; font-weight: bold; border: 1px solid #ddd;">생일</td>
-      <td style="padding: 4px 8px; border: 1px solid #ddd;">5월 15일</td>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">생일</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">5월 15일</td>
     </tr>
     <tr>
-      <td style="background: #dba801; color: white; padding: 4px 8px; font-weight: bold; border: 1px solid #ddd;">소속</td>
-      <td style="padding: 4px 8px; border: 1px solid #ddd;">리월항</td>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">소속</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">리월항</td>
     </tr>
     <tr>
-      <td style="background: #dba801; color: white; padding: 4px 8px; font-weight: bold; border: 1px solid #ddd;">신의 눈</td>
-      <td style="padding: 4px 8px; border: 1px solid #ddd;">바위</td>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">신의 눈</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">바위</td>
     </tr>
     <tr>
-      <td style="background: #dba801; color: white; padding: 4px 8px; font-weight: bold; border: 1px solid #ddd;">무기</td>
-      <td style="padding: 4px 8px; border: 1px solid #ddd;">한손검</td>
-    </tr>
-    <tr>
-      <td style="background: #dba801; color: white; padding: 4px 8px; font-weight: bold; border: 1px solid #ddd;">성우</td>
-      <td style="padding: 4px 8px; border: 1px solid #ddd; font-size: 0.9em;">🇰🇷 천송이<br>🇯🇵 후쿠엔 미사토</td>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">성우</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd; font-size: 0.9em; white-space: nowrap;">
+        🇰🇷 천송이 / 🇯🇵 후쿠엔 미사토
+      </td>
     </tr>
   </table>
 </div>
