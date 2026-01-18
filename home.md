@@ -15,7 +15,6 @@
       <col style="width: 85px;"> 
       <col>
     </colgroup>
-    
     <tr>
       <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">본명</th>
       <td style="padding: 6px 10px; border: 1px solid #ddd;">글레이브스 노아 비첸티노</td>
@@ -54,7 +53,7 @@
         🇰🇷 몰라 / 🇯🇵 몰라잇
       </td>
     </tr>
-<div style="clear: both; height: 10px;"></div>
+  </table> </div> <div style="clear: both; height: 10px;"></div>
 
 <details open style="margin-top: 20px;">
   <summary style="cursor: pointer; list-style: none; outline: none;">
@@ -84,13 +83,17 @@
     <span style="color: #dba801; margin-right: 10px;">∨</span> 2. 설정
   </summary>
   <div style="padding: 15px 5px;">
-    <div style="border: 1px solid #ccc; border-left: 5px solid #dba801; background: #f9f9f9; padding: 15px; margin: 10px 0; border-top-style: dashed; border-right-style: dashed; border-bottom-style: dashed;">
+    <div style="border: 1px solid #ccc; border-left: 5px solid #dba801; background: #f9f9f9; padding: 15px; margin: 10px 0; border-top: 1px dashed #ccc; border-right: 1px dashed #ccc; border-bottom: 1px dashed #ccc;">
       <div style="font-weight: bold; margin-bottom: 10px; color: #0056b3;">공식 홈페이지 캐릭터 소개</div>
       「아와와?.」<br>아왕왕
       <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
       <div style="font-weight: bold; margin-bottom: 10px; color: #0056b3;">인게임 캐릭터 정보</div>
       아와와와와<br>아와와!
     </div>
+  </div>
+</details>
+
+<div style="clear: both;"></div>
   </div>
 </details>
 
