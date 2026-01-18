@@ -59,7 +59,50 @@
 폰타인에서는 이런 농담이 전해진다. 「폰타인에서 들리는 모든 곡은 노아 비첸티노가 쓴 곡이다.」<br>거리의 소박한 발라드부터 심판 도중 울리는 웅장한 교향곡까지, 그의 손을 거치지 않은 음악은 없으며,사람들은 그를 폰타인 음악계의 「젊은 거장」이라 불렀다. 귀족 가문 「글레이브스」와 명가 「비첸티노」의 혈통을 잇는 그는 정교하고 우아한 걸작들을 쏟아내며 예술의 정점에 도달했다. 하지만 천재적인 재능만큼이나 오만하고 까칠한 성격 탓에, 그에게 고개를 끄덕이게 만드는 것은 폰타인의 각종 법률을 전부 지키는 것보다 어려운 일로 통했다. 하지만 자만할수록 영광은 영원하지 않는 법이다. 시대의 흐름이 변화하면서 그의 선율은 「자기 복제에 갇힌 천재」라며 음악 평단의 냉소를 받았고, 그의 음악은 빠르게 변해가는 폰타인의 유행을 따라가지 못했다. 그를 시기하던 이들은 「실력마저 무너진 오만한 천재에겐 더 이상 가치가 없다」 며 입을 모아 비아냥거렸다.<br>
 결국, 새로운 영감을 찾겠다는 짧은 편지 한 장과 수많은 소문만을 남긴 채 그의 행방은 묘연해졌다.
 </div>
-</div>
+</div><div style="margin-top: 25px; padding-left: 10px;">
+  <div style="font-size: 1.3em; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px; color: #333;">
+    2.1. 공식 미디어
+  </div>
+
+  <div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff;">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
+      <iframe src="https://www.youtube.com/embed/캐릭터_PV_ID" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+    </div>
+    <div style="background: #a8a8a8; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">
+      @캐릭터 이름@ 캐릭터 PV - 「 」
+    </div>
+    <details style="background: #f9f9f9; border-top: 1px solid #ddd;">
+      <summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+      <div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
+        <a href="일본어_링크" target="_blank" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
+        <a href="중국어_링크" target="_blank" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
+        <a href="영어_링크" target="_blank" style="color: #0056b3; text-decoration: none;">[ 영어 ]</a>
+      </div>
+    </details>
+  </div>
+
+  <div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff;">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
+      <iframe src="https://www.youtube.com/embed/캐릭터_플레이_ID" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+    </div>
+    <div style="background: #a8a8a8; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">
+      신규 캐릭터 플레이 - 「 」
+    </div>
+    <details style="background: #f9f9f9; border-top: 1px solid #ddd;">
+      <summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+      <div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
+        <a href="일본어_링크" target="_blank" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
+        <a href="중국어_링크" target="_blank" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
+        <a href="영어_링크" target="_blank" style="color: #0056b3; text-decoration: none;">[ 영어 ]</a>
+      </div>
+    </details>
+  </div>
+
+  <div style="width: 100%; max-width: 600px; margin: 0 auto 10px auto; border: 1px solid #a8a8a8; background: #fff;">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
+      <iframe src="https://www.youtube.com/embed/데인_여담_ID" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+    </div>
+    <div style="background: #a8a8a8; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center
 </details>
 
 <div style="clear: both;"></div>
