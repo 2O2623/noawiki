@@ -61,13 +61,6 @@
 </div>
 </div><div style="margin-top: 25px; padding-left: 10px;">
   <div style="font-size: 1.3em; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px; color: #333;">
-<details open style="margin-top: 25px; padding-left: 10px; outline: none;">
-  <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px;">
-    <div style="font-size: 1.3em; font-weight: bold; display: flex; align-items: center; color: #333;">
-      <span style="color: #757575; margin-right: 8px; font-size: 0.8em;">∨</span> 2.1. 공식 미디어
-    </div>
-  </summary>
-
 <details open style="margin-top: 25px; padding-left: 10px;">
   <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px;">
     <div style="font-size: 1.3em; font-weight: bold; display: flex; align-items: center; color: #333;">
