@@ -38,7 +38,8 @@
 내 손을 거쳐가지 않은 음악을 찾는 건<br>
 네 생각보다 훨씬 어려울 거야.」
 </div>
-<div style="margin-top: 10px; font-size: 0.85em; color: #666;">《원신》 공식 홈페이지 캐릭터 대사</div>
+<div style="margin-top: 10px; font-size: 0.85em; color: #666;"> 
+<hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">《원신》 공식 홈페이지 캐릭터 대사</div>
 <div style="position: absolute; bottom: 0; left: 0; right: 0; border-bottom: 1px dashed #ccc;"></div>
 </div>
 온라인 게임 《원신》에 등장하는 폰타인성 소속 바위 원소 장병기 캐릭터.
@@ -53,7 +54,7 @@
 <div style="border: 1px solid #ccc; border-left: 5px solid #dba801; background: #f9f9f9; padding: 15px; margin: 10px 0; border-top-style: dashed; border-right-style: dashed; border-bottom-style: dashed;">
 <div style="font-weight: bold; margin-bottom: 10px;">공식 홈페이지 캐릭터 소개</div>
 「아와와?.」<br>아왕왕
-<hr style="border: 0; border-top: 1px solid #dba801; margin: 15px 0;">
+<hr style="border: 0; border-top: 1px solid #ccc; margin: 15px 0;">
 <div style="font-weight: bold; margin-bottom: 10px;">인게임 캐릭터 정보</div>
 아와와와와<br>아와와!
 </div>
