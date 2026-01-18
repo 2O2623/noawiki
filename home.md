@@ -64,9 +64,6 @@
     <span style="color: #0056b3; margin-right: 10px;">∨</span> 1. 개요
   </summary>
 
-  <div style="padding: 15px 5px; line-height: 1.8;">
-    온라인 게임 《원신》에 등장하는 폰타인성 소속 바위 원소 장병기 캐릭터.
-
     <div style="border: 1px solid #ccc; border-left: 5px solid #0056b3; background: #f9f9f9; padding: 15px; margin: 20px 0; position: relative; overflow: hidden;">
       <div style="position: absolute; top: 0; left: 0; right: 0; border-top: 1px dashed #ccc;"></div>
       
@@ -86,6 +83,9 @@
 </details>
 
 <div style="clear: both;"></div>
+
+  <div style="padding: 15px 5px; line-height: 1.8;">
+    온라인 게임 《원신》에 등장하는 폰타인성 소속 바위 원소 장병기 캐릭터.
 
 <details open style="margin-top: 30px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
   <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333;">
