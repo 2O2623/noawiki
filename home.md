@@ -27,7 +27,7 @@
 <details open style="margin-top: 20px;">
 <summary style="cursor: pointer; list-style: none; outline: none;">
 <div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
-<span style="color: #eee; margin-right: 10px;">∨</span> 1. 개요
+<span style="color: #757575; margin-right: 10px;">∨</span> 1. 개요
 </div>
 </summary>
 <div style="padding: 10px 5px; line-height: 1.8;">
@@ -48,7 +48,7 @@
 
 <details open style="margin-top: 20px;">
 <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
-<span style="color: #eee; margin-right: 10px;">∨</span> 2. 설정
+<span style="color: #757575; margin-right: 10px;">∨</span> 2. 설정
 </summary>
 <div style="padding: 15px 5px;">
 <div style="border: 1px solid #ccc; border-left: 5px solid #dba801; background: #f9f9f9; padding: 15px; margin: 10px 0; border-top-style: dashed; border-right-style: dashed; border-bottom-style: dashed;">
