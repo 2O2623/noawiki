@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나만의 위키</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    /* 나무위키 느낌 커스텀 CSS */
+    :root { --theme-color: #00a495; } /* 나무위키 시그니처 초록색 */
+    .namu-box {
+      float: right; width: 300px; border: 1px solid #00a495;
+      margin: 0 0 10px 10px; font-size: 0.9em;
+    }
+    .namu-title {
+      background: #00a495; color: white; padding: 5px;
+      text-align: center; font-weight: bold;
+    }
+    .namu-content { padding: 10px; background: #f9f9f9; }
+    @media screen and (max-width: 600px) { .namu-box { float: none; width: 100%; margin: 10px 0; } }
+  </style>
+</head>
+<body>
+  <div id="app">로딩 중...</div>
+  <script>
+    window.$docsify = {
+      name: 'My Wiki',
+      repo: '',
+      loadSidebar: true, // 사이드바 사용
+      subMaxLevel: 2,    // 목차 깊이
+      homepage: 'home.md' // 메인 페이지 파일명
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
