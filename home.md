@@ -57,36 +57,35 @@
   </table>
 </div>
 
-<div style="clear: both;"></div>
+<div style="clear: both; height: 10px;"></div>
 
-<br>
-
-<div style="border: 1px solid #ccc; border-left: 5px solid #0056b3; background: #f9f9f9; padding: 15px; margin: 20px 0; position: relative; overflow: hidden;">
-  <div style="position: absolute; top: 0; left: 0; right: 0; border-top: 1px dashed #ccc;"></div>
-  
-  <div style="line-height: 1.8; color: #333;">
-    「폰타인에서 울려 퍼지는 모든 음악 중에<br>
-    <span style="color: #0056b3; font-weight: bold;">내 손을 거쳐가지 않은 음악을 찾는 건</span><br>
-    네 생각보다 훨씬 어려울 거야.」
-  </div>
-  
-  <div style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px; font-size: 0.9em; color: #666;">
-    《원신》 공식 홈페이지 캐릭터 대사
-  </div>
-  
-  <div style="position: absolute; bottom: 0; left: 0; right: 0; border-bottom: 1px dashed #ccc;"></div>
-</div>
-
-<br>
-
-<details open style="border-bottom: 1px solid #ccc; padding-bottom: 5px;">
-  <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333;">
+<details open style="margin-top: 20px;">
+  <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
     <span style="color: #0056b3; margin-right: 10px;">∨</span> 1. 개요
   </summary>
+
   <div style="padding: 15px 5px; line-height: 1.8;">
     온라인 게임 《원신》에 등장하는 폰타인성 소속 바위 원소 장병기 캐릭터.
+
+    <div style="border: 1px solid #ccc; border-left: 5px solid #0056b3; background: #f9f9f9; padding: 15px; margin: 20px 0; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 0; left: 0; right: 0; border-top: 1px dashed #ccc;"></div>
+      
+      <div style="line-height: 1.8; color: #333;">
+        「폰타인에서 울려 퍼지는 모든 음악 중에<br>
+        <span style="color: #0056b3; font-weight: bold;">내 손을 거쳐가지 않은 음악을 찾는 건</span><br>
+        네 생각보다 훨씬 어려울 거야.」
+      </div>
+      
+      <div style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px; font-size: 0.9em; color: #666;">
+        《원신》 공식 홈페이지 캐릭터 대사
+      </div>
+      
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; border-bottom: 1px dashed #ccc;"></div>
+    </div>
   </div>
 </details>
+
+<div style="clear: both;"></div>
 
 <details open style="margin-top: 30px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
   <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333;">
