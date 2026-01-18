@@ -2,8 +2,8 @@
 
 <div style="float: right; width: 320px; border: 2px solid #dba801; margin-left: 15px; font-size: 0.85em; background: #fff; line-height: 1.6;">
   <div style="background: #dba801; color: #ffffff; padding: 10px; text-align: center;">
-    <div style="font-size: 1.1em; font-weight: bold;">수면의 반주자 · 노아 비첸티노</div>
-    <div style="font-size: 0.8em;">Noa Vicentino: Surface Accompanist</div>
+    <div style="font-size: 1.5em; font-weight: bold;">수면의 반주자 · 노아 비첸티노</div>
+    <div style="font-size: 1.0em;">Noa Vicentino: Surface Accompanist</div>
   </div>
 
   <div style="background: #a87e4c; color: #ffffff; padding: 8px; text-align: center; font-size: 0.8em;">
@@ -29,10 +29,22 @@
     <tr>
       <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">소속</th>
       <td style="padding: 6px 10px; border: 1px solid #ddd;">폰타인 성</td>
-    </tr>
+    </tr> 
     <tr>
       <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">신의 눈</th>
       <td style="padding: 6px 10px; border: 1px solid #ddd;">바위</td>
+    </tr>
+     <tr>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">무기</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">장병기</td>
+    </tr>
+    <tr>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">운명의 자리</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">높은음자리</td>
+    </tr> 
+    <tr>
+      <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">비고</th>
+      <td style="padding: 6px 10px; border: 1px solid #ddd;">폰타인 예술가 협회 주요 후원인</td>
     </tr>
     <tr>
       <th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #dba801; text-align: center;">성우</th>
