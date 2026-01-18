@@ -31,11 +31,11 @@
 </div>
 </summary>
 <div style="padding: 10px 5px; line-height: 1.8;">
-<div style="border: 1px solid #ccc; border-left: 5px solid #0056b3; background: #f9f9f9; padding: 15px; margin: 10px 0; position: relative; overflow: hidden;">
+<div style="border: 1px solid #ccc; border-left: 5px solid #dba801; background: #f9f9f9; padding: 15px; margin: 10px 0; position: relative; overflow: hidden;">
 <div style="position: absolute; top: 0; left: 0; right: 0; border-top: 1px dashed #ccc;"></div>
 <div style="line-height: 1.8; color: #333;">
 「폰타인에서 울려 퍼지는 모든 음악 중에<br>
-<span style="color: #0056b3; font-weight: bold;">내 손을 거쳐가지 않은 음악을 찾는 건</span><br>
+내 손을 거쳐가지 않은 음악을 찾는 건<br>
 네 생각보다 훨씬 어려울 거야.」
 </div>
 <div style="margin-top: 10px; font-size: 0.85em; color: #666;">《원신》 공식 홈페이지 캐릭터 대사</div>
@@ -47,13 +47,13 @@
 
 <details open style="margin-top: 20px;">
 <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; list-style: none; display: flex; align-items: center; color: #333; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
-<span style="color: #dba801; margin-right: 10px;">∨</span> 2. 설정
+<span style="color: #ddd; margin-right: 10px;">∨</span> 2. 설정
 </summary>
 <div style="padding: 15px 5px;">
-<div style="border: 1px solid #ccc; border-left: 5px solid #ddd; background: #f9f9f9; padding: 15px; margin: 10px 0; border-top-style: dashed; border-right-style: dashed; border-bottom-style: dashed;">
+<div style="border: 1px solid #ccc; border-left: 5px solid #dba801; background: #f9f9f9; padding: 15px; margin: 10px 0; border-top-style: dashed; border-right-style: dashed; border-bottom-style: dashed;">
 <div style="font-weight: bold; margin-bottom: 10px;">공식 홈페이지 캐릭터 소개</div>
 「아와와?.」<br>아왕왕
-<hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
+<hr style="border: 0; border-top: 1px solid #dba801; margin: 15px 0;">
 <div style="font-weight: bold; margin-bottom: 10px;">인게임 캐릭터 정보</div>
 아와와와와<br>아와와!
 </div>
