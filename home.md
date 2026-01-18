@@ -113,10 +113,49 @@
 </div>
 </details>
 
-| 항목 | 내용 |
-| :--- | :--- |
-| **<span style="color:#dba801">대기 시 대사</span>** | |
-| **편성 시 / 대쉬 시** | ㅁㅇ|
-| **원소 전투 스킬 사용** | ㅁㅇ|
-| **원소 폭발 사용** | |
-| **사망 시** | ㅁㅇ|
+<details open style="margin-top: 20px;">
+<summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
+<div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333;">
+<span style="color: #757575; margin-right: 10px;">∨</span> 3. 대사
+</div>
+</summary>
+<div style="padding: 10px 5px;">
+<div style="background: #a8a8a8; color: #fff; padding: 10px; text-align: center; font-weight: bold; font-size: 1.1em; border-radius: 4px 4px 0 0;">대사집</div>
+<details style="border: 1px solid #ddd; border-top: none; background: #fff;">
+<summary style="padding: 10px; cursor: pointer; background: #fdfdfd; font-weight: bold; color: #555; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+<span>자료</span>
+<span style="font-size: 0.8em; color: #757575;">[ 펼치기 · 접기 ]</span>
+</summary>
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; line-height: 1.5;">
+<colgroup><col style="width: 35%; background: #bababa;"><col></colgroup>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">첫 만남...</td><td style="padding: 8px; border: 1px solid #ddd;"></집에 가고싶다요></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">잡담 · 잡담명</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">(날씨) 때...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">아침 인사...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">점심 인사...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">저녁 인사...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">(캐릭터 이름) 자신에 대해...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">「신의 눈」에 대해...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">하고 싶은 이야기...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">좋아하는 음식...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">싫어하는 음식...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">생일...</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">돌파의 느낌 · 결</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+</table>
+</details>
+<details style="border: 1px solid #ddd; border-top: none; background: #fff; border-radius: 0 0 4px 4px;">
+<summary style="padding: 10px; cursor: pointer; background: #fdfdfd; font-weight: bold; color: #555; list-style: none; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee;">
+<span>필드</span>
+<span style="font-size: 0.8em; color: #757575;">[ 펼치기 · 접기 ]</span>
+</summary>
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; line-height: 1.5;">
+<colgroup><col style="width: 35%; background: #bababa;"><col></colgroup>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">대기 시</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">편성 시</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">원소 전투 스킬 사용 시</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">원소 폭발 사용 시</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+<tr><td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold; color: #fff;">사망 시</td><td style="padding: 8px; border: 1px solid #ddd;"></td></tr>
+</table>
+</details>
+</div>
+</details>
