@@ -66,13 +66,13 @@
 </div>
 </summary>
 <div style="padding-top: 5px;">
-<div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #dba801; background: #fff;">
+<div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
 <iframe src="https://www.youtube.com/embed/PV_영상_ID" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
 </div>
 <div style="background: #dba801; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">노아 비첸티노 캐릭터 PV - 「예술가 협회」</div>
-<details style="background: #f9f9f9; border-top: 1px solid #ddd;">
-<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #dba801; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+<details style="background: #dba801; border-top: 1px solid #ddd;">
+<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
 <div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
 <a href="#" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
 <a href="#" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
@@ -80,13 +80,13 @@
 </div>
 </details>
 </div>
-<div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #dba801; background: #fff;">
+<div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
 <iframe src="https://www.youtube.com/embed/플레이_영상_ID" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
 </div>
 <div style="background: #dba801; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">신규 캐릭터 플레이 - 「노아 비첸티노: 모든 거리를 비추는 음악」</div>
 <details style="background: #f9f9f9; border-top: 1px solid #ddd;">
-<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #dba801; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
 <div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
 <a href="#" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
 <a href="#" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
@@ -94,13 +94,13 @@
 </div>
 </details>
 </div>
-<div style="width: 100%; max-width: 600px; margin: 0 auto 10px auto; border: 1px solid #dba801; background: #fff;">
+<div style="width: 100%; max-width: 600px; margin: 0 auto 10px auto; border: 1px solid #a8a8a8; background: #fff;">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
-<iframe src="(https://www.youtube.com/watch?v=jJfxBACf2_o)" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+<iframe src="[https://www.youtube.com/watch?v=jJfxBACf2_o]" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
 </div>
 <div style="background: #dba801; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">서곡 PV -「종막을 향한 연회」</div>
 <details style="background: #f9f9f9; border-top: 1px solid #ddd;">
-<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #dba801; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
 <div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
 <a href="#" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
 <a href="#" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
