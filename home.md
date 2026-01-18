@@ -67,32 +67,56 @@
 <div style="padding-top: 5px;">
 <div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <a href="https://www.youtube.com/watch?v=PV_영상_ID" target="_blank" style="text-decoration: none; position: relative; display: block;">
-<img src="https://img.youtube.com/vi/PV_영상_ID/maxresdefault.jpg" style="width: 100%; display: block;" alt="영상 썸네일">
+<img src="https://img.youtube.com/vi/PV_영상_ID/maxresdefault.jpg" style="width: 100%; display: block;">
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: rgba(0,0,0,0.7); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
 <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 15px solid white; margin-left: 5px;"></div>
 </div>
 </a>
 <div style="background: #dba801; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">노아 비첸티노 캐릭터 PV - 「예술가 협회」</div>
+<details style="background: #f9f9f9; border-top: 1px solid #ddd;">
+<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+<div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 영어 ]</a>
+</div>
+</details>
 </div>
 
 <div style="width: 100%; max-width: 600px; margin: 0 auto 30px auto; border: 1px solid #a8a8a8; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <a href="https://www.youtube.com/watch?v=플레이_영상_ID" target="_blank" style="text-decoration: none; position: relative; display: block;">
-<img src="https://img.youtube.com/vi/플레이_영상_ID/maxresdefault.jpg" style="width: 100%; display: block;" alt="영상 썸네일">
+<img src="https://img.youtube.com/vi/플레이_영상_ID/maxresdefault.jpg" style="width: 100%; display: block;">
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: rgba(0,0,0,0.7); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
 <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 15px solid white; margin-left: 5px;"></div>
 </div>
 </a>
 <div style="background: #dba801; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">신규 캐릭터 플레이 - 「노아 비첸티노: 모든 거리를 비추는 음악」</div>
+<details style="background: #f9f9f9; border-top: 1px solid #ddd;">
+<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+<div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 영어 ]</a>
+</div>
+</details>
 </div>
 
 <div style="width: 100%; max-width: 600px; margin: 0 auto 10px auto; border: 1px solid #a8a8a8; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <a href="https://www.youtube.com/watch?v=jJfxBACf2_o" target="_blank" style="text-decoration: none; position: relative; display: block;">
-<img src="https://img.youtube.com/vi/jJfxBACf2_o/maxresdefault.jpg" style="width: 100%; display: block;" alt="영상 썸네일">
+<img src="https://img.youtube.com/vi/jJfxBACf2_o/maxresdefault.jpg" style="width: 100%; display: block;">
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background: rgba(0,0,0,0.7); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
 <div style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 15px solid white; margin-left: 5px;"></div>
 </div>
 </a>
 <div style="background: #dba801; color: #fff; padding: 8px; font-weight: bold; font-size: 0.85em; text-align: center;">서곡 PV -「종막을 향한 연회」</div>
+<details style="background: #f9f9f9; border-top: 1px solid #ddd;">
+<summary style="padding: 6px; font-size: 0.8em; cursor: pointer; color: #757575; text-align: center; list-style: none;">기타 언어 버전 ▼</summary>
+<div style="display: flex; justify-content: space-around; padding: 10px; font-size: 0.8em; border-top: 1px dashed #ccc;">
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 일본어 ]</a>
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 중국어 ]</a>
+<a href="#" style="color: #0056b3; text-decoration: none;">[ 영어 ]</a>
+</div>
+</details>
 </div>
 </div>
 </details>
@@ -105,7 +129,7 @@
 <span style="color: #757575; margin-right: 10px;">∨</span> 3. 대사
 </div>
 </summary>
-<div style="padding: 0 5px;">
+<div style="padding: 0 5px; display: flex; justify-content: center;">
 <table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
 <tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.1em; border: 1px solid #a8a8a8;">대사집</td></tr>
 <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
@@ -119,8 +143,7 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">점심 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">저녁 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">생일...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-</table></details>
-</td></tr>
+</table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
 <details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
 <table style="width: 100%; border-collapse: collapse;">
@@ -129,8 +152,7 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 전투 스킬</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 폭발</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-</table></details>
-</td></tr>
+</table></details></td></tr>
 </table>
 </div>
 </details>
