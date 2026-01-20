@@ -137,7 +137,7 @@
 <table style="width: 100%; border-collapse: collapse;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">첫 만남...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">집에 가고싶다요</td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">지금이라면 전에는 없던 새로운 곡을 쓸 수 있을 것 같네</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">비가 올 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
@@ -152,12 +152,19 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">굿나잇...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">자신에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">자신에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">우리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">어떻게 하면 그렇게 빨리 이동할 수 있는 거야? 
+별건 아니고, 네 속도라면 이번에 발매된 폰타인 신문 정도는 
+빠르게 사 올 수 있을 것 같아서...</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">우리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">우리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">「신의 눈」에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">「신의 눈」에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">「신의 눈」을 받고 나서 유용하게 사용해 본 적은 한 번도 없어. 
+그래도 조금 달라진 점이 있다면, 폰타인 언론에 나에 관한 
+악성 기사가 올라오는 횟수가 약간 줄었다는 점이겠네</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">하고 싶은 이야기...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">흥미있는 일...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">타이나리는 정말 의지하기 좋은 사람이야. 
+매일 말로는 투덜대면서도 아침밥을 차려주는 건 타이나리밖에 없거든.
+항상 쳐다볼 때마다 빨리 돌아가 줬으면 좋겠다는 눈빛을 보내고는 하는데, 
+이렇게 잘 해주는데 누가 돌아가고 싶겠어?</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">콜레이에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">파루잔에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
