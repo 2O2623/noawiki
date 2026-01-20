@@ -181,57 +181,55 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 결</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
-<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
-<table style="width: 100%; border-collapse: collapse;">
-<colgroup><col style="width: 35%;"><col></colgroup>
-<div style="display: flex; justify-content: center; padding: 0 5px;">
-<table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse;">
-  <tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; border: 1px solid #a8a8a8;">대사집</td></tr>
-  <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
-    <details open>
-      <summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
-<div style="display: flex; justify-content: center; padding: 0 5px;">
-<table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse;">
-  <tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; border: 1px solid #a8a8a8;">대사집</td></tr>
-  <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
-    <details open>
-      <summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
-      <table style="width: 100%; border-collapse: collapse;">
-        <colgroup><col style="width: 35%;"><col></colgroup>
-        
-        <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">편성 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+<div style="display: flex; justify-content: center; padding: 0 5px; margin-top: 20px;">
+  <table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
+    <tr>
+      <td style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.1em; border: 1px solid #a8a8a8;">대사집</td>
+    </tr>
+    <tr>
+      <td style="padding: 0; border: 1px solid #a8a8a8;">
+        <details open>
+          <summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
+          <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+            <colgroup>
+              <col style="width: 35%;">
+              <col style="width: 65%;">
+            </colgroup>
+            
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">편성 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">원소 전투 스킬 사용 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">원소 전투 스킬 사용 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">원소 폭발 사용 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">원소 폭발 사용 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">일반 공격 피격 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">일반 공격 피격 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">강공격 피격 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">강공격 피격 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">동료 HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">동료 HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
 
-        <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">보물 상자 개방 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-        <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
-      </table>
-    </details>
-  </td></tr>
-</table>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">보물 상자 개방 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+          </table>
+        </details>
+      </td>
+    </tr>
+  </table>
 </div>
