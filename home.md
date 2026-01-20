@@ -179,14 +179,10 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 승</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 전</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 결</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-</table></details></td></tr>
-        <details open>
-          <summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
-          <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-            <colgroup>
-              <col style="width: 35%;">
-              <col style="width: 65%;">
-            </colgroup>
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee;">필드
+[ 펼치기 · 접기 ]</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
             
             <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">편성 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
             <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
