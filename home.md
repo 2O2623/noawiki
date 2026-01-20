@@ -199,8 +199,20 @@
 </tr> <tr>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">대사 3</td>
 </tr> <tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 전투 스킬</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 폭발</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 전투 스킬 사용 시</td>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">청음 테스트야. 집중해.</td>
+</tr> <tr>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">처음부터 다시!</td>
+</tr> <tr>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">선율이 어긋났네.</td>
+</tr> <tr>
+<td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 폭발 사용 시</td>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">실패는 성공의 어머니야.</td>
+</tr> <tr>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">비평은 끝났어. 감상해!</td>
+</tr> <tr>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">예상된 반응, 좋았어!</td>
+</tr> <tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 </table></details></td></tr>
 </table>
