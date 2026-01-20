@@ -123,12 +123,6 @@
 </div>
 </details>
 
-<details open style="margin-top: 20px;">
-  <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
-    <div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333;">
-      <span style="color: #757575; margin-right: 10px;">∨</span> 3. 대사
-    </div>
-  </summary>
   <details open style="margin-top: 20px;">
 <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
 <div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333;">
@@ -186,14 +180,6 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 전</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 결</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 </table></details></td></tr>
-<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
-<div style="display: flex; justify-content: center; padding: 0 5px; margin-top: 20px;">
-  <table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
-    <tr>
-      <td style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.1em; border: 1px solid #a8a8a8;">대사집</td>
-    </tr>
-    <tr>
-      <td style="padding: 0; border: 1px solid #a8a8a8;">
         <details open>
           <summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
           <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
