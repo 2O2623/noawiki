@@ -182,10 +182,7 @@
 <div style="text-align: left; width: 100%; max-width: 600px; margin: 0;">
   <table style="width: 100%; border-collapse: collapse; table-layout: fixed; border: 1px solid #a8a8a8;">
     <tr>
-      <td style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.1em; border: 1px solid #a8a8a8;">대사집</td>
-    </tr>
-    <tr>
-      <td style="padding: 0; border: 1px solid #a8a8a8;">
+
         <details open>
           <summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee;">필드 [ 펼치기 · 접기 ]</summary>
           <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
