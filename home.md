@@ -129,100 +129,105 @@
       <span style="color: #757575; margin-right: 10px;">∨</span> 3. 대사
     </div>
   </summary>
-
-  <div style="width: 100%; max-width: 600px; margin: 0;">
-    <table style="width: 100%; border-collapse: collapse; table-layout: fixed; border: 1px solid #a8a8a8;">
-      <tr>
-        <td style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.1em; border-bottom: 1px solid #a8a8a8;">대사집</td>
-      </tr>
-
-      <tr>
-        <td style="padding: 0;">
-          <details>
-            <summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee;">자료 [ 펼치기 · 접기 ]</summary>
-            <table style="width: 100%; border-collapse: collapse; table-layout: fixed; border: none;">
-              <colgroup><col style="width: 35%;"><col style="width: 65%;"></colgroup>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">첫 만남...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">집에 가고싶다요</td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · 여행</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · 경험담</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · 마크</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">비가 올 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">비가 그친 후...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">번개가 칠 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">강풍이 불 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">눈이 올 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">사막에 있을 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">아침 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">점심 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">저녁 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">굿나잇...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">자신에 대해... I</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">자신에 대해... II</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">우리에 대해... I</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">우리에 대해... II</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">「신의 눈」...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">하고 싶은 이야기...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">흥미있는 일...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해... I</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해... II</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">콜레이에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">파루잔에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">레브에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아 알기 · I</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아 알기 · II</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아 알기 · III</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아 알기 · IV</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아 알기 · V</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아의 취미...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아의 고민...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">좋아하는 음식...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">싫어하는 음식...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">선물 획득 · I</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">선물 획득 · II</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">선물 획득 · III</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">생일...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 기</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 승</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 전</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none; border-bottom: none;">돌파의 느낌 · 결</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none; border-bottom: none;"></td></tr>
-            </table>
-          </details>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding: 0; border-top: 1px solid #a8a8a8;">
-          <details open>
-            <summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee;">필드 [ 펼치기 · 접기 ]</summary>
-            <table style="width: 100%; border-collapse: collapse; table-layout: fixed; border: none;">
-              <colgroup><col style="width: 35%;"><col style="width: 65%;"></colgroup>
-              <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">편성 시</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 전투 스킬</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">원소 폭발</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">일반 피격</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">강공격 피격</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">동료 HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none; border-bottom: none;">상자 개방</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-              <tr><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none; border-bottom: none;"></td></tr>
-            </table>
-          </details>
-        </td>
-      </tr>
-    </table>
-  </div>
-</details>
+  <details open style="margin-top: 20px;">
+<summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
+<div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333;">
+<span style="color: #757575; margin-right: 10px;">∨</span> 3. 대사
+</div>
+</summary>
+<div style="padding: 0 5px; display: flex; justify-content: center;">
+<table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
+<tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.1em; border: 1px solid #a8a8a8;">대사집</td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee;">자료 [ 펼치기 · 접기 ]</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">첫 만남...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">집에 가고싶다요</td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">비가 올 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">비가 그친 후...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">번개가 칠 때…...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">강풍이 불 때…...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">눈이 올 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">사막에 있을 때...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">아침 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">점심 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">저녁 인사...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">굿나잇...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">자신에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">자신에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">우리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">우리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">「신의 눈」에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">하고 싶은 이야기...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">흥미있는 일...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">콜레이에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">파루잔에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">레브에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 첫 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 두 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 세 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 네 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 다섯 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아의 취미...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아의 고민...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">좋아하는 음식...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">싫어하는 음식...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">선물 획득 · 첫 번째</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">선물 획득 · 두 번째</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">선물 획득 · 세 번째</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">생일...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 기</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 승</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 전</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 결</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+</table></details></td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<div style="display: flex; justify-content: center; padding: 0 5px; margin-top: 20px;">
+  <table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
+    <tr>
+      <td style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.1em; border: 1px solid #a8a8a8;">대사집</td>
+    </tr>
+    <tr>
+      <td style="padding: 0; border: 1px solid #a8a8a8;">
+        <details open>
+          <summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none;">필드 [ 펼치기 · 접기 ]</summary>
+          <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+            <colgroup>
+              <col style="width: 35%;">
+              <col style="width: 65%;">
+            </colgroup>
+            
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">편성 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">원소 전투 스킬 사용 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">원소 폭발 사용 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">일반 공격 피격 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">강공격 피격 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="2" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">동료 HP 부족</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8;">보물 상자 개방 시</td><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+            <tr><td style="padding: 10px; border: 1px solid #a8a8a8;"></td></tr>
+          </table>
+        </details>
+      </td>
+    </tr>
+  </table>
+</div>
