@@ -136,7 +136,7 @@
 <details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee;">자료 [ 펼치기 · 접기 ]</summary>
 <table style="width: 100%; border-collapse: collapse;">
 <colgroup><col style="width: 35%;"><col></colgroup>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">첫 만남...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">집에 가고싶다요</td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">첫 만남...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">안녕, 반가워. 나는 노아 비첸티노라고 해. 혹시 너, 입이 가볍지는 않지? 내 행방은 항상 비밀로 유지하고 있으니까, 나의 관한 일에 대해서는 입 조심하는게 좋을 거야.</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">지금이라면 전에는 없던 새로운 곡을 쓸 수 있을 것 같네</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">잡담 · </td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
