@@ -193,7 +193,7 @@
 <table style="width: 100%; border-collapse: collapse;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 <td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">편성 시</td>
-<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">대사 1</td>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">좋은 선택했어.</td>
 </tr> <tr>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">대사 2</td>
 </tr> <tr>
