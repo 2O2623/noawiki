@@ -6,7 +6,7 @@
 <div style="font-size: 0.9em;">Noa Vicentino: Surface Accompanist</div>
 </div>
 <div style="background: #a87e4c; color: #ffffff; padding: 8px; text-align: center; font-size: 0.8em; border-bottom: 1px solid #ddd;">음 뭐넣지</div>
-<table style="width: 120%; border-collapse: collapse; table-layout: fixed; margin: 0; border: none;">
+<table style="width: 190%; border-collapse: collapse; table-layout: fixed; margin: 0; border: none;">
 <colgroup><col style="width: 85px;"><col></colgroup>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd font-size: 1.1em; text-align: center;">본명</th><td style="padding: 6px 10px; border: 1px solid #ddd font-size: 1.1em;">글레이브스 노아 비첸티노</td></tr>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd font-size: 1.1em; text-align: center;">성별</th><td style="padding: 6px 10px; border: 1px solid #ddd font-size: 1.1em;">남성</td></tr>
