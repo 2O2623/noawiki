@@ -1,6 +1,6 @@
 # 노아 비첸티노 (Noa Vicentino)
 
-<div style="float: right; width: 320px; border: 1px solid #ddd; margin-left: 15px; font-size: 0.85em; background: #fff; line-height: 1.6; padding: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<div style="float: right; width: 450px; border: 1px solid #ddd; margin-left: 15px; font-size: 0.85em; background: #fff; line-height: 1.6; padding: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <div style="background: #dba801; color: #ffffff; padding: 12px 10px; text-align: center; border-bottom: 1px solid #ddd;">
 <div style="font-size: 1.3em; font-weight: bold;">수면의 반주자 · 노아 비첸티노</div>
 <div style="font-size: 0.9em;">Noa Vicentino: Surface Accompanist</div>
