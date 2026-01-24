@@ -1,6 +1,6 @@
 # 노아 비첸티노 (Noa Vicentino)
 
-<div style="float: right; width: 380px; border: 1px solid #ddd; margin-left: 15px; font-size: 1.2em; background: #fff; line-height: 1.6; padding: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<div style="float: right; width: 400px; border: 1px solid #ddd; margin-left: 15px; font-size: 1.2em; background: #fff; line-height: 1.6; padding: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <div style="background: #dba801; color: #ffffff; padding: 12px 10px; text-align: center; border-bottom: 1px solid #ddd;">
 <div style="font-size: 1em; font-weight: bold;">수면의 반주자 · 노아 비첸티노</div>
 <div style="font-size: 0.9em;">Noa Vicentino: Surface Accompanist</div>
@@ -18,7 +18,9 @@
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">무기</th><td style="padding: 6px 10px; border: 1px solid #ddd;"><span style="background-color: #3C4150; display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 4px; margin-right: 6px; vertical-align: middle;"> <img src="images/장병기.png" width="18" alt="장병기">
 </span><span style="vertical-align: middle;">장병기</span></td></tr>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">운명의 자리</th><td style="padding: 6px 10px; border: 1px solid #ddd;">높은음자리</td></tr>
+<tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">출시 일자</th><td style="padding: 6px 10px; border: 1px solid #ddd;">20XX/XX/XX (N.N버전)</td></tr>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">비고</th><td style="padding: 6px 10px; border: 1px solid #ddd;">폰타인 예술가 협회 주요 후원인</td></tr>
+<tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">언어별 표기</th><td style="padding: 6px 10px; border: 1px solid #ddd; font-size: 0.9em; white-space: nowrap;">🇰🇷 몰라 / 🇯🇵 몰라잇</td></tr>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">성우</th><td style="padding: 6px 10px; border: 1px solid #ddd; font-size: 0.9em; white-space: nowrap;">🇰🇷 몰라 / 🇯🇵 몰라잇</td></tr>
 </table>
 </div>
