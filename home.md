@@ -166,14 +166,14 @@
 악성 기사가 올라오는 횟수가 약간 줄었다는 점이겠네</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">하고 싶은 이야기...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">흥미있는 일...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">타이나리는 정말 의지하기 좋은 사람이야. 
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해·</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">타이나리는 정말 의지하기 좋은 사람이야. 
 매일 말로는 투덜대면서도 아침밥을 차려주는 건 타이나리밖에 없거든.
 항상 쳐다볼 때마다 빨리 돌아가 줬으면 좋겠다는 눈빛을 보내고는 하는데, 
 이렇게 잘 해주는데 누가 돌아가고 싶겠어?</td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">콜레이에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">파루잔에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">레브에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">레브와는 편지로만 가끔 대화하는 사이였어. 원래 나는 후원인들과는 직접 만나지 않고 편지로만 안부를 전하거든. 하지만 최근에 타이나리를 따라 수메르 성에 갔을 때 레브와 처음 마주쳤는데, 편지로만 대화하다 보니 서로 정체를 알아차리느라 시간이 꽤 걸렸던게 기억이 나네. 그녀는 내가 지금까지 본 예술가 중에서 가장 겸손한 사람이야</td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">타이나리에 대해·</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">콜레이에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">만약 내게 동생이 생긴다면 콜레이같이 예의 바른 여동생이 좋을 것 같아... 물론, 콜레이에게 허락은 받지 않았어</td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">파루잔에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">내 또래 같아 보이지만, 선배님 취급을 받고 싶어 하던데... 선배라고 부르기 전까지는 보내주지 않을 것 같아서, 어쩔 수 없이 선배님이라고 부르고 있어. 하지만 그만큼 배울 점도 많은 건 사실이야</td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">레브에 대해...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">그녀가 쓰는 동화는 이미 다섯 번도 넘게 읽어봤어. 내가 후원하는 예술가 중에서 제일 겸손하고 착한 사람이거든... 여러 나라를 돌아다니는 모양인데, 만약 마주치면 그녀에게 그동안 있었던 여행담을 말해주는 게 좋을 거야</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 첫 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 두 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">노아에 대해 알기 · 세 번째...</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
@@ -197,7 +197,7 @@
 <table style="width: 100%; border-collapse: collapse;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 <td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">편성 시</td>
-<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">좋은 선택했어.</td>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">좋은 선택이야.</td>
 </tr> <tr>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">대사 2</td>
 </tr> <tr>
