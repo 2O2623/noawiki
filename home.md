@@ -134,8 +134,64 @@
 <span style="color: #757575; margin-right: 10px;">∨</span> 3. 속성
 </div>
 </summary>
+<details open style="margin-top: 25px; outline: none;">
+<summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px;">
+<div style="font-size: 1.3em; font-weight: bold; display: flex; align-items: center; color: #333;">
+<span style="color: #757575; margin-right: 8px; font-size: 0.8em;">∨</span> 3.1. 돌파 재료
+</div>
 <table width="100%">
-<tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="이미지_주소_넣기" width="80" alt="원신 아이콘">
+<tr>
+<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #ece6cc; padding: 5px;">
+<strong>캐릭터 육성 소재</strong>
+</td>
+</tr>
+<tr bgcolor="#3c4150">
+<td align="center" width="25%" style="color: #ece6cc; padding: 15px 0;">
+<img src="마노_이미지_주소" width="60"><br>
+<small>불타오르는 마노</small>
+</td>
+<td align="center" width="25%" style="color: #ece6cc;">
+<img src="특산물_이미지_주소" width="60"><br>
+<small>지역 특산물</small>
+</td>
+<td align="center" width="25%" style="color: #ece6cc;">
+<img src="일반소재_이미지_주소" width="60"><br>
+<small>일반 토벌 소재(상급)</small>
+</td>
+<td align="center" width="25%" style="color: #ece6cc;">
+<img src="정예소재_이미지_주소" width="60"><br>
+<small>정예 토벌 소재</small>
+</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr>
+<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #ece6cc; padding: 5px;">
+<strong>특성 육성 소재</strong>
+</td>
+</tr>
+<tr bgcolor="#3c4150">
+<td align="center" width="25%" style="color: #ece6cc; padding: 15px 0;">
+<img src="마노_이미지_주소" width="60"><br>
+<small>불타오르는 마노</small>
+</td>
+<td align="center" width="25%" style="color: #ece6cc;">
+<img src="특산물_이미지_주소" width="60"><br>
+<small>지역 특산물</small>
+</td>
+<td align="center" width="25%" style="color: #ece6cc;">
+<img src="일반소재_이미지_주소" width="60"><br>
+<small>일반 토벌 소재(상급)</small>
+</td>
+<td align="center" width="25%" style="color: #ece6cc;">
+<img src="정예소재_이미지_주소" width="60"><br>
+<small>정예 토벌 소재</small>
+</td>
+</tr>
+</table>
+<table width="100%">
+<tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/창.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
 <strong style="color: #fd7;">일반 공격</strong><br>
 창으로으로 최대 4번 공격한다.
@@ -150,6 +206,7 @@
 </table>
 </div>
 </details>
+</div>
 
 <details open style="margin-top: 20px;">
 <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
