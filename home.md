@@ -146,23 +146,23 @@
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
-<tr bgcolor="#3c4150">
-<td align="center" style="padding: 20px 10px; color: #ece6cc;">
+<tr bgcolor="#3C4150">
+<td align="center" style="padding: 20px 10px; color: #3C4150;">
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="마노_이미지_주소" width="60"><br>
-<small>불타오르는 마노</small>
+<img src="images/바위.png" width="60"><br>
+<small>단단한 황옥</small>
 </div>
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="특산물_이미지_주소" width="60"><br>
-<small>지역 특산물</small>
+<img src="images/특산물.png" width="60"><br>
+<small>첫 이슬의 근원</small>
 </div>
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="일반소재_이미지_주소" width="60"><br>
-<small>일반 토벌 소재(상급)</small>
+<img src="images/일반토벌.png" width="60"><br>
+<small>이색 결정석</small>
 </div>
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="정예소재_이미지_주소" width="60"><br>
-<small>정예 토벌 소재</small>
+<img src="images/정예토벌.png" width="60"><br>
+<small>금빛 선율의 단편</small>
 </div>
 </td>
 </tr>
@@ -174,19 +174,19 @@
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
-<tr bgcolor="#3c4150">
-<td align="center" style="padding: 20px 10px; color: #ece6cc;">
+<tr bgcolor="#3C4150">
+<td align="center" style="padding: 20px 10px; color: #3C4150;">
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="마노_이미지_주소" width="60"><br>
-<small>불타오르는 마노</small>
+<img src="images/특성책.png" width="60"><br>
+<small>「질서」의 철학</small>
 </div>
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="특산물_이미지_주소" width="60"><br>
-<small>지역 특산물</small>
+<img src="images/일반토벌.png" width="60"><br>
+<small>이색 결정석</small>
 </div>
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="일반소재_이미지_주소" width="60"><br>
-<small>일반 토벌 소재(상급)</small>
+<img src="images/주간토벌.png" width="60"><br>
+<small>승격·룩</small>
 </div>
 </div>
 </td>
