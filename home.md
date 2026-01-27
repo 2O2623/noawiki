@@ -131,6 +131,28 @@
 <details open style="margin-top: 20px;">
 <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
 <div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333;">
+<span style="color: #757575; margin-right: 10px;">∨</span> 3. 속성
+</div>
+</summary>
+<table width="100%">
+<tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="이미지_주소_넣기" width="80" alt="원신 아이콘">
+</td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
+<strong style="color: #fd7;">일반 공격</strong><br>
+창으로으로 최대 4번 공격한다.
+<br><br>
+<strong style="color: #fd7;">강공격</strong><br>
+일정 스태미나를 소모해 전방으로 돌진하며 경로상의 적에게 피해를 준다.
+<strong style="color: #fd7;">낙하 공격</strong><br>
+공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.
+</td>
+</tr>
+</table>
+</div>
+</details>
+
+<details open style="margin-top: 20px;">
+<summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
+<div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333;">
 <span style="color: #757575; margin-right: 10px;">∨</span> 3. 대사
 </div>
 </summary>
