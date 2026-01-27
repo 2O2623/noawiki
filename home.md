@@ -142,26 +142,26 @@
 </summary>
 <table width="100%">
 <tr>
-<td align="center" bgcolor="#3C4150" style="padding: 5px;">
+<td align="center" bgcolor="#2d2f3d" style="padding: 10px; border: none;">
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
-<tr bgcolor="#3C4150";>
-<td align="center" style="padding: 20px 10px; color: #ECE6CC;">
-<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/황옥.png" width="60"><br>
+<tr>
+<td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
+<div style="display: inline-block; width: 140px; margin: 10px; vertical-align: top;">
+<img src="images/황옥.png" width="80"><br>
 <small>단단한 황옥</small>
 </div>
-<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/특산물.png" width="60"><br>
+<div style="display: inline-block; width: 140px; margin: 10px; vertical-align: top;">
+<img src="images/특산물.png" width="80"><br>
 <small>첫 이슬의 근원</small>
 </div>
-<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/일반토벌.png" width="60"><br>
+<div style="display: inline-block; width: 140px; margin: 10px; vertical-align: top;">
+<img src="images/일반토벌.png" width="80"><br>
 <small>이색 결정석</small>
 </div>
-<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/정예토벌.png" width="60"><br>
+<div style="display: inline-block; width: 140px; margin: 10px; vertical-align: top;">
+<img src="images/정예토벌.png" width="80"><br>
 <small>금빛 선율의 단편</small>
 </div>
 </td>
@@ -170,22 +170,22 @@
 
 <table width="100%">
 <tr>
-<td align="center" bgcolor="#3C4150" style="padding: 5px;">
-<strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
+<td align="center" bgcolor="#2d2f3d" style="padding: 10px; border: none;">
+<strong style="color: #D2BE91;">특성 육성 소재</strong>
 </td>
 </tr>
-<tr bgcolor="#3C4150";>
-<td align="center" style="padding: 20px 10px; color: #ECE6CC;">
-<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/특성책.png" width="60"><br>
+<tr>
+<td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
+<div style="display: inline-block; width: 140px; margin: 10px; vertical-align: top;">
+<img src="images/특성책.png" width="80"><br>
 <small>「질서」의 철학</small>
 </div>
-<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/일반토벌.png" width="60"><br>
+<div style="display: inline-block; width: 140px; margin: 10px; vertical-align: top;">
+<img src="images/일반토벌.png" width="80"><br>
 <small>이색 결정석</small>
 </div>
-<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/주간토벌.png" width="60"><br>
+<div style="display: inline-block; width: 140px; margin: 10px; vertical-align: top;">
+<img src="images/주간토벌.png" width="80"><br>
 <small>승격·룩</small>
 </div>
 </div>
