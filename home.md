@@ -178,7 +178,7 @@
 <td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/특성책.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">질서」의 철학</strong>
+<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">「질서」의 철학</strong>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/일반토벌.png" width="120"><br>
