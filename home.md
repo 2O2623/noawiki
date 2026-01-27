@@ -142,6 +142,7 @@
 <br><br>
 <strong style="color: #fd7;">강공격</strong><br>
 일정 스태미나를 소모해 전방으로 돌진하며 경로상의 적에게 피해를 준다.
+<br><br>
 <strong style="color: #fd7;">낙하 공격</strong><br>
 공중에서 땅을 내려찍어 경로상의 적을 공격하고 착지 시 범위 피해를 준다.
 </td>
