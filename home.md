@@ -149,7 +149,7 @@
 <tr bgcolor="#3C4150">
 <td align="center" style="padding: 20px 10px; color: #3C4150;">
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
-<img src="images/바위.png" width="60"><br>
+<img src="images/황옥.png" width="60"><br>
 <small>단단한 황옥</small>
 </div>
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
@@ -204,7 +204,7 @@
 </div>
 </summary>
 <table width="100%">
-<tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/창.png" width="80" alt="일반 공격">
+<tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/장병기.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
 <strong style="color: #fd7;">일반 공격</strong><br>
 창으로으로 최대 4번 공격한다.
