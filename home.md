@@ -142,56 +142,56 @@
 </summary>
 <table width="100%">
 <tr>
-<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #3C4150; padding: 5px;">
+<td align="center" bgcolor="#2d2f3d" style="padding: 5px;">
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
 <tr bgcolor="#3c4150">
-<td align="center" width="25%" style="color: #ece6cc; padding: 15px 0;">
+<td align="center" style="padding: 20px 10px; color: #ece6cc;">
+<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="마노_이미지_주소" width="60"><br>
 <small>불타오르는 마노</small>
-</td>
-<td align="center" width="25%" style="color: #ece6cc;">
+</div>
+<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="특산물_이미지_주소" width="60"><br>
 <small>지역 특산물</small>
-</td>
-<td align="center" width="25%" style="color: #ece6cc;">
+</div>
+<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="일반소재_이미지_주소" width="60"><br>
 <small>일반 토벌 소재(상급)</small>
-</td>
-<td align="center" width="25%" style="color: #ece6cc;">
+</div>
+<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="정예소재_이미지_주소" width="60"><br>
 <small>정예 토벌 소재</small>
+</div>
 </td>
 </tr>
 </table>
 
 <table width="100%">
 <tr>
-<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #3C4150; padding: 5px;">
-<strong style="color: #D2BE91;">특성 육성 소재</strong>
+<td align="center" bgcolor="#2d2f3d" style="padding: 5px;">
+<strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
 <tr bgcolor="#3c4150">
-<td align="center" width="25%" style="color: #ece6cc; padding: 15px 0;">
+<td align="center" style="padding: 20px 10px; color: #ece6cc;">
+<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="마노_이미지_주소" width="60"><br>
 <small>불타오르는 마노</small>
-</td>
-<td align="center" width="25%" style="color: #ece6cc;">
+</div>
+<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="특산물_이미지_주소" width="60"><br>
 <small>지역 특산물</small>
-</td>
-<td align="center" width="25%" style="color: #ece6cc;">
+</div>
+<div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="일반소재_이미지_주소" width="60"><br>
 <small>일반 토벌 소재(상급)</small>
-</td>
-<td align="center" width="25%" style="color: #ece6cc;">
-<img src="정예소재_이미지_주소" width="60"><br>
-<small>정예 토벌 소재</small>
+</div>
+</div>
 </td>
 </tr>
 </table>
-
 </div>
 </details>
 </div>
