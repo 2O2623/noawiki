@@ -150,19 +150,19 @@
 <td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/황옥.png" width="120"><br>
-<small>단단한 황옥</small>
+<strong>단단한 황옥</strong>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/특산물.png" width="120"><br>
-<small>첫 이슬의 근원</small>
+<strong>첫 이슬의 근원</strong>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/일반토벌.png" width="120"><br>
-<small>이색 결정석</small>
+<strong>이색 결정석</strong>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/정예토벌.png" width="120"><br>
-<small>금빛 선율의 단편</small>
+<strong>금빛 선율의 단편</strong>
 </div>
 </td>
 </tr>
@@ -178,15 +178,15 @@
 <td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/특성책.png" width="120"><br>
-<small>「질서」의 철학</small>
+<strong>「질서」의 철학</strong>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/일반토벌.png" width="120"><br>
-<small>이색 결정석</small>
+<strong>이색 결정석</strong>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/주간토벌.png" width="120"><br>
-<small>승격·룩</small>
+<strong>승격·룩</strong>
 </div>
 </div>
 </td>
