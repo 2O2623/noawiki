@@ -146,8 +146,8 @@
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
-<tr bgcolor="#3C4150">
-<td align="center" style="padding: 20px 10px; color: #3C4150;">
+<tr bgcolor="#3C4150";>
+<td align="center" style="padding: 20px 10px; color: #ECE6CC;">
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="images/황옥.png" width="60"><br>
 <small>단단한 황옥</small>
@@ -174,8 +174,8 @@
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
-<tr bgcolor="#3C4150">
-<td align="center" style="padding: 20px 10px; color: #3C4150;">
+<tr bgcolor="#3C4150";>
+<td align="center" style="padding: 20px 10px; color: #ECE6CC;">
 <div style="display: inline-block; width: 120px; margin: 10px; vertical-align: top;">
 <img src="images/특성책.png" width="60"><br>
 <small>「질서」의 철학</small>
