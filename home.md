@@ -141,8 +141,8 @@
 </div>
 <table width="100%">
 <tr>
-<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #ece6cc; padding: 5px;">
-<strong>캐릭터 육성 소재</strong>
+<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #3C4150; padding: 5px;">
+<strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
 <tr bgcolor="#3c4150">
@@ -167,8 +167,8 @@
 
 <table width="100%">
 <tr>
-<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #ece6cc; padding: 5px;">
-<strong>특성 육성 소재</strong>
+<td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #3C4150; padding: 5px;">
+<strong style="color: #D2BE91;">특성 육성 소재</strong>
 </td>
 </tr>
 <tr bgcolor="#3c4150">
@@ -190,6 +190,17 @@
 </td>
 </tr>
 </table>
+</div>
+</details>
+</div>
+</details>
+
+<details open style="margin-top: 20px;">
+<summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
+<div style="font-size: 1.5em; font-weight: bold; display: flex; align-items: center; color: #333;">
+<span style="color: #757575; margin-right: 10px;">∨</span> 4. 특성
+</div>
+</summary>
 <table width="100%">
 <tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/창.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
@@ -206,7 +217,6 @@
 </table>
 </div>
 </details>
-</div>
 
 <details open style="margin-top: 20px;">
 <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
