@@ -142,7 +142,7 @@
 </summary>
 <table width="100%">
 <tr>
-<td align="center" bgcolor="#2d2f3d" style="padding: 5px;">
+<td align="center" bgcolor="#3C4150" style="padding: 5px;">
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
@@ -170,7 +170,7 @@
 
 <table width="100%">
 <tr>
-<td align="center" bgcolor="#2d2f3d" style="padding: 5px;">
+<td align="center" bgcolor="#3C4150" style="padding: 5px;">
 <strong style="color: #D2BE91;">캐릭터 육성 소재</strong>
 </td>
 </tr>
