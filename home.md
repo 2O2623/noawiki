@@ -139,6 +139,7 @@
 <div style="font-size: 1.3em; font-weight: bold; display: flex; align-items: center; color: #333;">
 <span style="color: #757575; margin-right: 8px; font-size: 0.8em;">∨</span> 3.1. 돌파 재료
 </div>
+</summary>
 <table width="100%">
 <tr>
 <td colspan="4" align="center" bgcolor="#2d2f3d" style="color: #3C4150; padding: 5px;">
@@ -190,6 +191,7 @@
 </td>
 </tr>
 </table>
+
 </div>
 </details>
 </div>
