@@ -150,19 +150,19 @@
 <td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/황옥.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">단단한 황옥</strong>
+<span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">단단한 황옥</span>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/특산물.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">첫 이슬의 근원</strong>
+<span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">첫 이슬의 근원</span>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/일반토벌.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">이색 결정석</strong>
+<span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">이색 결정석</span>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/정예토벌.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">금빛 선율의 단편</strong>
+<span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">금빛 선율의 단편</span>
 </div>
 </td>
 </tr>
@@ -171,22 +171,22 @@
 <table width="100%">
 <tr>
 <td align="center" bgcolor="#2d2f3d" style="padding: 10px; border: none;">
-<strong style="color: #D2BE91;">특성 육성 소재</strong>
+<span style="color: #D2BE91;">특성 육성 소재</span>
 </td>
 </tr>
 <tr>
 <td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/특성책.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">「질서」의 철학</strong>
+<span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">「질서」의 철학</span>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/일반토벌.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">이색 결정석</strong>
+<span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">이색 결정석</span>
 </div>
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/주간토벌.png" width="120"><br>
-<strong style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">승격·룩</strong>
+<span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">승격·룩</span>
 </div>
 </div>
 </td>
