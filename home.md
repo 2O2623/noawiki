@@ -252,8 +252,8 @@
 <tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 3px solid #dba801;">대사집</td></tr>
   
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd;">
-<details><summary style="display: block; padding: 5px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">자료 [ 펼치기 · 접기 ] </summary>
-<table style="width: 100%; border-collapse: collapse; border: none;">
+<details style="display: block;"><summary style="padding: 5px; cursor: pointer; text-align: center; background: #fff; font: bold 15px 'Malgun Gothic', sans-serif; list-style: none; color: #000; outline: none;">자료 [ 펼치기 · 접기 ] </summary>
+<table style="width: 100%; border-collapse: collapse; border: none; display: table;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">첫 만남...</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;">안녕, 반가워. 나는 노아 비첸티노라고 해. 혹시 너, 입이 가볍지는 않지? 내 행방은 항상 비밀로 유지하고 있으니까, 나의 관한 일에 대해서는 입 조심하는게 좋을 거야.</td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">잡담·영감</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;">지금이라면 전에는 없던 새로운 곡을 쓸 수 있을 것 같네</td></tr>
@@ -304,16 +304,15 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 기</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 승</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 전</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border: none;">돌파의 느낌 · 결</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border: none;"></td>
-</tr> <tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border: none;">돌파의 느낌 · 결</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border: none;"></td></tr>
 </table>
 </details>
 </td>
 </tr>
 
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 3px solid #dba801;">
-<details><summary style="display: block; padding: 5px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">필드 [ 펼치기 · 접기 ] </summary>
-<table style="width: 100%; border-collapse: collapse; border: none;">
+<details style="display: block;"><summary style="padding: 5px; cursor: pointer; text-align: center; background: #fff; font: bold 15px 'Malgun Gothic', sans-serif; list-style: none; color: #000; outline: none;">필드 [ 펼치기 · 접기 ] </summary>
+<table style="width: 100%; border-collapse: collapse; border: none; display: table;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 <td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;"> 편성 시</td>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">좋은 선택이야.</td>
@@ -338,7 +337,7 @@
 </tr> <tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border: none;">사망 시</td>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border: none;"></td>
-</tr> <tr>
+</tr>
 </table></details></td></tr>
 </table>
 </div>
