@@ -305,7 +305,7 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">돌파의 느낌 · 결</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
-<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; color: #000;">필드 [ 펼치기 · 접기 ]</summary>
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold solid #eee; color: #000;">필드 [ 펼치기 · 접기 ]</summary>
 <table style="width: 100%; border-collapse: collapse;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 <td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">편성 시</td>
@@ -332,5 +332,45 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 </table></details></td></tr>
 </table>
+
+<table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
+<tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 1px solid #a8a8a8;">대사집</td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee; color: #000;">[ 캐릭터 스토리 1 ]</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+</table></details></td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold solid #eee; color: #000;">[ 캐릭터 스토리 2 ]</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+</table></details></td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold solid #eee; color: #000;">[ 캐릭터 스토리 3 ]</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+</table></details></td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold solid #eee; color: #000;">[ 캐릭터 스토리 4 ]</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+</table></details></td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold solid #eee; color: #000;">[ 캐릭터 스토리 5 ]</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+</table></details></td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold solid #eee; color: #000;">｢ ｣</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+</table></details></td></tr>
+<tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
+<details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold solid #eee; color: #000;">신의 눈</summary>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup><col style="width: 35%;"><col></colgroup>
+</table></details></td></tr>
+</table>
+
 </div>
 </details>
