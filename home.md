@@ -349,37 +349,37 @@
 <tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 3px solid #dba801;">스토리 모음집</td></tr>
   
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd;">
-<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; font-family: 'Malgun Gothic';">[ 캐릭터 스토리 1 ]</summary>
+<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">[ 캐릭터 스토리 1 ]</summary>
 <table style="width: 100%; border-collapse: collapse; border: none;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd;">
-<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; font-family: 'Malgun Gothic';">[ 캐릭터 스토리 2 ]</summary>
+<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">[ 캐릭터 스토리 2 ]</summary>
 <table style="width: 100%; border-collapse: collapse; border: none;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd;">
-<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; font-family: 'Malgun Gothic';">[ 캐릭터 스토리 3 ]</summary>
+<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">[ 캐릭터 스토리 3 ]</summary>
 <table style="width: 100%; border-collapse: collapse; border: none;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd;">
-<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; font-family: 'Malgun Gothic';">[ 캐릭터 스토리 4 ]</summary>
+<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">[ 캐릭터 스토리 4 ]</summary>
 <table style="width: 100%; border-collapse: collapse; border: none;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd;">
-<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; font-family: 'Malgun Gothic';">[ 캐릭터 스토리 5 ]</summary>
+<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">[ 캐릭터 스토리 5 ]</summary>
 <table style="width: 100%; border-collapse: collapse; border: none;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd;">
-<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; font-family: 'Malgun Gothic';">｢ ｣</summary>
+<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">｢ ｣</summary>
 <table style="width: 100%; border-collapse: collapse; border: none;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 3px solid #dba801;">
-<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; font: bold 15px 'Malgun Gothic', sans-serif;">[ 신의 눈 ]</summary>
+<details><summary style="padding: 7px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">[ 신의 눈 ]</summary>
 <table style="width: 100%; border-collapse: collapse; border: none;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
