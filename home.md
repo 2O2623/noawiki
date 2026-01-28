@@ -252,7 +252,7 @@
 <tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 3px solid #dba801;">대사집</td></tr>
   
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 1px solid #ddd; font-size: 0;">
-<details style="display: block;"><summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; sans-serif; list-style: none; color: #000; outline: none; line-height: 1.5;">자료 [ 펼치기 · 접기 ] </summary>
+<details style="display: block;"><summary style="padding: 10px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; line-height: 1.5;">자료 [ 펼치기 · 접기 ] </summary>
 <table style="width: 100%; border-collapse: collapse; border: none; margin: 0; display: table; font-size: 14px;">
 <colgroup><col style="width: 35%;"><col></colgroup>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">첫 만남...</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;">안녕, 반가워. 나는 노아 비첸티노라고 해. 혹시 너, 입이 가볍지는 않지? 내 행방은 항상 비밀로 유지하고 있으니까, 나의 관한 일에 대해서는 입 조심하는게 좋을 거야.</td></tr>
