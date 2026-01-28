@@ -147,7 +147,7 @@
 </td>
 </tr>
 <tr>
-<td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
+<td align="center" bgcolor="#3C4150" style="padding: 10px 10px; color: #ECE6CC; border: none;">
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/황옥.png" width="120"><br>
 <span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">단단한 황옥</span>
@@ -175,7 +175,7 @@
 </td>
 </tr>
 <tr>
-<td align="center" bgcolor="#3C4150" style="padding: 20px 10px; color: #ECE6CC; border: none;">
+<td align="center" bgcolor="#3C4150" style="padding: 10px 10px; color: #ECE6CC; border: none;">
 <div style="display: inline-block; width: 140px; margin: 5px; vertical-align: top;">
 <img src="images/특성책.png" width="120"><br>
 <span style="font-size: 16px; color: #ECE6CC; display: block; margin-top: 5px;">「질서」의 철학</span>
