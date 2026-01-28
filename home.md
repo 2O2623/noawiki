@@ -232,11 +232,12 @@
 <tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/장병기.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
 아와와 아와 와와와 아와와와 아와와<br>
-
+  
 <i>｢ 척 추 척추 척척추 척추 척추 척척추 ｣</i>
 </td>
 </tr>
 </table>
+
 </div>
 </details>
 
@@ -248,7 +249,7 @@
 </summary>
 <div style="padding: 0 5px; display: flex; justify-content: center;">
 <table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
-<tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 1px solid #a8a8a8;">대사집</td></tr>
+<tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 1px solid #dba801;">대사집</td></tr>
 <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
 <details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee; color: #000;">자료 [ 펼치기 · 접기 ]</summary>
 <table style="width: 100%; border-collapse: collapse;">
@@ -343,7 +344,7 @@
 </summary>
 <div style="padding: 0 5px; display: flex; justify-content: center;">
 <table style="width: 100%; max-width: 600px; border: 1px solid #a8a8a8; border-collapse: collapse; table-layout: fixed;">
-<tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 1px solid #a8a8a8;">대사집</td></tr>
+<tr><td colspan="2" style="background: #dba801; color: #fff; text-align: center; font-weight: bold; padding: 10px; font-size: 1.4em; border: 1px solid #dba801;">대사집</td></tr>
 <tr><td colspan="2" style="padding: 0; border: 1px solid #a8a8a8;">
 <details><summary style="padding: 8px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; border-bottom: 1px solid #eee; color: #000;">[ 캐릭터 스토리 1 ]</summary>
 <table style="width: 100%; border-collapse: collapse;">
