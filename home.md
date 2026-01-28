@@ -304,8 +304,12 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 기</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 승</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 전</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border: none;">돌파의 느낌 · 결</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border: none;"></td></tr>
-</table></details></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border: none;">돌파의 느낌 · 결</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border: none;"></td>
+</tr> <tr>
+</table>
+</details>
+</td>
+</tr>
 
 <tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 3px solid #dba801;">
 <details><summary style="display: block; padding: 5px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none;">필드 [ 펼치기 · 접기 ] </summary>
@@ -333,7 +337,8 @@
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">예상된 반응, 좋았어!</td>
 </tr> <tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border: none;">사망 시</td>
-  <td style="padding: 10px; border: 1px solid #a8a8a8; border: none;"></td></tr>
+<td style="padding: 10px; border: 1px solid #a8a8a8; border: none;"></td>
+</tr> <tr>
 </table></details></td></tr>
 </table>
 </div>
