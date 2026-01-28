@@ -221,7 +221,7 @@
 <table width="100%">
 <tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/장병기.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
-아와와 아와 와와와 아와와와 아와와
+아와와 아와 와와와 아와와와 아와와<br>
   
 _｢ 척 추 척추 척척추 척추 척추 척척추 ｣_
 </td>
@@ -231,7 +231,7 @@ _｢ 척 추 척추 척척추 척추 척추 척척추 ｣_
 <table width="100%">
 <tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/장병기.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
-아와와 아와 와와와 아와와와 아와와
+아와와 아와 와와와 아와와와 아와와<br>
   
 _｢ 척 추 척추 척척추 척추 척추 척척추 ｣_
 </td>
