@@ -299,15 +299,15 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">싫어하는 음식...</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">선물 획득 · 첫 번째</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">선물 획득 · 두 번째</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">선물 획득 · 세 번째</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">생일...</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8f; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 기</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 승</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 전</td><td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">선물 획득 · 세 번째</td><td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">생일...</td><td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 기</td><td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 승</td><td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;"></td></tr>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">돌파의 느낌 · 전</td><td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;"></td></tr>
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: none; border-right: 1px solid #fff;">돌파의 느낌 · 결</td><td style="background: #fff; padding: 10px; border: none; border-right: none;"></td>
 </table></details></td></tr>
 
-<tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 3px solid #ddd; font-size: 0;">
+<tr><td colspan="2" style="padding: 0; border-left: 3px solid #dba801; border-right: 3px solid #dba801; border-bottom: 3px solid #dba801; font-size: 0;">
 <details style="display: block;"><summary style="padding: 5px; cursor: pointer; text-align: center; background: #fff; font-weight: bold; list-style: none; color: #000; outline: none; line-height: 1.5; font-size: 15px;">필드 [ 펼치기 · 접기 ]</summary>
 <table style="width: 100%; border-collapse: collapse; border: none; margin: 0; display: table; font-size: 14px;">
 <colgroup><col style="width: 35%;"><col></colgroup>
@@ -332,7 +332,7 @@
 </tr> <tr>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">예상된 반응, 좋았어!</td>
 </tr> <tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: none; border-right: 1px solid #fff;">사망 시</td>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: none; border: 1px solid #fff;">사망 시</td>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td>
 </table></details></td></tr>
 </tr>
