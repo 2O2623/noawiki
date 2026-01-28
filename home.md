@@ -332,6 +332,8 @@
 <tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #a8a8a8; border-left: none;">사망 시</td><td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td></tr>
 </table></details></td></tr>
 </table>
+</div>
+</details>
 
 <details open style="margin-top: 20px;">
 <summary style="cursor: pointer; list-style: none; outline: none; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 15px;">
@@ -378,6 +380,5 @@
 <colgroup><col style="width: 35%;"><col></colgroup>
 </table></details></td></tr>
 </table>
-
 </div>
 </details>
