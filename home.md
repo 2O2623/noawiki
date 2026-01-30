@@ -316,7 +316,7 @@
 </tr> <tr>
 <td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;">대사 2</td>
 </tr> <tr>
-<td style="background: #fff; padding: 10px; border: 1px solid #a8a8a8; border-right: none;">대사 3</td>
+<td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;">대사 3</td>
 </tr> <tr>
 <td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">원소 전투 스킬 사용 시</td>
 <td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;">청음 테스트야. 집중해.</td>
@@ -328,12 +328,12 @@
 <td rowspan="3" style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: 1px solid #fff; border-left: none;">원소 폭발 사용 시</td>
 <td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;">실패는 성공의 어머니야.</td>
 </tr> <tr>
-<td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;"></td>
+<td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;">대사2</td>
 </tr> <tr>
-<td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none;"></td>
+<td style="background: #fff; padding: 10px; border: 1px solid #eee; border-right: none; border-bottom: 1px solid #eee;">대사3</td>
 </tr> <tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: none; border-right: 1px solid #fff;">사망 시</td>
-<td style="padding: 10px; border: none;"></td>
+<td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: none; border-right: 1px solid #fff;">사망 시</td>
+<td style="background: #fff; padding: 10px; border: none;"></td>
 </table></details></td></tr>
 </tr>
 </table>
