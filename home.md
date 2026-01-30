@@ -332,7 +332,7 @@
 </tr> <tr>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;">예상된 반응, 좋았어!</td>
 </tr> <tr>
-<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: none; border: 1px solid #fff;">사망 시</td>
+<tr><td style="background: #a87e4c; color: #fff; padding: 10px; text-align: center; font-weight: bold; border: none; border-right: 1px solid #fff;">사망 시</td>
 <td style="padding: 10px; border: 1px solid #a8a8a8; border-right: none;"></td>
 </table></details></td></tr>
 </tr>
