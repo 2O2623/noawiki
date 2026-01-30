@@ -8,7 +8,7 @@
 <div style="background: #a87e4c; color: #ffffff; padding: 8px; text-align: center; font-size: 0.8em; border-bottom: 1px solid #ddd;">음 뭐넣지</div>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; margin: 0; border: none;">
 <colgroup><col style="width: 130px;"><col></colgroup>
-<tr><th style="background: #dba801; color: #fff; padding: 6px; border: none; text-align: center;">본명</th><td style="padding: 6px 10px; border: 1px solid #ddd;">글레이브스 노아 비첸티노</td></tr>
+<tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">본명</th><td style="padding: 6px 10px; border: 1px solid #ddd;">글레이브스 노아 비첸티노</td></tr>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">성별</th><td style="padding: 6px 10px; border: 1px solid #ddd;">남성</td></tr>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">생일</th><td style="padding: 6px 10px; border: 1px solid #ddd;">12월 28일</td></tr>
 <tr><th style="background: #dba801; color: #fff; padding: 6px; border: 1px solid #ddd; text-align: center;">소속</th><td style="padding: 6px 10px; border: 1px solid #ddd;"><span style="background-color: #3F80E8; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 4px; margin-right: 6px; vertical-align: middle;"> <img src="images/폰타인.png" width="23" alt="폰타인 성">
