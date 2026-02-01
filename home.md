@@ -221,7 +221,7 @@
 <table width="100%">
 <tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/장병기.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
-아무튼 궁을쓰면 강공격 피해증가와 원전투 피해를 증가시킨다<br>
+어쩌구를 소환한다 그리고 현재 필드 위 캐릭터를 따라다니며 원소반응을 n번이상일으켯을때마다 뭐 증폭해서 바위원소피해를준다 아무튼 버프도준다<br>
   
 <i>｢ 척 추 척추 척척추 척추 척추 척척추 ｣</i>
 </td>
@@ -231,7 +231,7 @@
 <table width="100%">
 <tr><td align="center" width="15%" bgcolor="#3c4150"> <img src="images/장병기.png" width="80" alt="일반 공격">
 </td> <td bgcolor="#3c4150" style="color: #ece6cc; line-height: 1.6;">
-아와와 아와 와와와 아와와와 아와와<br>
+아무튼 궁을쓰면 바위원소 피해를주고 현재 필드위캐릭터를 치유한다<br>
   
 <i>｢ 척 추 척추 척척추 척추 척추 척척추 ｣</i>
 </td>
