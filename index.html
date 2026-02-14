@@ -48,7 +48,7 @@
         font-family: 'Apple SD Gothic Neo', sans-serif;
     }
 
-    .top-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .top-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
     
     /* 레코드판 스타일 */
     .rotating-disc {
@@ -140,9 +140,9 @@
     const volPop = document.getElementById('volume-pop');
 
     const tracks = [
-        { src: 'Dream%20Anamnesis.mp3', title: 'Dream Anamnesis', img: '레코드판1.png' },
-        { src: 'Moonlike%20Smile.mp3', title: 'Moonlike Smile', img: '레코드판2.png' },
-        { src: 'Winding%20Through%20Avidya.mp3', title: 'Winding Through Avidya', img: '레코드판1.png' }
+        { src: 'Dream%20Anamnesis.mp3', title: 'Dream Anamnesis', img: 'archive/images/레코드판1.png' },
+        { src: 'Moonlike%20Smile.mp3', title: 'Moonlike Smile', img: 'archive/images/레코드판2.png' },
+        { src: 'Winding%20Through%20Avidya.mp3', title: 'Winding Through Avidya', img: 'archive/images/레코드판1.png' }
     ];
     let currentIndex = 0;
     let isLoop = false;
