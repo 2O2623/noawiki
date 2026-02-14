@@ -52,16 +52,48 @@
             <input type="range" id="seek-bar" value="0" max="100" oninput="seek()">
         </div>
 
-        <div class="controls-row">
+<style>
+         #volume-pop {
+        position: absolute;
+        bottom: 45px; /* 버튼과의 간격 */
+        left: 50%;
+        transform: translateX(-50%); /* 가운데 정렬 */
+        width: 30px;
+        height: 120px;
+        background: white;
+        border: 2px solid #B9C06D;
+        border-radius: 8px;
+        display: none; /* JS에서 flex로 켜줄 거예요 */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        box-shadow: 3px 3px 0px rgba(185, 192, 109, 0.2);
+        z-index: 10001;
+    }
+
+    #vol-control {
+        appearance: slider-vertical;
+        -webkit-appearance: slider-vertical; /* 크롬/사파리용 */
+        width: 8px;
+        height: 100px;
+        accent-color: #B9C06D;
+        cursor: pointer;
+    }
+</style>
+        
+<div class="controls-row">
             <button class="ctrl-btn" onclick="prevTrack()">⏮</button>
             <button class="ctrl-btn play-main" onclick="togglePlay()" id="play-btn">▶</button>
             <button class="ctrl-btn" onclick="nextTrack()">⏭</button>
             <button class="ctrl-btn" id="loop-btn" onclick="toggleLoop()">🔁</button>
-            <button class="ctrl-btn" onclick="toggleVolume()">🔊</button>
-        </div>
-
-        <div id="volume-pop" class="sub-panel hidden">
-            <input type="range" id="vol-control" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)">
+            
+            <div style="position: relative; display: inline-block;">
+                <button class="ctrl-btn" onclick="toggleVolume()">🔊</button>
+                <div id="volume-pop" class="sub-panel hidden">
+                    <input type="range" id="vol-control" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)">
+                </div>
+            </div>
         </div>
 
         <div id="playlist-box" class="sub-panel hidden">
@@ -69,9 +101,7 @@
             <div class="list-item" onclick="changeTrack(1)">2. Moonlike Smile</div>
             <div class="list-item" onclick="changeTrack(2)">3. Winding Through Avidya</div>
         </div>
-    </div>
-</div>
-
+        
 <audio id="main-audio"></audio>
 
 <style>
@@ -162,7 +192,15 @@
     }
 
     function toggleList() { document.getElementById('playlist-box').classList.toggle('hidden'); }
-    function toggleVolume() { document.getElementById('volume-pop').classList.toggle('hidden'); }
+   function toggleVolume() {
+        const volPop = document.getElementById('volume-pop');
+        // display 상태를 체크해서 켜고 끄기
+        if (volPop.style.display === 'flex') {
+            volPop.style.display = 'none';
+        } else {
+            volPop.style.display = 'flex';
+        }
+    }
     function setVolume(v) { audio.volume = v; }
     function changeTrack(i) { currentIndex = i; loadTrack(i); audio.play(); playBtn.innerText = "||"; }
 
