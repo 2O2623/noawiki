@@ -40,17 +40,15 @@
 
 <style>
     /* 1. 플레이어 메인 박스 */
-    #unified-player {
-        position: fixed; bottom: 30px; right: 30px;
-        width: 280px !important; 
-        background: white;
-        border: 2px solid #B9C06D; border-radius: 15px;
-        padding: 15px; z-index: 10000;
-        box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
-        font-family: 'Apple SD Gothic Neo', sans-serif;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
+  #unified-player {
+    position: fixed; bottom: 30px; right: 30px;
+    width: 280px !important; 
+    background: white;
+    border: 2px solid #B9C06D; border-radius: 15px;
+    padding: 15px; z-index: 10000;
+    box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
+    font-family: 'Apple SD Gothic Neo', sans-serif;
+    box-sizing: border-box;}
 
     /* 2. 상단 줄 (레코드판 + 제목 + 목록버튼) */
     .top-row { 
@@ -79,11 +77,13 @@
     }
     .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
 
-    /* 3. 재생바 영역 (이게 탈출했었죠!) */
-    .progress-wrap { 
-        width: 100%; 
-        margin: 5px 0 15px 0; 
-    }
+    /* 3. 재생바 영역 */
+.progress-wrap { 
+    width: 100%; 
+    margin: 5px 0 15px 0; 
+    overflow: hidden; /* ★ 전체 박스 대신 여기에 hidden을 줍니다 */
+    border-radius: 5px;}
+    
     #seek-bar { 
         width: 100% !important; 
         accent-color: #B9C06D; 
@@ -107,23 +107,21 @@
     /* 5. 볼륨 및 재생목록 */
     #volume-pop {
     position: absolute; 
-    bottom: 65px; 
+    bottom: 45px; /* 버튼 바로 위 */
     left: 50%;
     transform: translateX(-50%);
-    
-    width: 35px; 
-    height: 120px;
-    background-color: white !important; /* 배경색 강제 지정 */
+    width: 35px; height: 120px;
+    background-color: white !important; 
     border: 2px solid #B9C06D;
     border-radius: 10px;
-    
-    display: none; /* JS에서 flex로 켜짐 */
+    display: none; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px 0;
-    z-index: 10001; /* 다른 요소보다 위에 오도록 함 */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* 약간의 그림자로 입체감 주기 */}
+    /* 박스 밖으로 나가도 보이게 함 */
+    z-index: 10001; 
+}
     
     #vol-control { appearance: slider-vertical; -webkit-appearance: slider-vertical; height: 100px; width: 8px; accent-color: #B9C06D; }
 
