@@ -18,24 +18,24 @@
 </head>
 <body>
 
-    <header>
-        <h1>mm</h1>
-        <p>nnnnn</p>
-    </header>
+<header>
+    <h1>mm</h1>
+    <p>nnnnn</p>
+</header>
 
-    <div class="container">
-        <article class="post">
-            <div class="date">2026. 02. 14</div>
-            <h2>mmmmm</h2>
-            <p>mmm</p>
-        </article>
+<div class="container">
+    <article class="post">
+        <div class="date">2026. 02. 14</div>
+        <h2>mmmmm</h2>
+        <p>mmm</p>
+    </article>
 
-        <article class="post">
-            <div class="date">2026. 02. 14</div>
-            <h2>mmm</h2>
-            <p>여mm</p>
-        </article>
-    </div>
+    <article class="post">
+        <div class="date">2026. 02. 14</div>
+        <h2>mmm</h2>
+        <p>여mm</p>
+    </article>
+</div>
 
 <div id="fancy-player">
     <div class="player-main">
@@ -43,53 +43,104 @@
             <span class="music-note">♪</span>
             <marquee scrollamount="3" class="song-name">Dream Anamnesis - Playing Now</marquee>
         </div>
-        <audio id="main-audio" controls loop>
+        
+        <audio id="main-audio" loop>
             <source src="Dream%20Anamnesis.mp3" type="audio/mpeg">
         </audio>
+
+        <div class="custom-controls">
+            <button onclick="togglePlay()" id="play-btn">▶</button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)">
+        </div>
     </div>
 </div>
 
 <style>
+    /* 배경 및 틀 */
     #fancy-player {
         position: fixed;
         bottom: 30px;
         right: 30px;
         background: rgba(255, 255, 255, 0.95);
         padding: 15px 25px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(185, 192, 109, 0.2); /* 은은한 보라색 그림자 */
+        border-radius: 50px; /* 알약 모양 */
+        box-shadow: 0 10px 30px rgba(185, 192, 109, 0.3); 
         z-index: 10000;
-        border: 2px solid #dcdde1;
+        border: 2px solid #B9C06D;
         transition: transform 0.3s;
     }
     #fancy-player:hover {
-        transform: scale(1.05); /* 마우스 올리면 살짝 커짐 */
+        transform: scale(1.05);
     }
     .player-main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
     .info-area {
         display: flex;
         align-items: center;
         width: 100%;
-        color: #B9C06D; /*색*/
+        color: #B9C06D; 
         font-weight: bold;
     }
     .music-note {
         margin-right: 10px;
         font-size: 20px;
     }
-
     .song-name {
-        width: 180px;
-        font-size: 14px;
+        width: 150px;
+        font-size: 13px;
     }
-    /* 재생바 크기 대폭 키우기 */
-    audio {
-        width: 280px; 
-        height: 45px;
+    /* 커스텀 컨트롤러 배치 */
+    .custom-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+    /* 재생 버튼 */
+    #play-btn {
+        background: #B9C06D;
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+    }
+    #play-btn:hover {
+        background: #9ba350;
+    }
+    /* 볼륨 슬라이더 */
+    #volume-slider {
+        width: 80px;
+        cursor: pointer;
+        accent-color: #B9C06D; /* 슬라이더 색상도 통일 */
     }
 </style>
+
+<script>
+    const audio = document.getElementById('main-audio');
+    const playBtn = document.getElementById('play-btn');
+
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            playBtn.innerText = "||"; // 일시정지 아이콘
+        } else {
+            audio.pause();
+            playBtn.innerText = "▶"; // 재생 아이콘
+        }
+    }
+    function setVolume(val) {
+        audio.volume = val;
+    }
+</script>
