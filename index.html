@@ -48,13 +48,13 @@
         font-family: 'Apple SD Gothic Neo', sans-serif;
     }
 
-    .top-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+    .top-row { display: flex; align-items: center; justify-content: space-between; gap: 5px; margin-bottom: 6px; }
     
     /* 레코드판 스타일 */
     .rotating-disc {
         width: 40px; height: 40px; border-radius: 50%;
         object-fit: cover; border: 2px solid #B9C06D;
-        animation: rotate_disc 4s linear infinite;
+        animation: rotate_disc 10s linear infinite;
         animation-play-state: paused;
     }
     @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
