@@ -38,76 +38,33 @@
     </article>
 </div>
 
-<div id="fancy-player">
-    <div class="player-main">
-        <div class="info-area">
-            <span class="music-note">♪</span>
-            <marquee scrollamount="3" class="song-name">Dream Anamnesis - Playing Now</marquee>
-        </div>
-        
-        <audio id="main-audio" loop>
-            <source src="Dream%20Anamnesis.mp3" type="audio/mpeg">
-        </audio>
-
-        <div class="custom-ui">
-            <button onclick="togglePlay()" id="play-btn">▶</button>
-            <input type="range" id="progress-bar" value="0" max="100" oninput="seek()">
-        </div>
-    </div>
-</div>
-
-<div id="pixel-player">
-    <div class="player-top">
-        <div class="info-group">
+<div id="unified-player">
+    <div class="player-body">
+        <div class="top-row">
             <span class="music-icon">🍀</span>
-            <div class="text-scroll">
-                <marquee id="now-playing" scrollamount="3">Dream Anamnesis - Playing Now</marquee>
+            <div class="title-container">
+                <div id="song-title" class="marquee-text">Dream Anamnesis</div>
             </div>
-        </div>
-        
-        <div class="btn-group">
-            <button class="ctrl-btn" onclick="togglePlay()" id="master-play">▶</button>
-            <button class="ctrl-btn" onclick="toggleList()">≡</button> </div>
-
-        <div class="seek-bar-container">
-            <input type="range" id="seek-bar" value="0" max="100" oninput="seek()">
-        </div>
-    </div>
-
-    <div id="playlist-box" class="hidden">
-        <div class="list-item" onclick="changeTrack('Dream%20Anamnesis.mp3', 'Dream Anamnesis')">1. Dream Anamnesis</div>
-        <div class="list-item" onclick="changeTrack('Moonlike%20Smile.mp3', 'Moonlike Smile')">2. Moonlike Smile</div>
-        <div class="list-item" onclick="changeTrack('Winding%20Through%20Avidya.mp3', 'Winding Through Avidya')">3. Winding Through Avidya</div>
-    </div>
-</div>
-
-<div id="pixel-player">
-    <div class="player-main-body">
-        <div class="top-info">
-            <span class="music-icon">🍀</span>
-            <div class="title-wrap">
-                <div id="song-title" class="marquee">Dream Anamnesis</div>
-            </div>
-            <button class="icon-btn" onclick="toggleList()">≡</button>
+            <button class="menu-btn" onclick="toggleList()">≡</button>
         </div>
 
-        <div class="progress-area">
+        <div class="progress-wrap">
             <input type="range" id="seek-bar" value="0" max="100" oninput="seek()">
         </div>
 
-        <div class="control-center">
-            <button class="icon-btn" onclick="prevTrack()">⏮</button>
-            <button class="icon-btn main-play" onclick="togglePlay()" id="play-btn">▶</button>
-            <button class="icon-btn" onclick="nextTrack()">⏭</button>
-            <button class="icon-btn" id="loop-btn" onclick="toggleLoop()">🔁</button>
-            <button class="icon-btn" onclick="toggleVolume()">🔊</button>
+        <div class="controls-row">
+            <button class="ctrl-btn" onclick="prevTrack()">⏮</button>
+            <button class="ctrl-btn play-main" onclick="togglePlay()" id="play-btn">▶</button>
+            <button class="ctrl-btn" onclick="nextTrack()">⏭</button>
+            <button class="ctrl-btn" id="loop-btn" onclick="toggleLoop()">🔁</button>
+            <button class="ctrl-btn" onclick="toggleVolume()">🔊</button>
         </div>
 
-        <div id="volume-pop" class="hidden-ui">
+        <div id="volume-pop" class="sub-panel hidden">
             <input type="range" id="vol-control" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)">
         </div>
 
-        <div id="playlist-box" class="hidden-ui">
+        <div id="playlist-box" class="sub-panel hidden">
             <div class="list-item" onclick="changeTrack(0)">1. Dream Anamnesis</div>
             <div class="list-item" onclick="changeTrack(1)">2. Moonlike Smile</div>
             <div class="list-item" onclick="changeTrack(2)">3. Winding Through Avidya</div>
@@ -118,36 +75,45 @@
 <audio id="main-audio"></audio>
 
 <style>
-    #pixel-player {
-        position: fixed; bottom: 30px; right: 30px;
-        width: 260px; background: white;
-        border: 2px solid #B9C06D; border-radius: 15px;
-        padding: 12px; z-index: 10000;
-        box-shadow: 5px 5px 0px rgba(185, 192, 109, 0.2);
+    /* 1. 위치 고정 및 전체 디자인 */
+    #unified-player {
+        position: fixed; 
+        bottom: 30px; 
+        right: 30px;
+        width: 280px; 
+        background: white;
+        border: 2px solid #B9C06D; 
+        border-radius: 15px;
+        padding: 15px; 
+        z-index: 10000;
+        box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
         font-family: 'Apple SD Gothic Neo', sans-serif;
     }
 
-    .top-info { display: flex; align-items: center; justify-content: space-between; margin-bottom: 5px; }
-    .title-wrap { width: 150px; overflow: hidden; white-space: nowrap; font-size: 13px; color: #B9C06D; font-weight: bold; }
-    
-    .control-center { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
-    
-    .icon-btn {
+    .top-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .title-container { width: 160px; overflow: hidden; white-space: nowrap; }
+    .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; display: inline-block; }
+
+    .progress-wrap { margin: 10px 0; }
+    #seek-bar { width: 100%; accent-color: #B9C06D; cursor: pointer; }
+
+    .controls-row { display: flex; justify-content: center; gap: 10px; align-items: center; }
+    .ctrl-btn, .menu-btn {
         background: none; border: 1px solid #B9C06D; color: #B9C06D;
-        border-radius: 5px; cursor: pointer; padding: 4px 8px; font-size: 12px;
+        border-radius: 5px; cursor: pointer; transition: 0.2s;
     }
-    .main-play { font-size: 16px; padding: 4px 12px; border-width: 2px; }
-    .icon-btn:hover { background: #f9fbe7; }
-    .active { background: #B9C06D !important; color: white !important; }
+    .ctrl-btn { padding: 5px 10px; font-size: 12px; }
+    .play-main { font-size: 18px; padding: 5px 15px; border-width: 2px; }
+    .ctrl-btn:hover, .menu-btn:hover { background: #f9fbe7; }
+    .active-mode { background: #B9C06D !important; color: white !important; }
 
-    #seek-bar { width: 100%; accent-color: #B9C06D; cursor: pointer; height: 4px; }
+    /* 숨겨진 패널 스타일 */
+    .sub-panel { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee; text-align: center; }
+    .hidden { display: none; }
     
-    .hidden-ui { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee; }
-    #volume-pop { text-align: center; }
-    #vol-control { width: 80%; accent-color: #B9C06D; }
-
-    .list-item { font-size: 11px; padding: 5px; cursor: pointer; color: #666; }
-    .list-item:hover { color: #B9C06D; }
+    #vol-control { width: 90%; accent-color: #B9C06D; }
+    .list-item { font-size: 12px; padding: 6px; cursor: pointer; color: #666; text-align: left; }
+    .list-item:hover { background: #f9fbe7; color: #B9C06D; border-radius: 4px; }
 </style>
 
 <script>
@@ -174,31 +140,33 @@
         if (audio.paused) { audio.play(); playBtn.innerText = "||"; }
         else { audio.pause(); playBtn.innerText = "▶"; }
     }
+
     function nextTrack() {
         currentIndex = (currentIndex + 1) % tracks.length;
         loadTrack(currentIndex);
         audio.play();
         playBtn.innerText = "||";
     }
+
     function prevTrack() {
         currentIndex = (currentIndex - 1 + tracks.length) % tracks.length;
         loadTrack(currentIndex);
         audio.play();
         playBtn.innerText = "||";
     }
+
     function toggleLoop() {
         isLoop = !isLoop;
         audio.loop = isLoop;
-        document.getElementById('loop-btn').classList.toggle('active');
+        document.getElementById('loop-btn').classList.toggle('active-mode');
     }
 
-    function toggleList() { document.getElementById('playlist-box').style.display = 
-        document.getElementById('playlist-box').style.display === 'block' ? 'none' : 'block'; }
-    function toggleVolume() { document.getElementById('volume-pop').style.display = 
-        document.getElementById('volume-pop').style.display === 'block' ? 'none' : 'block'; }
+    function toggleList() { document.getElementById('playlist-box').classList.toggle('hidden'); }
+    function toggleVolume() { document.getElementById('volume-pop').classList.toggle('hidden'); }
     function setVolume(v) { audio.volume = v; }
     function changeTrack(i) { currentIndex = i; loadTrack(i); audio.play(); playBtn.innerText = "||"; }
-    audio.ontimeupdate = () => { seekBar.value = (audio.currentTime / audio.duration) * 100; };
+
+    audio.ontimeupdate = () => { if(audio.duration) seekBar.value = (audio.currentTime / audio.duration) * 100; };
     function seek() { audio.currentTime = (seekBar.value / 100) * audio.duration; }
     audio.onended = () => { if(!isLoop) nextTrack(); };
 </script>
