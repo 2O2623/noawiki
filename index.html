@@ -56,85 +56,105 @@
     </div>
 </div>
 
+<div id="pixel-player">
+    <div class="player-top">
+        <div class="info-group">
+            <span class="music-icon">🍀</span>
+            <div class="text-scroll">
+                <marquee id="now-playing" scrollamount="3">Dream Anamnesis - Playing Now</marquee>
+            </div>
+        </div>
+        
+        <div class="btn-group">
+            <button class="ctrl-btn" onclick="togglePlay()" id="master-play">▶</button>
+            <button class="ctrl-btn" onclick="toggleList()">≡</button> </div>
+
+        <div class="seek-bar-container">
+            <input type="range" id="seek-bar" value="0" max="100" oninput="seek()">
+        </div>
+    </div>
+
+    <div id="playlist-box" class="hidden">
+        <div class="list-item" onclick="changeTrack('Dream%20Anamnesis.mp3', 'Dream Anamnesis')">1. Dream Anamnesis</div>
+        <div class="list-item" onclick="changeTrack('Song2.mp3', 'Second Track Title')">2. 두 번째 노래 이름</div>
+        <div class="list-item" onclick="changeTrack('Song3.mp3', 'Third Track Title')">3. 세 번째 노래 이름</div>
+    </div>
+</div>
+
+<audio id="main-audio" loop>
+    <source src="Dream%20Anamnesis.mp3" type="audio/mpeg">
+    <source src="Moonlike%20Smile.mp3" type="audio/mpeg">
+</audio>
+
 <style>
-    /* 질문자님이 보내주신 디자인 그대로 */
-    #fancy-player {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background: rgba(255, 255, 255, 0.95);
-        padding: 15px 25px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(185, 192, 109, 0.2); 
-        z-index: 10000;
-        border: 2px solid #B9C06D;
-        transition: transform 0.3s;
-    }
-    .player-main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .info-area {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        color: #B9C06D; 
-        font-weight: bold;
-    }
-    .music-note { margin-right: 10px; font-size: 20px; }
-    .song-name { width: 180px; font-size: 14px; }
-    /* 재생바 & 버튼 디자인 추가 */
-    .custom-ui {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-    #play-btn {
-        background: none;
-        border: 2px solid #B9C06D;
-        color: #B9C06D;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /* 노래 시간 슬라이더 */
-    #progress-bar {
-        width: 200px;
-        cursor: pointer;
-        accent-color: #B9C06D; /* 연두색 슬라이더 */
-    }
-</style>
-<script>
-    const audio = document.getElementById('main-audio');
-    const progressBar = document.getElementById('progress-bar');
-    const playBtn = document.getElementById('play-btn');
-    // 재생/일시정지
-    function togglePlay() {
-        if (audio.paused) {
-            audio.play();
-            playBtn.innerText = "||";
-        } else {
-            audio.pause();
-            playBtn.innerText = "▶";
-        }
+    /* 전체 틀 디자인 */
+    #pixel-player {
+        position: fixed; bottom: 30px; right: 30px;
+        background: #fff; width: 280px;
+        border: 2px solid #B9C06D; border-radius: 12px;
+        padding: 15px; z-index: 10000;
+        box-shadow: 4px 4px 0px rgba(185, 192, 109, 0.3);
+        font-family: 'Courier New', Courier, monospace;
     }
 
-    // 노래 시간에 맞춰 슬라이더 움직이기
-    audio.ontimeupdate = function() {
-        const progress = (audio.currentTime / audio.duration) * 100;
-        progressBar.value = progress;
+    .player-top { display: flex; flex-direction: column; gap: 10px; }
+
+    .info-group { display: flex; align-items: center; gap: 10px; color: #B9C06D; font-weight: bold; }
+    .text-scroll { width: 180px; overflow: hidden; }
+
+    .btn-group { display: flex; justify-content: center; gap: 15px; }
+    .ctrl-btn {
+        background: none; border: 2px solid #B9C06D; color: #B9C06D;
+        width: 35px; height: 35px; border-radius: 4px; cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        font-weight: bold; transition: 0.2s;
+    }
+    .ctrl-btn:hover { background: #B9C06D; color: white; }
+
+    /* 슬라이더 디자인 */
+    #seek-bar { width: 100%; cursor: pointer; accent-color: #B9C06D; }
+
+    /* 재생목록 디자인 */
+    #playlist-box {
+        margin-top: 10px; border-top: 1px dashed #B9C06D;
+        padding-top: 10px; max-height: 150px; overflow-y: auto;
+    }
+    .list-item {
+        padding: 5px; font-size: 12px; color: #777; cursor: pointer;
+        border-radius: 4px; transition: 0.2s;
+    }
+    .list-item:hover { background: #f9fbe7; color: #B9C06D; }
+    .hidden { display: none; } /* 목록 닫기용 */
+</style>
+
+<script>
+    const audio = document.getElementById('main-audio');
+    const playBtn = document.getElementById('master-play');
+    const listBox = document.getElementById('playlist-box');
+    const seekBar = document.getElementById('seek-bar');
+    const nowPlayingText = document.getElementById('now-playing');
+
+    // 1. 재생/일시정지
+    function togglePlay() {
+        if (audio.paused) { audio.play(); playBtn.innerText = "||"; }
+        else { audio.pause(); playBtn.innerText = "▶"; }
+    }
+    // 2. 재생목록 열고 닫기
+    function toggleList() {
+        listBox.classList.toggle('hidden');
+    }
+    // 3. 노래 바꾸기 기능
+    function changeTrack(src, title) {
+        audio.src = src;
+        nowPlayingText.innerText = title + " - Playing Now";
+        audio.play();
+        playBtn.innerText = "||";
+    }
+    // 4. 시간 슬라이더 연동
+    audio.ontimeupdate = () => {
+        seekBar.value = (audio.currentTime / audio.duration) * 100;
     };
-    // 슬라이더 옮기면 노래 시간 이동
     function seek() {
-        const time = (progressBar.value / 100) * audio.duration;
-        audio.currentTime = time;
+        audio.currentTime = (seekBar.value / 100) * audio.duration;
     }
 </script>
