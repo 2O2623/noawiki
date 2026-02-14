@@ -59,9 +59,10 @@
     }
     @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-    .title-container { width: 150px; overflow: hidden; white-space: nowrap; margin-left: -15px;} }
-    .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
-
+    .top-row {display: flex; align-items: center; justify-content: flex-start; gap: 8px; width: 100%; /* 부모 너비 꽉 채우기 */}
+    .title-container {flex-grow: 1; max-width: 160px; overflow: hidden; white-space: nowrap; margin-left: 0;}
+    marquee-text {color: #B9C06D;f ont-weight: bold; font-size: 14px; width: 100%; display: block;}
+    
     .progress-wrap { margin: 10px 0; }
     #seek-bar { width: 100%; accent-color: #B9C06D; cursor: pointer; }
 
