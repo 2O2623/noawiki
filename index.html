@@ -37,16 +37,49 @@
         </article>
     </div>
 
-    <footer>
-        &copy; 2026 My GitHub Page. All rights reserved.
-    </footer>
-
-    <div style="text-align: center; margin: 20px 0; background: #eee; padding: 10px; border-radius: 10px;">
-    <p style="margin: 0 0 10px 0; font-size: 14px;">🎵 Dream Anamnesis</p>
-    <audio controls loop style="width: 250px; height: 30px;">
-        <source src="Dream Anamnesis.mp3" type="audio/mpeg">
+<div id="fixed-player">
+    <div class="player-info">
+        <span class="music-icon">🎵</span>
+        <span class="song-title">Dream Anamnesis</span>
+    </div>
+    <audio controls loop class="custom-audio">
+        <source src="DreamAnamnesis.mp3" type="audio/mpeg">
     </audio>
 </div>
 
-</body>
-</html>
+<style>
+    #fixed-player {
+        position: fixed;
+        bottom: 20px;      
+        right: 20px;  
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px 15px;
+        border-radius: 50px; /* 알약 모양 */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        z-index: 10000;   
+        border: 1px solid #eee;
+        backdrop-filter: blur(5px); 
+    }
+
+    .player-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: #555;
+        min-width: 100px;
+    }
+
+    .song-title {
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .custom-audio {
+        height: 30px;
+        width: 200px;
+    }
+</style>
