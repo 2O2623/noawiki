@@ -76,85 +76,129 @@
 
     <div id="playlist-box" class="hidden">
         <div class="list-item" onclick="changeTrack('Dream%20Anamnesis.mp3', 'Dream Anamnesis')">1. Dream Anamnesis</div>
-        <div class="list-item" onclick="changeTrack('Song2.mp3', 'Second Track Title')">2. 두 번째 노래 이름</div>
-        <div class="list-item" onclick="changeTrack('Song3.mp3', 'Third Track Title')">3. 세 번째 노래 이름</div>
+        <div class="list-item" onclick="changeTrack('Moonlike%20Smile.mp3', 'Moonlike Smile')">2. Moonlike Smile</div>
+        <div class="list-item" onclick="changeTrack('Winding%20Through%20Avidya.mp3', 'Winding Through Avidya')">3. Winding Through Avidya</div>
     </div>
 </div>
 
-<audio id="main-audio" loop>
-    <source src="Dream%20Anamnesis.mp3" type="audio/mpeg">
-    <source src="Moonlike%20Smile.mp3" type="audio/mpeg">
-</audio>
+<div id="pixel-player">
+    <div class="player-main-body">
+        <div class="top-info">
+            <span class="music-icon">🍀</span>
+            <div class="title-wrap">
+                <div id="song-title" class="marquee">Dream Anamnesis</div>
+            </div>
+            <button class="icon-btn" onclick="toggleList()">≡</button>
+        </div>
+
+        <div class="progress-area">
+            <input type="range" id="seek-bar" value="0" max="100" oninput="seek()">
+        </div>
+
+        <div class="control-center">
+            <button class="icon-btn" onclick="prevTrack()">⏮</button>
+            <button class="icon-btn main-play" onclick="togglePlay()" id="play-btn">▶</button>
+            <button class="icon-btn" onclick="nextTrack()">⏭</button>
+            <button class="icon-btn" id="loop-btn" onclick="toggleLoop()">🔁</button>
+            <button class="icon-btn" onclick="toggleVolume()">🔊</button>
+        </div>
+
+        <div id="volume-pop" class="hidden-ui">
+            <input type="range" id="vol-control" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)">
+        </div>
+
+        <div id="playlist-box" class="hidden-ui">
+            <div class="list-item" onclick="changeTrack(0)">1. Dream Anamnesis</div>
+            <div class="list-item" onclick="changeTrack(1)">2. Moonlike Smile</div>
+            <div class="list-item" onclick="changeTrack(2)">3. Winding Through Avidya</div>
+        </div>
+    </div>
+</div>
+
+<audio id="main-audio"></audio>
 
 <style>
-    /* 전체 틀 디자인 */
     #pixel-player {
         position: fixed; bottom: 30px; right: 30px;
-        background: #fff; width: 280px;
-        border: 2px solid #B9C06D; border-radius: 12px;
-        padding: 15px; z-index: 10000;
-        box-shadow: 4px 4px 0px rgba(185, 192, 109, 0.3);
-        font-family: 'Courier New', Courier, monospace;
+        width: 260px; background: white;
+        border: 2px solid #B9C06D; border-radius: 15px;
+        padding: 12px; z-index: 10000;
+        box-shadow: 5px 5px 0px rgba(185, 192, 109, 0.2);
+        font-family: 'Apple SD Gothic Neo', sans-serif;
     }
 
-    .player-top { display: flex; flex-direction: column; gap: 10px; }
-
-    .info-group { display: flex; align-items: center; gap: 10px; color: #B9C06D; font-weight: bold; }
-    .text-scroll { width: 180px; overflow: hidden; }
-
-    .btn-group { display: flex; justify-content: center; gap: 15px; }
-    .ctrl-btn {
-        background: none; border: 2px solid #B9C06D; color: #B9C06D;
-        width: 35px; height: 35px; border-radius: 4px; cursor: pointer;
-        display: flex; align-items: center; justify-content: center;
-        font-weight: bold; transition: 0.2s;
+    .top-info { display: flex; align-items: center; justify-content: space-between; margin-bottom: 5px; }
+    .title-wrap { width: 150px; overflow: hidden; white-space: nowrap; font-size: 13px; color: #B9C06D; font-weight: bold; }
+    
+    .control-center { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
+    
+    .icon-btn {
+        background: none; border: 1px solid #B9C06D; color: #B9C06D;
+        border-radius: 5px; cursor: pointer; padding: 4px 8px; font-size: 12px;
     }
-    .ctrl-btn:hover { background: #B9C06D; color: white; }
+    .main-play { font-size: 16px; padding: 4px 12px; border-width: 2px; }
+    .icon-btn:hover { background: #f9fbe7; }
+    .active { background: #B9C06D !important; color: white !important; }
 
-    /* 슬라이더 디자인 */
-    #seek-bar { width: 100%; cursor: pointer; accent-color: #B9C06D; }
+    #seek-bar { width: 100%; accent-color: #B9C06D; cursor: pointer; height: 4px; }
+    
+    .hidden-ui { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee; }
+    #volume-pop { text-align: center; }
+    #vol-control { width: 80%; accent-color: #B9C06D; }
 
-    /* 재생목록 디자인 */
-    #playlist-box {
-        margin-top: 10px; border-top: 1px dashed #B9C06D;
-        padding-top: 10px; max-height: 150px; overflow-y: auto;
-    }
-    .list-item {
-        padding: 5px; font-size: 12px; color: #777; cursor: pointer;
-        border-radius: 4px; transition: 0.2s;
-    }
-    .list-item:hover { background: #f9fbe7; color: #B9C06D; }
-    .hidden { display: none; } /* 목록 닫기용 */
+    .list-item { font-size: 11px; padding: 5px; cursor: pointer; color: #666; }
+    .list-item:hover { color: #B9C06D; }
 </style>
 
 <script>
     const audio = document.getElementById('main-audio');
-    const playBtn = document.getElementById('master-play');
-    const listBox = document.getElementById('playlist-box');
+    const playBtn = document.getElementById('play-btn');
+    const songTitle = document.getElementById('song-title');
     const seekBar = document.getElementById('seek-bar');
-    const nowPlayingText = document.getElementById('now-playing');
 
-    // 1. 재생/일시정지
+    const tracks = [
+        { src: 'Dream%20Anamnesis.mp3', title: 'Dream Anamnesis' },
+        { src: 'Moonlike%20Smile.mp3', title: 'Moonlike Smile' },
+        { src: 'Winding%20Through%20Avidya.mp3', title: 'Winding Through Avidya' }
+    ];
+    let currentIndex = 0;
+    let isLoop = false;
+
+    function loadTrack(index) {
+        audio.src = tracks[index].src;
+        songTitle.innerText = tracks[index].title;
+    }
+    loadTrack(currentIndex);
+
     function togglePlay() {
         if (audio.paused) { audio.play(); playBtn.innerText = "||"; }
         else { audio.pause(); playBtn.innerText = "▶"; }
     }
-    // 2. 재생목록 열고 닫기
-    function toggleList() {
-        listBox.classList.toggle('hidden');
-    }
-    // 3. 노래 바꾸기 기능
-    function changeTrack(src, title) {
-        audio.src = src;
-        nowPlayingText.innerText = title + " - Playing Now";
+    function nextTrack() {
+        currentIndex = (currentIndex + 1) % tracks.length;
+        loadTrack(currentIndex);
         audio.play();
         playBtn.innerText = "||";
     }
-    // 4. 시간 슬라이더 연동
-    audio.ontimeupdate = () => {
-        seekBar.value = (audio.currentTime / audio.duration) * 100;
-    };
-    function seek() {
-        audio.currentTime = (seekBar.value / 100) * audio.duration;
+    function prevTrack() {
+        currentIndex = (currentIndex - 1 + tracks.length) % tracks.length;
+        loadTrack(currentIndex);
+        audio.play();
+        playBtn.innerText = "||";
     }
+    function toggleLoop() {
+        isLoop = !isLoop;
+        audio.loop = isLoop;
+        document.getElementById('loop-btn').classList.toggle('active');
+    }
+
+    function toggleList() { document.getElementById('playlist-box').style.display = 
+        document.getElementById('playlist-box').style.display === 'block' ? 'none' : 'block'; }
+    function toggleVolume() { document.getElementById('volume-pop').style.display = 
+        document.getElementById('volume-pop').style.display === 'block' ? 'none' : 'block'; }
+    function setVolume(v) { audio.volume = v; }
+    function changeTrack(i) { currentIndex = i; loadTrack(i); audio.play(); playBtn.innerText = "||"; }
+    audio.ontimeupdate = () => { seekBar.value = (audio.currentTime / audio.duration) * 100; };
+    function seek() { audio.currentTime = (seekBar.value / 100) * audio.duration; }
+    audio.onended = () => { if(!isLoop) nextTrack(); };
 </script>
