@@ -43,43 +43,64 @@
         <span class="song-title">Dream Anamnesis</span>
     </div>
     <audio controls loop class="custom-audio">
-        <source src="DreamAnamnesis.mp3" type="audio/mpeg">
+        <source src="bgm.mp3" type="audio/mpeg">
     </audio>
 </div>
 
-<style>
-    #fixed-player {
-        position: fixed;
-        bottom: 20px;      
-        right: 20px;  
-        background: rgba(255, 255, 255, 0.9);
-        padding: 10px 15px;
-        border-radius: 50px; /* 알약 모양 */
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        z-index: 10000;   
-        border: 1px solid #eee;
-        backdrop-filter: blur(5px); 
-    }
+<div id="fancy-player">
+    <div class="player-main">
+        <div class="info-area">
+            <span class="music-note">♪</span>
+            <marquee scrollamount="3" class="song-name">Dream Anamnesis - Playing Now</marquee>
+        </div>
+        <audio id="main-audio" controls loop>
+            <source src="bgm.mp3" type="audio/mpeg">
+            <source src="bgm.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</div>
 
-    .player-info {
+<style>
+    #fancy-player {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 15px 25px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(185, 192, 109, 0.2); /* 은은한 보라색 그림자 */
+        z-index: 10000;
+        border: 2px solid #dcdde1;
+        transition: transform 0.3s;
+    }
+    #fancy-player:hover {
+        transform: scale(1.05); /* 마우스 올리면 살짝 커짐 */
+    }
+    .player-main {
         display: flex;
         flex-direction: column;
-        font-size: 12px;
-        color: #555;
-        min-width: 100px;
+        align-items: center;
+        gap: 10px;
+    }
+    .info-area {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: #B9C06D; /*색*/
+        font-weight: bold;
+    }
+    .music-note {
+        margin-right: 10px;
+        font-size: 20px;
     }
 
-    .song-title {
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    .song-name {
+        width: 180px;
+        font-size: 14px;
     }
-    .custom-audio {
-        height: 30px;
-        width: 200px;
+    /* 재생바 크기 대폭 키우기 */
+    audio {
+        width: 280px; 
+        height: 45px;
     }
 </style>
