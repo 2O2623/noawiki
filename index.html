@@ -106,14 +106,25 @@
 
     /* 5. 볼륨 및 재생목록 */
     #volume-pop {
-        position: absolute; bottom: 50px; left: 50%;
-        transform: translateX(-50%);
-        width: 35px; height: 120px;
-        background: white; border: 2px solid #B9C06D;
-        border-radius: 10px; display: none;
-        flex-direction: column; align-items: center; justify-content: center;
-        z-index: 10001;
-    }
+    position: absolute; 
+    bottom: 55px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 35px; 
+    height: 120px;
+    background-color: white !important; /* 배경색 강제 지정 */
+    border: 2px solid #B9C06D;
+    border-radius: 10px;
+    
+    display: none; /* JS에서 flex로 켜짐 */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 10001; /* 다른 요소보다 위에 오도록 함 */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* 약간의 그림자로 입체감 주기 */}
+    
     #vol-control { appearance: slider-vertical; -webkit-appearance: slider-vertical; height: 100px; width: 8px; accent-color: #B9C06D; }
 
     .sub-panel { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee; }
