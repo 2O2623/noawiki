@@ -352,3 +352,33 @@
     function seek() { audio.currentTime = (seekBar.value / 100) * audio.duration; }
     audio.onended = () => { if(!isLoop) nextTrack(); };
 </script>
+
+    <script>
+    function showPage(pageId) {
+        // 모든 페이지(.page)를 일단 다 숨깁니다.
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+
+        // 모든 탭(.tab)에서 활성화(active) 클래스를 지웁니다.
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // 클릭한 탭에 해당하는 페이지와 탭 본인만 활성화합니다.
+        const targetPage = document.getElementById(pageId);
+        if (targetPage) {
+            targetPage.classList.add('active');
+        }
+        
+        // 현재 클릭된 탭 요소에 active 클래스 추가
+        if (event && event.currentTarget) {
+            event.currentTarget.classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>
