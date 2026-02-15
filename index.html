@@ -9,31 +9,34 @@
 <html lang="ko">
 <head>
 <style>
-    /* 배경 설정 */
+    /* 1. 기본 초기화 및 배경 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-        background-color: #f9fbe7; /* 아주 연한 노란빛 배경 */
+        background-color: #f9fbe7;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
         font-family: 'Apple SD Gothic Neo', sans-serif;
+        overflow-x: hidden;
     }
 
-    /* 메인 창 (올리브 그린 포인트) */
+    /* 2. 메인 윈도우 창 */
     #window-container {
         width: 1000px;
+        max-width: 95%;
         height: 650px;
         background: white;
-        border: 2px solid #B9C06D; /* 플레이어 색상 */
+        border: 2px solid #B9C06D;
         border-radius: 15px;
         box-shadow: 8px 8px 0px rgba(185, 192, 109, 0.2);
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        margin: 20px auto;
     }
 
-    /* 상단 탭 영역 */
+    /* 3. 상단 탭 영역 */
     .tab-bar {
         display: flex;
         gap: 5px;
@@ -41,7 +44,6 @@
         background: #fff;
         border-bottom: 2px solid #B9C06D;
     }
-
     .tab {
         padding: 8px 20px;
         border: 2px solid #B9C06D;
@@ -53,8 +55,6 @@
         cursor: pointer;
         font-size: 13px;
     }
-
-    /* 활성화된 탭 (플레이어 색상 적용) */
     .tab.active { 
         background: #B9C06D; 
         color: white; 
@@ -62,118 +62,67 @@
         padding-top: 10px; 
     }
 
-    /* 본문 레이아웃 */
-    .main-content {
-        display: flex;
-        flex: 1;
-        padding: 25px;
-        gap: 20px;
+    /* 4. 본문 레이아웃 및 세로 구분선 */
+    .main-content { display: none; flex: 1; padding: 25px; gap: 20px; }
+    .main-content.active { display: flex; }
+
+    /* 좌측 프로필 (30%) + 우측 세로 점선 */
+    .side-profile { 
+        width: 30%; 
+        border-right: 2px dashed #f0f4c3; /* 메인창과 프로필 사이 세로선 살림 */
+        padding-right: 20px; 
     }
-
-    /* 3:5:2 비율 설정 */
-/* 프로필 상단 (이미지+닉네임) 정렬 */
-.profile-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid #f0f4c3;
-}
-
-/* 프로필 이미지 동그랗게 */
-.profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #B9C06D; /* 플레이어 포인트 컬러 */
-}
-
-/* 닉네임 스타일 */
-.nickname {
-    font-size: 16px;
-    font-weight: bold;
-    color: #B9C06D;
-    letter-spacing: -0.5px;
-}
-
-/* 소개글 상자 추가 여백 및 높이 조절 */
-.profile-bio {
-    min-height: 150px; /* 텍스트 양에 따라 조절하세요 */
-    word-break: break-all;
-}
     .center-notice { width: 50%; }
-    .side-banner { width: 20%; border-left: 2px dashed #f0f4c3; padding-left: 20px; }
+    .side-banner { 
+        width: 20%; 
+        border-left: 2px dashed #f0f4c3; /* 배너 왼쪽 세로선 */
+        padding-left: 20px; 
+    }
 
-    /* 섹션 타이틀 (올리브 그린) */
-    .section-title {
-        font-size: 14px;
-        font-weight: bold;
-        color: #9ba34d;
-        margin-bottom: 12px;
+    /* 5. 통합 프로필 카드 디자인 */
+    .single-profile-card {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 5px;
+        text-align: center;
+        padding: 20px !important;
     }
-
-    /* 타이틀 앞에 작은 점 포인트 */
-    .section-title::before {
-        content: '';
-        display: inline-block;
-        width: 8px; height: 8px;
-        background: #B9C06D;
-        border-radius: 2px;
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #B9C06D;
+        margin-bottom: 15px;
     }
-
-    /* 노란색 박스 (부드러운 느낌) */
-    .content-box {
-        background: #fffde7; /* 부드러운 노란색 */
-        border: 1px solid #f0f4c3;
-        border-radius: 12px;
-        padding: 15px;
-        min-height: 120px;
+    .nickname {
+        font-size: 16px;
+        font-weight: bold;
+        color: #B9C06D;
+        margin-bottom: 10px;
+    }
+    .bio-text {
         font-size: 13px;
         color: #555;
         line-height: 1.6;
+        width: 100%;
+        word-break: break-all;
     }
 
-    /* 페이지 숨김/표시 */
-    .page { display: none; width: 100%; height: 100%; }
+    /* 6. 공통 컴포넌트 */
+    .section-title {
+        font-size: 14px; font-weight: bold; color: #9ba34d;
+        margin-bottom: 12px; display: flex; align-items: center; gap: 5px;
+    }
+    .section-title::before { content: ''; width: 8px; height: 8px; background: #B9C06D; border-radius: 2px; }
+    .content-box {
+        background: #fffde7; border: 1px solid #f0f4c3;
+        border-radius: 12px; padding: 15px; min-height: 120px;
+    }
+
+    /* 페이지 제어 */
+    .page { display: none; }
     .page.active { display: flex; }
-
-    /* 1. 브라우저 기본 여백을 0으로 만들어 잘림 방지 */
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
-
-body {
-    background-color: #f9fbe7; /* 연한 노란 배경 */
-    display: flex;
-    justify-content: center; /* 가로 중앙 정렬 */
-    align-items: center;     /* 세로 중앙 정렬 */
-    min-height: 100vh;
-    overflow-x: hidden;      /* 가로 스크롤 방지 */
-}
-
-/* 2. 메인 창 설정 (너비를 유지하면서 잘리지 않게) */
-#window-container {
-    width: 1000px;
-    max-width: 95%;          /* 화면이 작아지면 자동으로 줄어들게 함 */
-    height: 650px;
-    background: white;
-    border: 2px solid #B9C06D; 
-    border-radius: 15px;
-    box-shadow: 8px 8px 0px rgba(185, 192, 109, 0.2);
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;       /* 상하 여백 주고 중앙 배치 */
-}
 </style>
 
 <div id="window-container">
@@ -186,40 +135,40 @@ body {
     </div>
 
     <div id="home" class="page active main-content">
-<div class="side-profile">
-    <div class="section-title">PROFILE</div>
-    
-    <div class="profile-top">
-        <img src="archive/images/프로필.jpg" class="profile-img" alt="Profile">
-        <div class="nickname">여행자</div>
-    </div>
+        <div class="side-profile">
+            <div class="section-title">PROFILE</div>
+            
+            <div class="content-box single-profile-card">
+                <img src="archive/images/프로필.jpg" class="profile-img" alt="Profile">
+                <div class="nickname">여행자</div>
+                
+                <hr style="width:100%; border:0; border-top:1px dashed #B9C06D; margin:10px 0;">
+                
+                <div class="bio-text">
+                    텍스트트<br>
+                    텍스트
+                </div>
+            </div>
+        </div>
 
-    <div class="content-box profile-bio style="text-align: center;">
-백업 위주 드림계 / 맞구독 </br>
-        타이나리 NCP상정 오픈 드림</br>
-    </div>
-</div>
         <div class="center-notice">
             <div class="section-title">NOTICE</div>
-            <div class="content-box">
-                새로운 공지사항이 들어갈 자리입니다.
-            </div>
+            <div class="content-box">공지사항 내용이 들어갑니다.</div>
         </div>
+
         <div class="side-banner">
             <div class="section-title">BANNER</div>
-            <div class="content-box" style="text-align: center;">
-                88*31 배너
-            </div>
+            <div class="content-box" style="text-align: center;">88*31 배너</div>
         </div>
     </div>
-    
+
     <div id="gallery" class="page main-content">
         <div style="width: 100%;">
             <div class="section-title">GALLERY</div>
-            <div class="content-box" style="height: 450px;">업로드한 이미지들이 보일 공간입니다.</div>
+            <div class="content-box" style="height: 450px;">갤러리 준비 중...</div>
         </div>
     </div>
-    
+
     <div id="guest" class="page main-content">
         <div style="width: 100%;">
             <div class="section-title">GUEST</div>
@@ -227,6 +176,17 @@ body {
         </div>
     </div>
 </div>
+
+<script>
+    function showPage(pageId) {
+        document.querySelectorAll('.main-content').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        
+        const target = document.getElementById(pageId);
+        if(target) target.classList.add('active');
+        if(event) event.currentTarget.classList.add('active');
+    }
+</script>
 
 <style>
     /* 1. 플레이어 메인 박스 */
