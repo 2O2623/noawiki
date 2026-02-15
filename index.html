@@ -8,99 +8,109 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <style>
-        /* 배경 설정 */
-        body {
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Apple SD Gothic Neo', sans-serif;
-        }
+<style>
+    /* 배경 설정 */
+    body {
+        background-color: #f9fbe7; /* 아주 연한 노란빛 배경 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Apple SD Gothic Neo', sans-serif;
+    }
 
-        /* 메인 창 (인터넷 창 느낌) */
-        #window-container {
-            width: 1000px;
-            height: 650px;
-            background: white;
-            border: 2px solid #ffcada; /* 탭 색상과 맞춘 핑크톤 */
-            border-radius: 15px;
-            box-shadow: 10px 10px 0px rgba(255, 202, 218, 0.3);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
+    /* 메인 창 (올리브 그린 포인트) */
+    #window-container {
+        width: 1000px;
+        height: 650px;
+        background: white;
+        border: 2px solid #B9C06D; /* 플레이어 색상 */
+        border-radius: 15px;
+        box-shadow: 8px 8px 0px rgba(185, 192, 109, 0.2);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
 
-        /* 상단 탭 영역 (보내주신 사진 스타일) */
-        .tab-bar {
-            display: flex;
-            gap: 5px;
-            padding: 10px 15px 0 15px;
-            background: #fff;
-            border-bottom: 2px solid #ffcada;
-        }
+    /* 상단 탭 영역 */
+    .tab-bar {
+        display: flex;
+        gap: 5px;
+        padding: 10px 15px 0 15px;
+        background: #fff;
+        border-bottom: 2px solid #B9C06D;
+    }
 
-        .tab {
-            padding: 8px 20px;
-            border: 2px solid #ffcada;
-            border-bottom: none;
-            border-radius: 10px 10px 0 0;
-            background: #fff0f5;
-            color: #d18d9e;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.2s;
-            font-size: 13px;
-        }
+    .tab {
+        padding: 8px 20px;
+        border: 2px solid #B9C06D;
+        border-bottom: none;
+        border-radius: 10px 10px 0 0;
+        background: #fdfdfd;
+        color: #B9C06D;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 13px;
+    }
 
-        .tab:hover { background: #ffe4e1; }
-        .tab.active { background: #fff; color: #ff8da1; margin-bottom: -2px; padding-top: 10px; }
+    /* 활성화된 탭 (플레이어 색상 적용) */
+    .tab.active { 
+        background: #B9C06D; 
+        color: white; 
+        margin-bottom: -2px; 
+        padding-top: 10px; 
+    }
 
-        /* 본문 레이아웃 (3:5:2 비율) */
-        .main-content {
-            display: flex;
-            flex: 1;
-            padding: 20px;
-            gap: 20px;
-            overflow-y: auto;
-        }
+    /* 본문 레이아웃 */
+    .main-content {
+        display: flex;
+        flex: 1;
+        padding: 25px;
+        gap: 20px;
+    }
 
-        /* 좌측 프로필 (30%) */
-        .side-profile { width: 30%; border-right: 1px dashed #ffcada; padding-right: 20px; }
-        
-        /* 중앙 공지사항 (50%) */
-        .center-notice { width: 50%; }
+    /* 3:5:2 비율 설정 */
+    .side-profile { width: 30%; border-right: 2px dashed #f0f4c3; padding-right: 20px; }
+    .center-notice { width: 50%; }
+    .side-banner { width: 20%; border-left: 2px dashed #f0f4c3; padding-left: 20px; }
 
-        /* 우측 배너 (20%) */
-        .side-banner { width: 20%; border-left: 1px dashed #ffcada; padding-left: 20px; }
+    /* 섹션 타이틀 (올리브 그린) */
+    .section-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #9ba34d;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 
-        /* 섹션 공통 스타일 */
-        .section-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: #ff8da1;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ffcada;
-            padding-bottom: 5px;
-        }
+    /* 타이틀 앞에 작은 점 포인트 */
+    .section-title::before {
+        content: '';
+        display: inline-block;
+        width: 8px; height: 8px;
+        background: #B9C06D;
+        border-radius: 2px;
+    }
 
-        .content-box {
-            background: #fafafa;
-            border-radius: 10px;
-            padding: 15px;
-            min-height: 100px;
-            font-size: 13px;
-            line-height: 1.6;
-        }
+    /* 노란색 박스 (부드러운 느낌) */
+    .content-box {
+        background: #fffde7; /* 부드러운 노란색 */
+        border: 1px solid #f0f4c3;
+        border-radius: 12px;
+        padding: 15px;
+        min-height: 120px;
+        font-size: 13px;
+        color: #555;
+        line-height: 1.6;
+    }
 
-        /* 페이지 숨김/표시 */
-        .page { display: none; width: 100%; height: 100%; }
-        .page.active { display: flex; }
-    </style>
-</head>
-<body>
+    /* 페이지 숨김/표시 */
+    .page { display: none; width: 100%; height: 100%; }
+    .page.active { display: flex; }
+</style>
 
 <div id="window-container">
     <div class="tab-bar">
@@ -114,51 +124,38 @@
     <div id="home" class="page active main-content">
         <div class="side-profile">
             <div class="section-title">PROFILE</div>
-            <div class="content-box">여기에 프로필 사진과 소개글이 들어갑니다.</div>
+            <div class="content-box">
+                이곳에 프로필 정보를 적어주세요.
+            </div>
         </div>
         <div class="center-notice">
             <div class="section-title">NOTICE</div>
-            <div class="content-box">홈페이지 공지사항이 들어가는 자리입니다.</div>
+            <div class="content-box">
+                새로운 공지사항이 들어갈 자리입니다.
+            </div>
         </div>
         <div class="side-banner">
             <div class="section-title">BANNER</div>
-            <div class="content-box" style="text-align: center;">88*31<br>배너교환</div>
+            <div class="content-box" style="text-align: center;">
+                88*31 배너
+            </div>
         </div>
     </div>
-
+    
     <div id="gallery" class="page main-content">
         <div style="width: 100%;">
             <div class="section-title">GALLERY</div>
-            <div class="content-box" style="height: 400px;">작업물들이 올라올 갤러리 공간입니다.</div>
+            <div class="content-box" style="height: 450px;">업로드한 이미지들이 보일 공간입니다.</div>
         </div>
     </div>
-
+    
     <div id="guest" class="page main-content">
         <div style="width: 100%;">
-            <div class="section-title">GUEST BOOK</div>
-            <div class="content-box" style="height: 400px;">방명록을 남겨주세요!</div>
+            <div class="section-title">GUEST</div>
+            <div class="content-box" style="height: 450px;">방명록 공간입니다.</div>
         </div>
     </div>
 </div>
-
-<script>
-    function showPage(pageId) {
-        // 모든 페이지 숨기기
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => page.classList.remove('active'));
-
-        // 모든 탭 비활성화
-        const tabs = document.querySelectorAll('.tab');
-        tabs.forEach(tab => tab.classList.remove('active'));
-
-        // 선택한 페이지와 탭 활성화
-        document.getElementById(pageId).classList.add('active');
-        event.currentTarget.classList.add('active');
-    }
-</script>
-
-</body>
-</html>
 
 <style>
     /* 1. 플레이어 메인 박스 */
