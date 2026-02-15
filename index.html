@@ -68,7 +68,21 @@
     }
 
     /* 4. 본문 레이아웃 및 세로 구분선 */
-    .main-content { display: none; flex: 1; padding: 25px; gap: 20px; }
+    .main-content <div id="gallery-content" class="main-content">
+    <div style="width: 100%;">
+        <p class="section-title">Gallery</p>
+        
+        <div class="gallery-grid">
+            <img src="이미지1_썸네일.jpg" class="thumb" onclick="showImage('이미지1_원본.jpg', '작품 제목 1')">
+            <img src="이미지2_썸네일.jpg" class="thumb" onclick="showImage('이미지2_원본.jpg', '작품 제목 2')">
+        </div>
+
+        <div class="viewer-container">
+            <img id="main-display-img" src="">
+            <div id="main-display-title">썸네일을 클릭하면 이미지가 나타납니다.</div>
+        </div>
+    </div>
+</div>
     .main-content.active { display: flex; }
 
     /* 좌측 프로필 (30%) + 우측 세로 점선 */
@@ -164,6 +178,42 @@
     display: block;
     text-decoration: none;}
 
+    /* 갤러리 레이아웃 - 여기에 추가 */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .thumb {
+        width: 80px; height: 80px;
+        border: 1px solid #B9C06D;
+        cursor: pointer;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .viewer-container {
+        border-top: 2px dashed #f0f4c3;
+        padding-top: 20px;
+        text-align: center;
+        min-height: 350px; /* 공간 확보 */
+    }
+
+    #main-display-img {
+        max-width: 100%;
+        max-height: 300px;
+        border: 2px solid #B9C06D;
+        border-radius: 10px;
+        display: none;
+    }
+
+    #main-display-title {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #9ba34d;
+    }
 </style>
 
 <div id="window-container">
@@ -456,5 +506,17 @@
     }
 </script>
 
+    <script>
+    function showImage(src, title) {
+        const mainImg = document.getElementById('main-display-img');
+        const mainTitle = document.getElementById('main-display-title');
+
+        mainImg.src = src;
+        mainImg.style.display = 'inline-block'; 
+        mainTitle.innerText = title;
+    }
+
+    // (참고) 기존에 탭 전환 기능이 있다면 그 코드 아래에 붙여넣으세요.
+</script>
 </body>
 </html>
