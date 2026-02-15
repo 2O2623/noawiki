@@ -12,6 +12,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    
     <style>
         /* 1. 기본 초기화 및 배경 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -150,24 +151,25 @@
         }
         #main-display-title { font-weight: bold; color: #9ba34d; }
 
-        /* 플레이어 스타일 (생략 없이 유지) */
-        #unified-player {
-            position: fixed; bottom: 30px; right: 30px;
-            width: 280px; background: white;
-            border: 2px solid #B9C06D; border-radius: 15px;
-            padding: 15px; z-index: 10000;
-            box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
-        }
-        .top-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
-        .rotating-disc { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #B9C06D; animation: rotate_disc 10s linear infinite; animation-play-state: paused; }
-        @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
-        .progress-wrap { width: 100%; margin: 5px 0 15px 0; border-radius: 5px; }
-        #seek-bar { width: 100%; accent-color: #B9C06D; }
-        .controls-row { display: flex; justify-content: center; gap: 8px; align-items: center; }
-        .ctrl-btn { background: none; border: 1px solid #B9C06D; color: #B9C06D; border-radius: 5px; cursor: pointer; width: 35px; height: 35px; }
-        .active-mode { background: #B9C06D; color: white; }
-        .hidden { display: none; }
+/* 플레이어 메인 박스 */
+    #unified-player {
+        position: fixed; bottom: 30px; right: 30px;
+        width: 280px; background: white;
+        border: 2px solid #B9C06D; border-radius: 15px;
+        padding: 15px; z-index: 10000;
+        box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
+    }
+    .top-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+    .rotating-disc { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #B9C06D; animation: rotate_disc 10s linear infinite; animation-play-state: paused; }
+    @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
+    .progress-wrap { width: 100%; margin: 5px 0 15px 0; border-radius: 5px; }
+    #seek-bar { width: 100%; accent-color: #B9C06D; }
+    .controls-row { display: flex; justify-content: center; gap: 8px; align-items: center; }
+    .ctrl-btn { background: none; border: 1px solid #B9C06D; color: #B9C06D; border-radius: 5px; cursor: pointer; width: 35px; height: 35px; }
+    .active-mode { background: #B9C06D !important; color: white !important; }
+    .hidden { display: none; }
+    .list-item:hover { background: #f9fbe7; color: #B9C06D; }
     </style>
 </head>
 <body>
@@ -232,45 +234,46 @@
         <div style="flex-grow:1; overflow:hidden; white-space:nowrap;">
             <marquee scrollamount="3" class="marquee-text" id="song-title">Dream Anamnesis</marquee>
         </div>
+        <button class="ctrl-btn" style="border:none; width:25px !important;" onclick="toggleList()">≡</button>
     </div>
+
     <div class="progress-wrap">
         <input type="range" id="seek-bar" value="0" max="100" oninput="seek()">
     </div>
+
     <div class="controls-row">
         <button class="ctrl-btn" onclick="prevTrack()">⏮</button>
         <button class="ctrl-btn" onclick="togglePlay()" id="play-btn">▶</button>
         <button class="ctrl-btn" onclick="nextTrack()">⏭</button>
+        <button class="ctrl-btn" id="loop-btn" onclick="toggleLoop()">🔁</button>
+        
+        <div style="position: relative; display: inline-block;">
+            <button class="ctrl-btn" onclick="toggleVolume()">🔊</button>
+            <div id="volume-pop" style="position: absolute; bottom: 45px; left: 50%; transform: translateX(-50%); width: 35px; height: 120px; background: white; border: 2px solid #B9C06D; border-radius: 10px; display: none; flex-direction: column; align-items: center; padding: 10px 0; z-index: 10001;">
+                <input type="range" id="vol-control" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)" style="appearance: slider-vertical; width: 8px; height: 100px; accent-color: #B9C06D;">
+            </div>
+        </div>
     </div>
+
+    <div id="playlist-box" class="hidden" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee;">
+        <div class="list-item" style="font-size: 12px; padding: 6px; cursor: pointer;" onclick="changeTrack(0)">1. Dream Anamnesis</div>
+        <div class="list-item" style="font-size: 12px; padding: 6px; cursor: pointer;" onclick="changeTrack(1)">2. Moonlike Smile</div>
+        <div class="list-item" style="font-size: 12px; padding: 6px; cursor: pointer;" onclick="changeTrack(2)">3. Winding Through Avidya</div>
+    </div>
+</div>
+<audio id="main-audio"></audio>
 </div>
 
 <audio id="main-audio"></audio>
 
 <script>
-    // 1. 탭 전환 기능
-    function showPage(pageId, event) {
-        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        
-        const target = document.getElementById(pageId);
-        if(target) target.classList.add('active');
-        if(event) event.currentTarget.classList.add('active');
-    }
-
-    // 2. 갤러리 이미지 표시 기능
-    function showImage(src, title) {
-        const mainImg = document.getElementById('main-display-img');
-        const mainTitle = document.getElementById('main-display-title');
-        mainImg.src = src;
-        mainImg.style.display = 'inline-block';
-        mainTitle.innerText = title;
-    }
-
-    // 3. 오디오 플레이어 핵심 로직
-    const audio = document.getElementById('main-audio');
+const audio = document.getElementById('main-audio');
     const playBtn = document.getElementById('play-btn');
     const songTitle = document.getElementById('song-title');
     const seekBar = document.getElementById('seek-bar');
     const recordImg = document.getElementById('record-img');
+    const volPop = document.getElementById('volume-pop');
+    const loopBtn = document.getElementById('loop-btn');
 
     const tracks = [
         { src: 'Dream%20Anamnesis.mp3', title: 'Dream Anamnesis', img: 'archive/images/레코드판1.png' },
@@ -278,55 +281,53 @@
         { src: 'Winding%20Through%20Avidya.m4a', title: 'Winding Through Avidya', img: 'archive/images/레코드판3.png' }
     ];
     let currentIndex = 0;
+    let isLoop = false;
 
-    // 곡 로드 함수
     function loadTrack(index) {
         audio.src = tracks[index].src;
         songTitle.innerText = tracks[index].title;
         if(recordImg) recordImg.src = tracks[index].img;
-        audio.load(); // 오디오 파일 새로고침
     }
-
-    // 초기 실행
     loadTrack(currentIndex);
 
-    // 재생/일시정지 토글
     function togglePlay() {
         if (audio.paused) {
-            audio.play().catch(e => console.log("재생 오류: 파일 경로를 확인하세요."));
-            playBtn.innerText = "||";
+            audio.play(); playBtn.innerText = "||";
             if(recordImg) recordImg.style.animationPlayState = 'running';
         } else {
-            audio.pause();
-            playBtn.innerText = "▶";
+            audio.pause(); playBtn.innerText = "▶";
             if(recordImg) recordImg.style.animationPlayState = 'paused';
         }
     }
 
-    // 곡 변경 함수 (목록에서 클릭 시)
-    function changeTrack(index) {
-        currentIndex = index;
-        loadTrack(currentIndex);
-        togglePlay(); // 로드 후 바로 재생
+    function changeTrack(i) {
+        currentIndex = i; loadTrack(i); audio.play();
+        playBtn.innerText = "||";
+        if(recordImg) recordImg.style.animationPlayState = 'running';
     }
 
     function nextTrack() { currentIndex = (currentIndex + 1) % tracks.length; changeTrack(currentIndex); }
     function prevTrack() { currentIndex = (currentIndex - 1 + tracks.length) % tracks.length; changeTrack(currentIndex); }
+    function toggleLoop() { isLoop = !isLoop; audio.loop = isLoop; loopBtn.classList.toggle('active-mode'); }
+    function toggleVolume() { volPop.style.display = (volPop.style.display === 'flex') ? 'none' : 'flex'; }
+    function toggleList() { document.getElementById('playlist-box').classList.toggle('hidden'); }
+    function setVolume(v) { audio.volume = v; }
+    audio.ontimeupdate = () => { if(audio.duration) seekBar.value = (audio.currentTime / audio.duration) * 100; };
+    function seek() { audio.currentTime = (seekBar.value / 100) * audio.duration; }
+    audio.onended = () => { if(!isLoop) nextTrack(); };
 
-    // 재생바 업데이트
-    audio.ontimeupdate = () => {
-        if(audio.duration) {
-            seekBar.value = (audio.currentTime / audio.duration) * 100;
-        }
-    };
-
-    // 재생바 조작
-    function seek() {
-        audio.currentTime = (seekBar.value / 100) * audio.duration;
+    // 탭 전환 및 갤러리 함수 (삭제 금지)
+    function showPage(pageId, event) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+        event.currentTarget.classList.add('active');
     }
-
-    // 곡 끝나면 다음 곡으로
-    audio.onended = () => { nextTrack(); };
+    function showImage(src, title) {
+        const mainImg = document.getElementById('main-display-img');
+        const mainTitle = document.getElementById('main-display-title');
+        mainImg.src = src; mainImg.style.display = 'inline-block'; mainTitle.innerText = title;
+    }
 </script>
 
 </body>
