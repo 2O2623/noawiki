@@ -71,7 +71,41 @@
     }
 
     /* 3:5:2 비율 설정 */
-    .side-profile { width: 30%; border-right: 2px dashed #f0f4c3; padding-right: 20px; }
+/* 프로필 상단 (이미지+닉네임) 정렬 */
+.profile-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #f0f4c3;
+}
+
+/* 프로필 이미지 동그랗게 */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #B9C06D; /* 플레이어 포인트 컬러 */
+}
+
+/* 닉네임 스타일 */
+.nickname {
+    font-size: 16px;
+    font-weight: bold;
+    color: #B9C06D;
+    letter-spacing: -0.5px;
+}
+
+/* 소개글 상자 추가 여백 및 높이 조절 */
+.profile-bio {
+    min-height: 150px; /* 텍스트 양에 따라 조절하세요 */
+    word-break: break-all;
+}
     .center-notice { width: 50%; }
     .side-banner { width: 20%; border-left: 2px dashed #f0f4c3; padding-left: 20px; }
 
@@ -152,12 +186,19 @@ body {
     </div>
 
     <div id="home" class="page active main-content">
-        <div class="side-profile">
-            <div class="section-title">PROFILE</div>
-            <div class="content-box">
-                이곳에 프로필 정보를 적어주세요.
-            </div>
-        </div>
+<div class="side-profile">
+    <div class="section-title">PROFILE</div>
+    
+    <div class="profile-top">
+        <img src="아카이브/이미지/프로필사진.png" class="profile-img" alt="Profile">
+        <div class="nickname">Your Nickname</div>
+    </div>
+
+    <div class="content-box profile-bio">
+백업 위주 드림계 / 맞구독 </br>
+        원신 oc x 타이나리 NCP 상정 비이입 오픈 </br>
+    </div>
+</div>
         <div class="center-notice">
             <div class="section-title">NOTICE</div>
             <div class="content-box">
