@@ -124,7 +124,7 @@
             border-radius: 12px; padding: 15px; min-height: 120px;
         }
 
-/* 1. 팝업 창 본체 */
+/* 팝업 창 본체 */
 .modal-content {
     position: relative; 
     background: white;
@@ -134,18 +134,19 @@
     max-height: 85%;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    border: 1px solid #eee; /* 본체 경계선 */
+    border: 1px solid #eee;
+    margin: auto; /* 중앙 정렬 유지 */
 }
 
-/* 2. 닫기 버튼 (중복 코드 제거 및 하나로 통합) */
+/* 닫기 버튼 통합 (중복 없이 하나로!) */
 .close-btn {
     position: absolute;
-    top: 0;           /* 본체 맨 위 지점에 맞춤 */
-    right: -40px;     /* 본체 바로 오른쪽에 붙임 */
-    width: 40px;      
+    top: 15px;      /* 상단에서 살짝 내림 */
+    right: -40px;   /* 본체 오른쪽 밖에 붙임 */
+    width: 40px;
     height: 50px;
-    background: #ffffff !important; /* 배경색 흰색 강제 적용 */
-    color: #B9C06D !important;      /* X 기호 올리브색 강제 적용 */
+    background: #ffffff !important; /* 배경: 흰색 */
+    color: #B9C06D !important;      /* X 표시: 올리브색 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,23 +154,28 @@
     cursor: pointer;
     font-weight: bold;
     
-    /* [3번] 자연스러운 연결: 왼쪽 모서리 각지게 */
+    /* [3번] 자연스러운 연결: 왼쪽은 직선, 오른쪽만 둥글게 */
     border-radius: 0 8px 8px 0; 
     
-    /* [2번] 세로 점선 추가 */
+    /* [2번] 세로 점선: 본체와 만나는 '왼쪽 테두리'만 점선으로! */
     border-left: 2px dashed #B9C06D; 
     
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    transition: all 0.2s;
     z-index: 20001;
 }
 
-/* 마우스 올렸을 때 효과 (색상 반전 방지) */
 .close-btn:hover {
-    background: #f9f9f9 !important; /* 살짝 밝은 회색으로 변경 */
-    color: #9ba34d !important;      /* 올리브색 유지 */
+    background: #f9f9f9 !important; /* 호버 시 아주 살짝 어둡게 */
 }
 
+/* 갤러리 그리드 깨짐 방지 */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    width: 100%; /* 그리드가 화면을 넘지 않게 고정 */
+}
+        
     /* 화살표 버튼 */
     .nav-btn {
         position: absolute; top: 50%; transform: translateY(-50%);
