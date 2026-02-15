@@ -174,12 +174,30 @@
         font-weight: bold; color: #9ba34d; font-size: 16px;
     }
 
-    /* 닫기 버튼 (X) */
+/* 닫기 버튼 (책갈피 스타일) */
     .close-btn {
-        position: absolute; top: 10px; right: 15px;
-        font-size: 25px; cursor: pointer; color: #B9C06D;
+        position: absolute;
+        top: 0; /* 창 맨 윗부분에 맞춤 */
+        right: -40px; /* 창 오른쪽 밖으로 40px 밀어냄 (책갈피 효과) */
+        width: 40px;
+        height: 50px;
+        background: #B9C06D; /* 탭 색상과 통일 */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 0 8px 8px 0; /* 오른쪽만 둥글게 해서 책갈피 느낌 */
         font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        transition: background 0.2s;
     }
+
+    .close-btn:hover {
+        background: #9ba34d; /* 마우스 올리면 살짝 어둡게 */
+    }
+
 
     /* 화살표 버튼 */
     .nav-btn {
