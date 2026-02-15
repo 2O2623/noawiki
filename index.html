@@ -124,32 +124,74 @@
             border-radius: 12px; padding: 15px; min-height: 120px;
         }
 
-        /* 7. 갤러리 전용 스타일 */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .thumb {
-            width: 80px; height: 80px;
-            border: 1.5px solid #B9C06D;
-            cursor: pointer;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .viewer-container {
-            border-top: 2px dashed #f0f4c3;
-            padding-top: 20px;
-            text-align: center;
-            min-height: 350px;
-        }
-        #main-display-img {
-            max-width: 100%; max-height: 300px;
-            border: 2px solid #B9C06D; border-radius: 10px;
-            display: none; margin-bottom: 10px;
-        }
-        #main-display-title { font-weight: bold; color: #9ba34d; }
+   /* 7. 갤러리 팝업(모달) 스타일 */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+    .thumb {
+        width: 100%; height: 120px;
+        border: 1.5px solid #B9C06D;
+        cursor: pointer;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.2s;
+    }
+    .thumb:hover { transform: scale(1.03); }
+
+    /* 팝업 전체 배경 (어둡게) */
+    #image-modal {
+        display: none; /* 기본 숨김 */
+        position: fixed; top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* 연하게 어두워짐 */
+        z-index: 20000;
+        justify-content: center; align-items: center;
+    }
+
+    /* 팝업 창 본체 */
+    .modal-content {
+        position: relative;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 80%;
+        max-height: 85%;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    #modal-img {
+        max-width: 100%;
+        max-height: 70vh;
+        border-radius: 5px;
+        border: 1px solid #eee;
+    }
+
+    #modal-title {
+        margin-top: 15px;
+        font-weight: bold; color: #9ba34d; font-size: 16px;
+    }
+
+    /* 닫기 버튼 (X) */
+    .close-btn {
+        position: absolute; top: 10px; right: 15px;
+        font-size: 25px; cursor: pointer; color: #B9C06D;
+        font-weight: bold;
+    }
+
+    /* 화살표 버튼 */
+    .nav-btn {
+        position: absolute; top: 50%; transform: translateY(-50%);
+        background: rgba(185, 192, 109, 0.8);
+        color: white; border: none;
+        width: 40px; height: 40px;
+        border-radius: 50%; cursor: pointer;
+        font-size: 20px;
+    }
+    .prev-btn { left: -60px; }
+    .next-btn { right: -60px; }
 
 /* 플레이어 메인 박스 */
     #unified-player {
@@ -207,17 +249,25 @@
     </div>
 
     <div id="gallery" class="page">
-        <div style="width: 100%;">
-            <div class="section-title">GALLERY</div>
-            <div class="gallery-grid">
-                <img src="이미지1_썸네일.jpg" class="thumb" onclick="showImage('이미지1_원본.jpg', '작품 제목 1')">
-                <img src="이미지2_썸네일.jpg" class="thumb" onclick="showImage('이미지2_원본.jpg', '작품 제목 2')">
-            </div>
-            <div class="viewer-container">
-                <img id="main-display-img" src="">
-                <div id="main-display-title">썸네일을 클릭하면 이미지가 나타납니다.</div>
-            </div>
+<div id="gallery" class="page">
+    <div style="width: 100%;">
+        <div class="section-title">GALLERY</div>
+        <div class="gallery-grid">
+            <img src="이미지1_썸네일.jpg" class="thumb" onclick="openModal(0)">
+            <img src="이미지2_썸네일.jpg" class="thumb" onclick="openModal(1)">
+            <img src="이미지3_썸네일.jpg" class="thumb" onclick="openModal(2)">
         </div>
+    </div>
+</div>
+
+<div id="image-modal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="document.getElementById('image-modal').style.display='none'">&times;</span>
+        <button class="nav-btn prev-btn" onclick="changeModalImage(-1)">&#10094;</button>
+        <img id="modal-img" src="">
+        <div id="modal-title"></div>
+        <button class="nav-btn next-btn" onclick="changeModalImage(1)">&#10095;</button>
+    </div>
     </div>
 
     <div id="guest" class="page">
@@ -323,10 +373,42 @@ const audio = document.getElementById('main-audio');
         document.getElementById(pageId).classList.add('active');
         event.currentTarget.classList.add('active');
     }
-    function showImage(src, title) {
-        const mainImg = document.getElementById('main-display-img');
-        const mainTitle = document.getElementById('main-display-title');
-        mainImg.src = src; mainImg.style.display = 'inline-block'; mainTitle.innerText = title;
+    
+// 갤러리 데이터 설정 (이미지 경로와 제목을 순서대로 적으세요)
+    const galleryData = [
+        { src: '이미지1_원본.jpg', title: '작품 제목 1' },
+        { src: '이미지2_원본.jpg', title: '작품 제목 2' },
+        { src: '이미지3_원본.jpg', title: '작품 제목 3' }
+    ];
+    let currentGalleryIndex = 0;
+
+    // 모달 열기
+    function openModal(index) {
+        currentGalleryIndex = index;
+        updateModal();
+        document.getElementById('image-modal').style.display = 'flex';
+    }
+
+    // 모달 내용 업데이트
+    function updateModal() {
+        const data = galleryData[currentGalleryIndex];
+        document.getElementById('modal-img').src = data.src;
+        document.getElementById('modal-title').innerText = data.title;
+    }
+
+    // 이전/다음 이동
+    function changeModalImage(step) {
+        currentGalleryIndex += step;
+        if (currentGalleryIndex < 0) currentGalleryIndex = galleryData.length - 1;
+        if (currentGalleryIndex >= galleryData.length) currentGalleryIndex = 0;
+        updateModal();
+    }
+
+    // 배경 클릭 시 닫기
+    function closeModal(event) {
+        if (event.target === document.getElementById('image-modal')) {
+            document.getElementById('image-modal').style.display = 'none';
+        }
     }
 </script>
 
