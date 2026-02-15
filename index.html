@@ -124,75 +124,78 @@
             border-radius: 12px; padding: 15px; min-height: 120px;
         }
 
-   /* 7. 갤러리 팝업(모달) 스타일 */
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-        gap: 15px;
-    }
-    .thumb {
-        width: 100%; height: 120px;
-        border: 1.5px solid #B9C06D;
-        cursor: pointer;
-        object-fit: cover;
-        border-radius: 8px;
-        transition: transform 0.2s;
-    }
-    .thumb:hover { transform: scale(1.03); }
+/* 1. 팝업 창 본체 (연결의 기준점) */
+.modal-content {
+    position: relative; /* 자식인 .close-btn이 이 박스를 기준으로 붙게 함 */
+    background: white;
+    padding: 20px;
+    border-radius: 15px; /* 본체는 둥글게 유지 */
+    max-width: 80%;
+    max-height: 85%;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    /* [중요] 닫기 버튼과의 연결을 위해 테두리가 있다면 추가 (없어도 무방) */
+    border: 1px solid #eee; 
+}
 
-    /* 팝업 전체 배경 (어둡게) */
-    #image-modal {
-        display: none; /* 기본 숨김 */
-        position: fixed; top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0, 0, 0, 0.4); /* 연하게 어두워짐 */
-        z-index: 20000;
-        justify-content: center; align-items: center;
-    }
+/* 2. 닫기 버튼 (3번 자연스러운 연결 + 2번 점선 적용) */
+.close-btn {
+    position: absolute;
+    top: 20px;       /* 본체 상단 여백만큼 내림 */
+    right: -41px;    /* [3번 수정] 본체와 1px 겹치게 하여 빈틈 제거 (width가 40일 때) */
+    width: 42px;     /* 살짝 넉넉하게 설정 */
+    height: 50px;
+    background: #fff; /* [배경색 흰색] */
+    color: #9ba34d;   /* [X색 올리브색] */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    
+    /* [3번 수정] 연결부 곡률 제거: 왼쪽은 직선(0), 오른쪽만 둥글게 */
+    border-radius: 0 8px 8px 0; 
+    
+    font-weight: bold;
+    box-shadow: 3px 2px 5px rgba(0,0,0,0.1);
+    z-index: 20001;
 
-    /* 팝업 창 본체 */
-    .modal-content {
-        position: relative;
-        background: white;
-        padding: 20px;
-        border-radius: 15px;
-        max-width: 80%;
-        max-height: 85%;
-        text-align: center;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    }
+    /* [2번 추가] 세로 점선: 본체와 만나는 왼쪽에 배치 */
+    border-left: 2px dashed #9ba34d; 
+}
 
-    #modal-img {
-        max-width: 100%;
-        max-height: 70vh;
-        border-radius: 5px;
-        border: 1px solid #eee;
-    }
-
-    #modal-title {
-        margin-top: 15px;
-        font-weight: bold; color: #9ba34d; font-size: 16px;
-    }
+/* 마우스 올렸을 때 효과 */
+.close-btn:hover {
+    background: #fafafa;
+}
 
 /* 닫기 버튼 (책갈피 스타일) */
-    .close-btn {
-        position: absolute;
-        top: 0; /* 창 맨 윗부분에 맞춤 */
-        right: -40px; /* 창 오른쪽 밖으로 40px 밀어냄 (책갈피 효과) */
-        width: 40px;
-        height: 50px;
-        background: #B9C06D; /* 탭 색상과 통일 */
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-        cursor: pointer;
-        border-radius: 0 8px 8px 0; /* 오른쪽만 둥글게 해서 책갈피 느낌 */
-        font-weight: bold;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-        transition: background 0.2s;
-    }
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 50px;
+    background: #fff; /* 배경색 흰색 확인 */
+    color: #B9C06D;   /* X색 올리브색 확인 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+
+    /* [추가] 왼쪽 연결 부위에 세로 점선 넣기 */
+    border-left: 2px dashed #B9C06D; 
+}
+
+/* [추가] 점선이 너무 바짝 붙어 보인다면 안쪽 여백 조절 */
+.close-btn {
+    padding-left: 5px; 
+}
 
     .close-btn:hover {
         background: #9ba34d; /* 마우스 올리면 살짝 어둡게 */
