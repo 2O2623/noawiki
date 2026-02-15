@@ -5,38 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepwood horn</title>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
     <style>
-        /* 여기서부터 디자인(CSS)입니다 */
-        body { font-family: 'Apple SD Gothic Neo', sans-serif; background-color: #f5f5f5; margin: 0; padding: 0; color: #333; }
-        header { background-color: #ffffff; padding: 40px 20px; text-align: center; border-bottom: 1px solid #ddd; }
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; }
-        .post { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        h1 { color: #222; margin-bottom: 10px; }
-        p { line-height: 1.6; color: #666; }
-        .date { font-size: 0.8em; color: #999; margin-bottom: 10px; }
-        footer { text-align: center; padding: 20px; color: #888; font-size: 0.9em; }
+        /* 배경 설정 */
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Apple SD Gothic Neo', sans-serif;
+        }
+
+        /* 메인 창 (인터넷 창 느낌) */
+        #window-container {
+            width: 1000px;
+            height: 650px;
+            background: white;
+            border: 2px solid #ffcada; /* 탭 색상과 맞춘 핑크톤 */
+            border-radius: 15px;
+            box-shadow: 10px 10px 0px rgba(255, 202, 218, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* 상단 탭 영역 (보내주신 사진 스타일) */
+        .tab-bar {
+            display: flex;
+            gap: 5px;
+            padding: 10px 15px 0 15px;
+            background: #fff;
+            border-bottom: 2px solid #ffcada;
+        }
+
+        .tab {
+            padding: 8px 20px;
+            border: 2px solid #ffcada;
+            border-bottom: none;
+            border-radius: 10px 10px 0 0;
+            background: #fff0f5;
+            color: #d18d9e;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 13px;
+        }
+
+        .tab:hover { background: #ffe4e1; }
+        .tab.active { background: #fff; color: #ff8da1; margin-bottom: -2px; padding-top: 10px; }
+
+        /* 본문 레이아웃 (3:5:2 비율) */
+        .main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+            overflow-y: auto;
+        }
+
+        /* 좌측 프로필 (30%) */
+        .side-profile { width: 30%; border-right: 1px dashed #ffcada; padding-right: 20px; }
+        
+        /* 중앙 공지사항 (50%) */
+        .center-notice { width: 50%; }
+
+        /* 우측 배너 (20%) */
+        .side-banner { width: 20%; border-left: 1px dashed #ffcada; padding-left: 20px; }
+
+        /* 섹션 공통 스타일 */
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #ff8da1;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ffcada;
+            padding-bottom: 5px;
+        }
+
+        .content-box {
+            background: #fafafa;
+            border-radius: 10px;
+            padding: 15px;
+            min-height: 100px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* 페이지 숨김/표시 */
+        .page { display: none; width: 100%; height: 100%; }
+        .page.active { display: flex; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>mm</h1>
-    <p>nnnnn</p>
-</header>
+<div id="window-container">
+    <div class="tab-bar">
+        <div class="tab active" onclick="showPage('home')">HOME</div>
+        <div class="tab" onclick="showPage('gallery')">GALLERY</div>
+        <div class="tab" onclick="showPage('guest')">GUEST</div>
+        <div class="tab">OC</div>
+        <div class="tab">WORK</div>
+    </div>
 
-<div class="container">
-    <article class="post">
-        <div class="date">2026. 02. 14</div>
-        <h2>mmmmm</h2>
-        <p>mmm</p>
-    </article>
+    <div id="home" class="page active main-content">
+        <div class="side-profile">
+            <div class="section-title">PROFILE</div>
+            <div class="content-box">여기에 프로필 사진과 소개글이 들어갑니다.</div>
+        </div>
+        <div class="center-notice">
+            <div class="section-title">NOTICE</div>
+            <div class="content-box">홈페이지 공지사항이 들어가는 자리입니다.</div>
+        </div>
+        <div class="side-banner">
+            <div class="section-title">BANNER</div>
+            <div class="content-box" style="text-align: center;">88*31<br>배너교환</div>
+        </div>
+    </div>
 
-    <article class="post">
-        <div class="date">2026. 02. 14</div>
-        <h2>mmm</h2>
-        <p>여mm</p>
-    </article>
+    <div id="gallery" class="page main-content">
+        <div style="width: 100%;">
+            <div class="section-title">GALLERY</div>
+            <div class="content-box" style="height: 400px;">작업물들이 올라올 갤러리 공간입니다.</div>
+        </div>
+    </div>
+
+    <div id="guest" class="page main-content">
+        <div style="width: 100%;">
+            <div class="section-title">GUEST BOOK</div>
+            <div class="content-box" style="height: 400px;">방명록을 남겨주세요!</div>
+        </div>
+    </div>
 </div>
+
+<script>
+    function showPage(pageId) {
+        // 모든 페이지 숨기기
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.classList.remove('active'));
+
+        // 모든 탭 비활성화
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => tab.classList.remove('active'));
+
+        // 선택한 페이지와 탭 활성화
+        document.getElementById(pageId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
 
 <style>
     /* 1. 플레이어 메인 박스 */
