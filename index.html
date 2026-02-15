@@ -8,265 +8,217 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<style>
-    /* 1. 기본 초기화 및 배경 */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-        background-color: #f9fbe7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        font-family: 'Apple SD Gothic Neo', sans-serif;
-        overflow-x: hidden;
-    }
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 1. 기본 초기화 및 배경 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #f9fbe7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Apple SD Gothic Neo', sans-serif;
+            overflow-x: hidden;
+        }
 
-    /* 2. 메인 윈도우 창 */
-    #window-container {
-        width: 1000px;
-        max-width: 95%;
-        height: 650px;
-        background: white;
-        border: 2px solid #B9C06D;
-        border-radius: 15px;
-        box-shadow: 8px 8px 0px rgba(185, 192, 109, 0.2);
-        display: flex;
-        flex-direction: column;
-        margin: 20px auto;
-    }
+        /* 2. 메인 윈도우 창 */
+        #window-container {
+            width: 1000px;
+            max-width: 95%;
+            height: 650px;
+            background: white;
+            border: 2px solid #B9C06D;
+            border-radius: 15px;
+            box-shadow: 8px 8px 0px rgba(185, 192, 109, 0.2);
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            overflow: hidden;
+        }
 
+        /* 3. 상단 탭 영역 */
+        .tab-bar {
+            display: flex;
+            gap: 5px;
+            padding: 15px 15px 0 15px;
+            background: #fff;
+            border-bottom: 2px solid #B9C06D;
+            height: 55px;
+            align-items: flex-end;
+        }
 
+        .tab {
+            padding: 8px 20px;
+            border: 2px solid #B9C06D;
+            border-bottom: none;
+            border-radius: 10px 10px 0 0;
+            background: #fdfdfd;
+            color: #B9C06D;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 13px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            transition: 0.2s;
+        }
 
-    /* 3. 상단 탭 영역 */
-    .tab-bar {
-        display: flex;
-        gap: 5px;
-        padding: 10px 15px 0 15px;
-        background: #fff;
-        border-bottom: 2px solid #B9C06D;
-    }
+        .tab.active { 
+            background: #B9C06D; 
+            color: white; 
+            height: 37px;
+            margin-bottom: -2px;
+            z-index: 5;
+        }
 
-    .tab {
-        padding: 8px 20px;
-        border: 2px solid #B9C06D;
-        border-bottom: none;
-        border-radius: 10px 10px 0 0;
-        background: #fdfdfd;
-        color: #B9C06D;
-        font-weight: bold;
-        cursor: pointer;
-        font-size: 13px;
-    }
+        /* 4. 본문 레이아웃 */
+        .page { 
+            display: none; /* 기본적으로 모든 페이지 숨김 */
+            flex: 1; 
+            padding: 25px; 
+            gap: 20px; 
+            background: white;
+            overflow-y: auto;
+        }
+        .page.active { display: flex; }
 
-    .tab.active { 
-        background: #B9C06D; 
-        color: white; 
-        height: 37px; 
-        margin-bottom: -2px; 
-        padding-top: 8px;
-    }
+        /* 좌측/중앙/우측 섹션 구분 */
+        .side-profile { width: 30%; border-right: 2px dashed #f0f4c3; padding-right: 20px; }
+        .center-notice { width: 50%; }
+        .side-banner { width: 20%; border-left: 2px dashed #f0f4c3; padding-left: 20px; }
 
-    /* 4. 본문 레이아웃 및 세로 구분선 */
-    .main-content <div id="gallery-content" class="main-content">
-    <div style="width: 100%;">
-        <p class="section-title">Gallery</p>
-        
-        <div class="gallery-grid">
-            <img src="이미지1_썸네일.jpg" class="thumb" onclick="showImage('이미지1_원본.jpg', '작품 제목 1')">
-            <img src="이미지2_썸네일.jpg" class="thumb" onclick="showImage('이미지2_원본.jpg', '작품 제목 2')">
-        </div>
+        /* 5. 프로필 카드 */
+        .single-profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: #ffffff !important;
+            border-radius: 12px;
+            border: 1px solid #f0f4c3;
+        }
+        .profile-img {
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #B9C06D;
+            margin-bottom: 15px;
+        }
+        .nickname { font-size: 16px; font-weight: bold; color: #B9C06D; margin-bottom: 10px; }
+        .bio-text { font-size: 13px; color: #555; line-height: 1.6; word-break: break-all; }
 
-        <div class="viewer-container">
-            <img id="main-display-img" src="">
-            <div id="main-display-title">썸네일을 클릭하면 이미지가 나타납니다.</div>
-        </div>
-    </div>
-</div>
-    .main-content.active { display: flex; }
+        /* 6. 공통 컴포넌트 */
+        .section-title {
+            font-size: 14px; font-weight: bold; color: #9ba34d;
+            margin-bottom: 12px; display: flex; align-items: center; gap: 5px;
+        }
+        .section-title::before { content: ''; width: 8px; height: 8px; background: #B9C06D; border-radius: 2px; }
+        .content-box {
+            background: #fffde7; border: 1px solid #f0f4c3;
+            border-radius: 12px; padding: 15px; min-height: 120px;
+        }
 
-    /* 좌측 프로필 (30%) + 우측 세로 점선 */
-    .side-profile { 
-        width: 30%; 
-        border-right: 2px dashed #f0f4c3; /* 메인창과 프로필 사이 세로선 살림 */
-        padding-right: 20px; 
-    }
+        /* 7. 갤러리 전용 스타일 */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .thumb {
+            width: 80px; height: 80px;
+            border: 1.5px solid #B9C06D;
+            cursor: pointer;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .viewer-container {
+            border-top: 2px dashed #f0f4c3;
+            padding-top: 20px;
+            text-align: center;
+            min-height: 350px;
+        }
+        #main-display-img {
+            max-width: 100%; max-height: 300px;
+            border: 2px solid #B9C06D; border-radius: 10px;
+            display: none; margin-bottom: 10px;
+        }
+        #main-display-title { font-weight: bold; color: #9ba34d; }
 
-    .center-notice { width: 50%; }
-    .side-banner { 
-        width: 20%; 
-        border-left: 2px dashed #f0f4c3; /* 배너 왼쪽 세로선 */
-        padding-left: 20px; 
-    }
-
-
-
-    /* 5. 통합 프로필 카드 디자인 */
-
-    .single-profile-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px !important;
-        background: #fff !important; /* 여기를 노란색에서 하얀색으로 변경! */
-    }
-    
-    .profile-img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #B9C06D;
-        margin-bottom: 15px;
-    }
-
-    .nickname {
-        font-size: 16px;
-        font-weight: bold;
-        color: #B9C06D;
-        margin-bottom: 10px;
-    }
-
-    .bio-text {
-        font-size: 13px;
-        color: #555;
-        line-height: 1.6;
-        width: 100%;
-        word-break: break-all;
-    }
-
-    /* 6. 공통 컴포넌트 */
-    .section-title {
-        font-size: 14px; font-weight: bold; color: #9ba34d;
-        margin-bottom: 12px; display: flex; align-items: center; gap: 5px;}
-    .section-title::before { content: ''; width: 8px; height: 8px; background: #B9C06D; border-radius: 2px; }
-    .content-box {
-        background: #fffde7; border: 1px solid #f0f4c3;
-        border-radius: 12px; padding: 15px; min-height: 120px;}
-
-    /* 페이지 제어 */
-    .page { display: none; }
-    .page.active { display: flex; }
-
-    /* 배너 컨테이너: 배너들을 중앙에 정렬하고 간격을 줌 */
-.banner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* 배너 사이의 간격 */
-    width: 100%;}
-
-
-
-/* 배너 이미지 스타일 (200x40 최적화) */
-.banner-img {
-    width: 200px;
-    height: 40px;
-    object-fit: contain; /* 비율 유지하며 채우기 */
-    border: 1px solid #f0f4c3; /* 아주 연한 테두리 */
-    border-radius: 4px;
-    transition: transform 0.2s; /* 마우스 올렸을 때 효과 */}
-
-
-
-/* 마우스를 올렸을 때 살짝 커지는 효과 */
-.banner-img:hover {
-    transform: scale(1.05);
-    border-color: #B9C06D; /* 플레이어 색상으로 강조 */}
-.banner-link {
-    display: block;
-    text-decoration: none;}
-
-    /* 갤러리 레이아웃 - 여기에 추가 */
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-        gap: 10px;
-        margin-bottom: 20px;
-    }
-
-    .thumb {
-        width: 80px; height: 80px;
-        border: 1px solid #B9C06D;
-        cursor: pointer;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-
-    .viewer-container {
-        border-top: 2px dashed #f0f4c3;
-        padding-top: 20px;
-        text-align: center;
-        min-height: 350px; /* 공간 확보 */
-    }
-
-    #main-display-img {
-        max-width: 100%;
-        max-height: 300px;
-        border: 2px solid #B9C06D;
-        border-radius: 10px;
-        display: none;
-    }
-
-    #main-display-title {
-        margin-top: 10px;
-        font-weight: bold;
-        color: #9ba34d;
-    }
-</style>
+        /* 플레이어 스타일 (생략 없이 유지) */
+        #unified-player {
+            position: fixed; bottom: 30px; right: 30px;
+            width: 280px; background: white;
+            border: 2px solid #B9C06D; border-radius: 15px;
+            padding: 15px; z-index: 10000;
+            box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
+        }
+        .top-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+        .rotating-disc { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #B9C06D; animation: rotate_disc 10s linear infinite; animation-play-state: paused; }
+        @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
+        .progress-wrap { width: 100%; margin: 5px 0 15px 0; border-radius: 5px; }
+        #seek-bar { width: 100%; accent-color: #B9C06D; }
+        .controls-row { display: flex; justify-content: center; gap: 8px; align-items: center; }
+        .ctrl-btn { background: none; border: 1px solid #B9C06D; color: #B9C06D; border-radius: 5px; cursor: pointer; width: 35px; height: 35px; }
+        .active-mode { background: #B9C06D; color: white; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
 
 <div id="window-container">
     <div class="tab-bar">
-        <div class="tab active" onclick="showPage('home')">HOME</div>
-        <div class="tab" onclick="showPage('gallery')">GALLERY</div>
-        <div class="tab" onclick="showPage('guest')">GUEST</div>
+        <div class="tab active" onclick="showPage('home', event)">HOME</div>
+        <div class="tab" onclick="showPage('gallery', event)">GALLERY</div>
+        <div class="tab" onclick="showPage('guest', event)">GUEST</div>
         <div class="tab">OC</div>
         <div class="tab">WORK</div>
     </div>
 
-    <div id="home" class="page active main-content">
+    <div id="home" class="page active">
         <div class="side-profile">
             <div class="section-title">PROFILE</div>
-            
-            <div class="content-box single-profile-card">
+            <div class="single-profile-card">
                 <img src="archive/images/프로필.jpg" class="profile-img" alt="Profile">
                 <div class="nickname">여행자</div>
-                
                 <hr style="width:100%; border:0; border-top:1px dashed #B9C06D; margin:10px 0;">
-                
-                <div class="bio-text">
-                    백업 위주 드림계 / 맞구독 </br>
-                   타이나리 NCP상정 오픈 드림</br>
-                </div>
+                <div class="bio-text">백업 위주 드림계 / 맞구독<br>타이나리 NCP상정 오픈 드림</div>
             </div>
         </div>
-
         <div class="center-notice">
             <div class="section-title">NOTICE</div>
             <div class="content-box">공지사항 내용이 들어갑니다.</div>
         </div>
-
-<div class="side-banner">
-    <div class="section-title">BANNER</div>
-    <div class="banner-container">
-        <a href="링크주소1" target="_blank" class="banner-link">
-            <img src="archive/images/배너1.png" class="banner-img" alt="배너1">
-        </a>
-        <a href="링크주소2" target="_blank" class="banner-link">
-            <img src="archive/images/배너2.png" class="banner-img" alt="배너2">
-        </a>
-        </div>
-</div>
-
-    <div id="gallery" class="page main-content">
-        <div style="width: 100%;">
-            <div class="section-title">GALLERY</div>
-            <div class="content-box" style="height: 450px;">갤러리 준비 중...</div>
+        <div class="side-banner">
+            <div class="section-title">BANNER</div>
+            <div class="banner-container">
+                <a href="#" class="banner-link"><img src="archive/images/배너1.png" class="banner-img"></a>
+                <a href="#" class="banner-link"><img src="archive/images/배너2.png" class="banner-img"></a>
+            </div>
         </div>
     </div>
 
-    <div id="guest" class="page main-content">
+    <div id="gallery" class="page">
+        <div style="width: 100%;">
+            <div class="section-title">GALLERY</div>
+            <div class="gallery-grid">
+                <img src="이미지1_썸네일.jpg" class="thumb" onclick="showImage('이미지1_원본.jpg', '작품 제목 1')">
+                <img src="이미지2_썸네일.jpg" class="thumb" onclick="showImage('이미지2_원본.jpg', '작품 제목 2')">
+            </div>
+            <div class="viewer-container">
+                <img id="main-display-img" src="">
+                <div id="main-display-title">썸네일을 클릭하면 이미지가 나타납니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="guest" class="page">
         <div style="width: 100%;">
             <div class="section-title">GUEST</div>
             <div class="content-box" style="height: 450px;">방명록 공간입니다.</div>
@@ -274,151 +226,51 @@
     </div>
 </div>
 
-<script>
-    function showPage(pageId) {document.querySelectorAll('.main-content').forEach(p => p.classList.remove('active'));
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        
-        const target = document.getElementById(pageId);
-        if(target) target.classList.add('active');
-        if(event) event.currentTarget.classList.add('active');}
-</script>
-
-<style>
-    /* 1. 플레이어 메인 박스 */
-  #unified-player {
-    position: fixed; bottom: 30px; right: 30px;
-    width: 280px !important; 
-    background: white;
-    border: 2px solid #B9C06D; border-radius: 15px;
-    padding: 15px; z-index: 10000;
-    box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
-    font-family: 'Apple SD Gothic Neo', sans-serif;
-    box-sizing: border-box;}
-
-    /* 2. 상단 줄 (레코드판 + 제목 + 목록버튼) */
-    .top-row { 
-        display: flex; 
-        align-items: center; 
-        justify-content: flex-start; 
-        gap: 8px; 
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    
-    .rotating-disc {
-        width: 40px; height: 40px; border-radius: 50%;
-        object-fit: cover; border: 2px solid #B9C06D;
-        animation: rotate_disc 10s linear infinite;
-        animation-play-state: paused;
-        flex-shrink: 0;
-    }
-    @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-
-    .title-container { 
-        flex-grow: 1; 
-        max-width: 160px; 
-        overflow: hidden; 
-        white-space: nowrap; 
-    }
-    .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
-
-    /* 3. 재생바 영역 */
-.progress-wrap { 
-    width: 100%; 
-    margin: 5px 0 15px 0; 
-    overflow: hidden; /* ★ 전체 박스 대신 여기에 hidden을 줍니다 */
-    border-radius: 5px;}
-    
-    #seek-bar { 
-        width: 100% !important; 
-        accent-color: #B9C06D; 
-        cursor: pointer; 
-        margin: 0;
-    }
-
-    /* 4. 컨트롤 버튼 영역 */
-    .controls-row { display: flex; justify-content: center; gap: 8px; align-items: center; }
-    
-    .ctrl-btn {
-        background: none; border: 1px solid #B9C06D; color: #B9C06D;
-        border-radius: 5px; cursor: pointer;
-        width: 35px !important; height: 35px !important;
-        display: inline-flex; align-items: center; justify-content: center;
-        padding: 0 !important; font-size: 14px;
-    }
-    .play-main { width: 45px !important; font-size: 18px; font-weight: bold; }
-    .active-mode { background: #B9C06D !important; color: white !important; }
-
-    /* 5. 볼륨 및 재생목록 */
-    #volume-pop {
-    position: absolute; 
-    bottom: 45px; /* 버튼 바로 위 */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 35px; height: 120px;
-    background-color: white !important; 
-    border: 2px solid #B9C06D;
-    border-radius: 10px;
-    display: none; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    /* 박스 밖으로 나가도 보이게 함 */
-    z-index: 10001; 
-}
-    
-    #vol-control { appearance: slider-vertical; -webkit-appearance: slider-vertical; height: 100px; width: 8px; accent-color: #B9C06D; }
-
-    .sub-panel { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee; }
-    .hidden { display: none; }
-    .list-item { font-size: 12px; padding: 6px; cursor: pointer; color: #666; text-align: left; }
-    .list-item:hover { background: #f9fbe7; color: #B9C06D; }
-</style>
-
 <div id="unified-player">
     <div class="top-row">
         <img id="record-img" src="archive/images/레코드판1.png" class="rotating-disc">
-        <div class="title-container">
+        <div style="flex-grow:1; overflow:hidden; white-space:nowrap;">
             <marquee scrollamount="3" class="marquee-text" id="song-title">Dream Anamnesis</marquee>
         </div>
-        <button class="ctrl-btn" style="border:none; width:25px !important;" onclick="toggleList()">≡</button>
     </div>
-
     <div class="progress-wrap">
         <input type="range" id="seek-bar" value="0" max="100" oninput="seek()">
     </div>
-
     <div class="controls-row">
         <button class="ctrl-btn" onclick="prevTrack()">⏮</button>
-        <button class="ctrl-btn play-main" onclick="togglePlay()" id="play-btn">▶</button>
+        <button class="ctrl-btn" onclick="togglePlay()" id="play-btn">▶</button>
         <button class="ctrl-btn" onclick="nextTrack()">⏭</button>
-        <button class="ctrl-btn" id="loop-btn" onclick="toggleLoop()">🔁</button>
-        
-        <div style="position: relative; display: inline-block;">
-            <button class="ctrl-btn" onclick="toggleVolume()">🔊</button>
-            <div id="volume-pop">
-                <input type="range" id="vol-control" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)">
-            </div>
-        </div>
-    </div>
-
-    <div id="playlist-box" class="sub-panel hidden">
-        <div class="list-item" onclick="changeTrack(0)">1. Dream Anamnesis</div>
-        <div class="list-item" onclick="changeTrack(1)">2. Moonlike Smile</div>
-        <div class="list-item" onclick="changeTrack(2)">3. Winding Through Avidya</div>
     </div>
 </div>
 
 <audio id="main-audio"></audio>
 
 <script>
+    // 1. 탭 전환 기능
+    function showPage(pageId, event) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        
+        const target = document.getElementById(pageId);
+        if(target) target.classList.add('active');
+        if(event) event.currentTarget.classList.add('active');
+    }
+
+    // 2. 갤러리 이미지 표시 기능
+    function showImage(src, title) {
+        const mainImg = document.getElementById('main-display-img');
+        const mainTitle = document.getElementById('main-display-title');
+        mainImg.src = src;
+        mainImg.style.display = 'inline-block';
+        mainTitle.innerText = title;
+    }
+
+    // 3. 오디오 플레이어 핵심 로직
     const audio = document.getElementById('main-audio');
     const playBtn = document.getElementById('play-btn');
     const songTitle = document.getElementById('song-title');
     const seekBar = document.getElementById('seek-bar');
     const recordImg = document.getElementById('record-img');
-    const volPop = document.getElementById('volume-pop');
 
     const tracks = [
         { src: 'Dream%20Anamnesis.mp3', title: 'Dream Anamnesis', img: 'archive/images/레코드판1.png' },
@@ -426,19 +278,22 @@
         { src: 'Winding%20Through%20Avidya.m4a', title: 'Winding Through Avidya', img: 'archive/images/레코드판3.png' }
     ];
     let currentIndex = 0;
-    let isLoop = false;
 
+    // 곡 로드 함수
     function loadTrack(index) {
         audio.src = tracks[index].src;
-        // marquee 내부 텍스트 교체
         songTitle.innerText = tracks[index].title;
         if(recordImg) recordImg.src = tracks[index].img;
+        audio.load(); // 오디오 파일 새로고침
     }
+
+    // 초기 실행
     loadTrack(currentIndex);
 
+    // 재생/일시정지 토글
     function togglePlay() {
         if (audio.paused) {
-            audio.play();
+            audio.play().catch(e => console.log("재생 오류: 파일 경로를 확인하세요."));
             playBtn.innerText = "||";
             if(recordImg) recordImg.style.animationPlayState = 'running';
         } else {
@@ -448,75 +303,31 @@
         }
     }
 
-    function changeTrack(i) {
-        currentIndex = i;
-        loadTrack(i);
-        audio.play();
-        playBtn.innerText = "||";
-        if(recordImg) recordImg.style.animationPlayState = 'running';
+    // 곡 변경 함수 (목록에서 클릭 시)
+    function changeTrack(index) {
+        currentIndex = index;
+        loadTrack(currentIndex);
+        togglePlay(); // 로드 후 바로 재생
     }
 
     function nextTrack() { currentIndex = (currentIndex + 1) % tracks.length; changeTrack(currentIndex); }
     function prevTrack() { currentIndex = (currentIndex - 1 + tracks.length) % tracks.length; changeTrack(currentIndex); }
-    
-    function toggleLoop() {
-        isLoop = !isLoop;
-        audio.loop = isLoop;
-        document.getElementById('loop-btn').classList.toggle('active-mode');
-    }
 
-    function toggleVolume() {
-        volPop.style.display = (volPop.style.display === 'flex') ? 'none' : 'flex';
-    }
-
-    function toggleList() {
-        document.getElementById('playlist-box').classList.toggle('hidden');
-    }
-
-    function setVolume(v) { audio.volume = v; }
-    audio.ontimeupdate = () => { if(audio.duration) seekBar.value = (audio.currentTime / audio.duration) * 100; };
-    function seek() { audio.currentTime = (seekBar.value / 100) * audio.duration; }
-    audio.onended = () => { if(!isLoop) nextTrack(); };
-</script>
-
-    <script>
-    function showPage(pageId) {
-        // 모든 페이지(.page)를 일단 다 숨깁니다.
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => {
-            page.classList.remove('active');
-        });
-
-        // 모든 탭(.tab)에서 활성화(active) 클래스를 지웁니다.
-        const tabs = document.querySelectorAll('.tab');
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
-
-        // 클릭한 탭에 해당하는 페이지와 탭 본인만 활성화합니다.
-        const targetPage = document.getElementById(pageId);
-        if (targetPage) {
-            targetPage.classList.add('active');
+    // 재생바 업데이트
+    audio.ontimeupdate = () => {
+        if(audio.duration) {
+            seekBar.value = (audio.currentTime / audio.duration) * 100;
         }
-        
-        // 현재 클릭된 탭 요소에 active 클래스 추가
-        if (event && event.currentTarget) {
-            event.currentTarget.classList.add('active');
-        }
-    }
-</script>
+    };
 
-    <script>
-    function showImage(src, title) {
-        const mainImg = document.getElementById('main-display-img');
-        const mainTitle = document.getElementById('main-display-title');
-
-        mainImg.src = src;
-        mainImg.style.display = 'inline-block'; 
-        mainTitle.innerText = title;
+    // 재생바 조작
+    function seek() {
+        audio.currentTime = (seekBar.value / 100) * audio.duration;
     }
 
-    // (참고) 기존에 탭 전환 기능이 있다면 그 코드 아래에 붙여넣으세요.
+    // 곡 끝나면 다음 곡으로
+    audio.onended = () => { nextTrack(); };
 </script>
+
 </body>
 </html>
