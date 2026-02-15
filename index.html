@@ -10,15 +10,19 @@
 <head>
 <style>
     /* 1. 기본 초기화 및 배경 */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+
     body {
         background-color: #f9fbe7;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        margin: 0;
-        font-family: 'Apple SD Gothic Neo', sans-serif;
+        font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
         overflow-x: hidden;
     }
 
@@ -34,59 +38,77 @@
         display: flex;
         flex-direction: column;
         margin: 20px auto;
+        overflow: hidden; /* 내부 요소가 테두리를 넘지 않도록 설정 */
     }
 
     /* 3. 상단 탭 영역 */
     .tab-bar {
         display: flex;
         gap: 5px;
-        padding: 10px 15px 0 15px;
+        padding: 15px 15px 0 15px;
         background: #fff;
-        border-bottom: 2px solid #B9C06D;
+        border-bottom: 2px solid #B9C06D; /* 탭 하단 가로선 */
+        position: relative;
+        z-index: 1;
     }
+
     .tab {
         padding: 8px 20px;
         border: 2px solid #B9C06D;
-        border-bottom: none;
+        border-bottom: none; /* 기본 상태에서 하단 선 없음 */
         border-radius: 10px 10px 0 0;
         background: #fdfdfd;
         color: #B9C06D;
         font-weight: bold;
         cursor: pointer;
         font-size: 13px;
+        position: relative;
+        top: 0;
+        transition: all 0.2s;
     }
+
+    /* 활성화된 탭: 하단 선을 덮어서 메인 창과 연결된 느낌 부여 */
     .tab.active { 
         background: #B9C06D; 
         color: white; 
-        margin-bottom: -2px; 
-        padding-top: 10px; 
+        margin-bottom: -2px; /* 하단 보더 위로 1px 더 내려오게 설정 */
+        padding-bottom: 10px; /* 내려온 만큼 패딩 추가 */
+        z-index: 2;
     }
 
-    /* 4. 본문 레이아웃 및 세로 구분선 */
-    .main-content { display: none; flex: 1; padding: 25px; gap: 20px; }
+    /* 4. 본문 레이아웃 */
+    .main-content { 
+        display: none; 
+        flex: 1; 
+        padding: 25px; 
+        gap: 20px; 
+        background: #fff;
+    }
     .main-content.active { display: flex; }
 
-    /* 좌측 프로필 (30%) + 우측 세로 점선 */
+    /* 좌측/중앙/우측 섹션 구분선 */
     .side-profile { 
         width: 30%; 
-        border-right: 2px dashed #f0f4c3; /* 메인창과 프로필 사이 세로선 살림 */
+        border-right: 2px dashed #f0f4c3; 
         padding-right: 20px; 
     }
-    .center-notice { width: 50%; }
+    .center-notice { 
+        width: 50%; 
+    }
     .side-banner { 
         width: 20%; 
-        border-left: 2px dashed #f0f4c3; /* 배너 왼쪽 세로선 */
+        border-left: 2px dashed #f0f4c3; 
         padding-left: 20px; 
     }
 
-    /* 5. 통합 프로필 카드 디자인 */
+    /* 5. 프로필 카드 */
     .single-profile-card {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px !important;
-        background: #fff !important; /* 여기를 노란색에서 하얀색으로 변경! */
+        padding: 20px;
+        background: #fff;
     }
     .profile-img {
         width: 100px;
@@ -110,44 +132,52 @@
         word-break: break-all;
     }
 
-    /* 6. 공통 컴포넌트 */
+    /* 6. 공용 컴포넌트 */
     .section-title {
-        font-size: 14px; font-weight: bold; color: #9ba34d;
-        margin-bottom: 12px; display: flex; align-items: center; gap: 5px;}
-    .section-title::before { content: ''; width: 8px; height: 8px; background: #B9C06D; border-radius: 2px; }
+        font-size: 14px; 
+        font-weight: bold; 
+        color: #9ba34d;
+        margin-bottom: 12px; 
+        display: flex; 
+        align-items: center; 
+        gap: 5px;
+    }
+    .section-title::before { 
+        content: ''; 
+        width: 8px; 
+        height: 8px; 
+        background: #B9C06D; 
+        border-radius: 2px; 
+    }
     .content-box {
-        background: #fffde7; border: 1px solid #f0f4c3;
-        border-radius: 12px; padding: 15px; min-height: 120px;}
+        background: #fffde7; 
+        border: 1px solid #f0f4c3;
+        border-radius: 12px; 
+        padding: 15px; 
+        min-height: 120px;
+    }
 
-    /* 페이지 제어 */
-    .page { display: none; }
-    .page.active { display: flex; }
-
-    /* 배너 컨테이너: 배너들을 중앙에 정렬하고 간격을 줌 */
-.banner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* 배너 사이의 간격 */
-    width: 100%;}
-
-/* 배너 이미지 스타일 (200x40 최적화) */
-.banner-img {
-    width: 200px;
-    height: 40px;
-    object-fit: contain; /* 비율 유지하며 채우기 */
-    border: 1px solid #f0f4c3; /* 아주 연한 테두리 */
-    border-radius: 4px;
-    transition: transform 0.2s; /* 마우스 올렸을 때 효과 */}
-
-/* 마우스를 올렸을 때 살짝 커지는 효과 */
-.banner-img:hover {
-    transform: scale(1.05);
-    border-color: #B9C06D; /* 플레이어 색상으로 강조 */}
-
-.banner-link {
-    display: block;
-    text-decoration: none;}
+    /* 배너 스타일 */
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .banner-img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        object-fit: contain;
+        border: 1px solid #f0f4c3;
+        border-radius: 4px;
+        transition: transform 0.2s;
+    }
+    .banner-img:hover {
+        transform: scale(1.05);
+        border-color: #B9C06D;
+    }
 </style>
 
 <div id="window-container">
