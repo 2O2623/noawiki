@@ -124,87 +124,51 @@
             border-radius: 12px; padding: 15px; min-height: 120px;
         }
 
-/* 1. 팝업 창 본체 (연결의 기준점) */
+/* 1. 팝업 창 본체 */
 .modal-content {
-    <div class="modal-content">
-    <div class="close-btn">✕</div> <img id="modal-img" ...>
-    <div id="modal-title">...</div>
-</div>
-    position: relative; /* 자식인 .close-btn이 이 박스를 기준으로 붙게 함 */
+    position: relative; 
     background: white;
     padding: 20px;
-    border-radius: 15px; /* 본체는 둥글게 유지 */
+    border-radius: 15px;
     max-width: 80%;
     max-height: 85%;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    /* [중요] 닫기 버튼과의 연결을 위해 테두리가 있다면 추가 (없어도 무방) */
-    border: 1px solid #eee; 
+    border: 1px solid #eee; /* 본체 경계선 */
 }
 
-/* 2. 닫기 버튼 (3번 자연스러운 연결 + 2번 점선 적용) */
+/* 2. 닫기 버튼 (중복 코드 제거 및 하나로 통합) */
 .close-btn {
     position: absolute;
-    top: 20px;       /* 본체 상단 여백만큼 내림 */
-    right: -41px;    /* [3번 수정] 본체와 1px 겹치게 하여 빈틈 제거 (width가 40일 때) */
-    width: 42px;     /* 살짝 넉넉하게 설정 */
+    top: 0;           /* 본체 맨 위 지점에 맞춤 */
+    right: -40px;     /* 본체 바로 오른쪽에 붙임 */
+    width: 40px;      
     height: 50px;
-    background: #fff; /* [배경색 흰색] */
-    color: #9ba34d;   /* [X색 올리브색] */
+    background: #ffffff !important; /* 배경색 흰색 강제 적용 */
+    color: #B9C06D !important;      /* X 기호 올리브색 강제 적용 */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     cursor: pointer;
+    font-weight: bold;
     
-    /* [3번 수정] 연결부 곡률 제거: 왼쪽은 직선(0), 오른쪽만 둥글게 */
+    /* [3번] 자연스러운 연결: 왼쪽 모서리 각지게 */
     border-radius: 0 8px 8px 0; 
     
-    font-weight: bold;
-    box-shadow: 3px 2px 5px rgba(0,0,0,0.1);
-    z-index: 20001;
-
-    /* [2번 추가] 세로 점선: 본체와 만나는 왼쪽에 배치 */
-    border-left: 2px dashed #9ba34d; 
-}
-
-/* 마우스 올렸을 때 효과 */
-.close-btn:hover {
-    background: #fafafa;
-}
-
-/* 닫기 버튼 (책갈피 스타일) */
-.close-btn {
-    position: absolute;
-    top: 0;
-    right: -40px;
-    width: 40px;
-    height: 50px;
-    background: #fff; /* 배경색 흰색 확인 */
-    color: #B9C06D;   /* X색 올리브색 확인 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 0 8px 8px 0;
-    font-weight: bold;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    transition: background 0.2s;
-
-    /* [추가] 왼쪽 연결 부위에 세로 점선 넣기 */
+    /* [2번] 세로 점선 추가 */
     border-left: 2px dashed #B9C06D; 
+    
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    z-index: 20001;
 }
 
-/* [추가] 점선이 너무 바짝 붙어 보인다면 안쪽 여백 조절 */
-.close-btn {
-    padding-left: 5px; 
+/* 마우스 올렸을 때 효과 (색상 반전 방지) */
+.close-btn:hover {
+    background: #f9f9f9 !important; /* 살짝 밝은 회색으로 변경 */
+    color: #9ba34d !important;      /* 올리브색 유지 */
 }
-
-    .close-btn:hover {
-        background: #9ba34d; /* 마우스 올리면 살짝 어둡게 */
-    }
-
 
     /* 화살표 버튼 */
     .nav-btn {
