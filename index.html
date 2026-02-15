@@ -13,8 +13,13 @@
 <head>
     <meta charset="UTF-8">
     
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery & Player</title>
     <style>
-        /* 1. 기본 초기화 및 배경 */
+        /* [1-6번 스타일은 기존과 동일하므로 생략하지 않고 포함합니다] */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             background-color: #f9fbe7;
@@ -26,7 +31,6 @@
             overflow-x: hidden;
         }
 
-        /* 2. 메인 윈도우 창 */
         #window-container {
             width: 1000px;
             max-width: 95%;
@@ -39,9 +43,9 @@
             flex-direction: column;
             margin: 20px auto;
             overflow: hidden;
+            position: relative;
         }
 
-        /* 3. 상단 탭 영역 */
         .tab-bar {
             display: flex;
             gap: 5px;
@@ -68,140 +72,79 @@
             transition: 0.2s;
         }
 
-        .tab.active { 
-            background: #B9C06D; 
-            color: white; 
-            height: 37px;
-            margin-bottom: -2px;
-            z-index: 5;
-        }
+        .tab.active { background: #B9C06D; color: white; height: 37px; margin-bottom: -2px; z-index: 5; }
 
-        /* 4. 본문 레이아웃 */
-        .page { 
-            display: none; /* 기본적으로 모든 페이지 숨김 */
-            flex: 1; 
-            padding: 25px; 
-            gap: 20px; 
-            background: white;
-            overflow-y: auto;
-        }
+        .page { display: none; flex: 1; padding: 25px; gap: 20px; background: white; overflow-y: auto; }
         .page.active { display: flex; }
 
-        /* 좌측/중앙/우측 섹션 구분 */
         .side-profile { width: 30%; border-right: 2px dashed #f0f4c3; padding-right: 20px; }
         .center-notice { width: 50%; }
         .side-banner { width: 20%; border-left: 2px dashed #f0f4c3; padding-left: 20px; }
 
-        /* 5. 프로필 카드 */
         .single-profile-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            background: #ffffff !important;
-            border-radius: 12px;
-            border: 1px solid #f0f4c3;
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+            padding: 20px; background: #ffffff !important; border-radius: 12px; border: 1px solid #f0f4c3;
         }
-        .profile-img {
-            width: 100px; height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #B9C06D;
-            margin-bottom: 15px;
-        }
+        .profile-img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #B9C06D; margin-bottom: 15px; }
         .nickname { font-size: 16px; font-weight: bold; color: #B9C06D; margin-bottom: 10px; }
         .bio-text { font-size: 13px; color: #555; line-height: 1.6; word-break: break-all; }
 
-        /* 6. 공통 컴포넌트 */
-        .section-title {
-            font-size: 14px; font-weight: bold; color: #9ba34d;
-            margin-bottom: 12px; display: flex; align-items: center; gap: 5px;
-        }
+        .section-title { font-size: 14px; font-weight: bold; color: #9ba34d; margin-bottom: 12px; display: flex; align-items: center; gap: 5px; }
         .section-title::before { content: ''; width: 8px; height: 8px; background: #B9C06D; border-radius: 2px; }
-        .content-box {
-            background: #fffde7; border: 1px solid #f0f4c3;
-            border-radius: 12px; padding: 15px; min-height: 120px;
+        .content-box { background: #fffde7; border: 1px solid #f0f4c3; border-radius: 12px; padding: 15px; min-height: 120px; }
+
+        /* 갤러리 그리드 */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 15px; width: 100%; }
+        .thumb { width: 100%; height: 120px; border: 1.5px solid #B9C06D; cursor: pointer; object-fit: cover; border-radius: 8px; transition: transform 0.2s; }
+
+        /* 이미지 모달(팝업) 스타일 */
+        #image-modal {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4); z-index: 20000; justify-content: center; align-items: center;
+        }
+        .modal-content { position: relative; background: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+        #modal-img { max-width: 100%; max-height: 70vh; border-radius: 5px; }
+        
+        /* [요청사항] 닫기 버튼 */
+        .close-btn {
+            position: absolute; top: 0; right: -40px; width: 40px; height: 50px;
+            background: #fff !important; color: #B9C06D !important;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 24px; cursor: pointer; border-radius: 0 8px 8px 0;
+            font-weight: bold; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            border-left: 2px dashed #B9C06D;
         }
 
-/* 팝업 창 본체 */
-.modal-content {
-    position: relative; 
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 80%;
-    max-height: 85%;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    border: 1px solid #eee;
-    margin: auto; /* 중앙 정렬 유지 */
-}
+        /* 화살표 버튼 */
+        .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(185, 192, 109, 0.8); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; }
+        .prev-btn { left: -60px; }
+        .next-btn { right: -60px; }
 
-/* 닫기 버튼 통합 (중복 없이 하나로!) */
-.close-btn {
-    position: absolute;
-    top: 0;
-    right: -40px;
-    width: 40px;
-    height: 50px;
-    background: #ffffff !important; /* 배경을 흰색으로! */
-    color: #B9C06D !important;      /* X를 올리브색으로! */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 0 8px 8px 0;    /* 3번: 오른쪽만 둥글게 해서 연결 자연스럽게! */
-    font-weight: bold;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-
-    /* ★ 이게 바로 2번(세로 점점선)입니다! ★ */
-    border-left: 2px dashed #B9C06D; 
-}
-.close-btn:hover {
-    background: #f9f9f9 !important; /* 호버 시 아주 살짝 어둡게 */
-}
-
-/* 갤러리 그리드 깨짐 방지 */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 15px;
-    width: 100%; /* 그리드가 화면을 넘지 않게 고정 */
-}
+        /* 플레이어 스타일 */
+        #unified-player {
+            position: fixed; bottom: 30px; right: 30px; width: 280px; background: white;
+            border: 2px solid #B9C06D; border-radius: 15px; padding: 15px; z-index: 10000;
+            box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
+        }
+        .top-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+        .rotating-disc { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #B9C06D; animation: rotate_disc 10s linear infinite; animation-play-state: paused; }
+        @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
+        .progress-wrap { width: 100%; margin: 5px 0 15px 0; }
+        #seek-bar { width: 100%; accent-color: #B9C06D; cursor: pointer; }
+        .controls-row { display: flex; justify-content: center; gap: 8px; align-items: center; }
+        .ctrl-btn { background: none; border: 1px solid #B9C06D; color: #B9C06D; border-radius: 5px; cursor: pointer; width: 35px; height: 35px; font-weight: bold; }
+        .active-mode { background: #B9C06D !important; color: white !important; }
+        .hidden { display: none; }
+        #playlist-box { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee; max-height: 150px; overflow-y: auto; }
+        .list-item { font-size: 12px; padding: 6px; cursor: pointer; border-radius: 4px; transition: 0.2s; }
+        .list-item:hover { background: #f9fbe7; color: #B9C06D; }
         
-    /* 화살표 버튼 */
-    .nav-btn {
-        position: absolute; top: 50%; transform: translateY(-50%);
-        background: rgba(185, 192, 109, 0.8);
-        color: white; border: none;
-        width: 40px; height: 40px;
-        border-radius: 50%; cursor: pointer;
-        font-size: 20px;
-    }
-    .prev-btn { left: -60px; }
-    .next-btn { right: -60px; }
-
-/* 플레이어 메인 박스 */
-    #unified-player {
-        position: fixed; bottom: 30px; right: 30px;
-        width: 280px; background: white;
-        border: 2px solid #B9C06D; border-radius: 15px;
-        padding: 15px; z-index: 10000;
-        box-shadow: 6px 6px 0px rgba(185, 192, 109, 0.2);
-    }
-    .top-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
-    .rotating-disc { width: 40px; height: 40px; border-radius: 50%; border: 2px solid #B9C06D; animation: rotate_disc 10s linear infinite; animation-play-state: paused; }
-    @keyframes rotate_disc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    .marquee-text { color: #B9C06D; font-weight: bold; font-size: 14px; }
-    .progress-wrap { width: 100%; margin: 5px 0 15px 0; border-radius: 5px; }
-    #seek-bar { width: 100%; accent-color: #B9C06D; }
-    .controls-row { display: flex; justify-content: center; gap: 8px; align-items: center; }
-    .ctrl-btn { background: none; border: 1px solid #B9C06D; color: #B9C06D; border-radius: 5px; cursor: pointer; width: 35px; height: 35px; }
-    .active-mode { background: #B9C06D !important; color: white !important; }
-    .hidden { display: none; }
-    .list-item:hover { background: #f9fbe7; color: #B9C06D; }
+        #volume-pop {
+            position: absolute; bottom: 45px; left: 50%; transform: translateX(-50%);
+            width: 35px; height: 120px; background: white; border: 2px solid #B9C06D;
+            border-radius: 10px; display: none; flex-direction: column; align-items: center; padding: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -211,8 +154,6 @@
         <div class="tab active" onclick="showPage('home', event)">HOME</div>
         <div class="tab" onclick="showPage('gallery', event)">GALLERY</div>
         <div class="tab" onclick="showPage('guest', event)">GUEST</div>
-        <div class="tab">OC</div>
-        <div class="tab">WORK</div>
     </div>
 
     <div id="home" class="page active">
@@ -231,32 +172,29 @@
         </div>
         <div class="side-banner">
             <div class="section-title">BANNER</div>
-            <div class="banner-container">
-                <a href="#" class="banner-link"><img src="archive/images/배너1.png" class="banner-img"></a>
-                <a href="#" class="banner-link"><img src="archive/images/배너2.png" class="banner-img"></a>
-            </div>
+            <div class="content-box">배너 공간</div>
         </div>
     </div>
 
     <div id="gallery" class="page">
-    <div style="width: 100%;">
-        <div class="section-title">GALLERY</div>
-        <div class="gallery-grid">
-            <img src="art/cm/쭈님.jpg" class="thumb" onclick="openModal(0)">
-            <img src="이미지2_썸네일.jpg" class="thumb" onclick="openModal(1)">
-            <img src="이미지3_썸네일.jpg" class="thumb" onclick="openModal(2)">
+        <div style="width: 100%;">
+            <div class="section-title">GALLERY</div>
+            <div class="gallery-grid">
+                <img src="art/cm/쭈님.jpg" class="thumb" onclick="openModal(0)">
+                <img src="이미지2_썸네일.jpg" class="thumb" onclick="openModal(1)">
+                <img src="이미지3_썸네일.jpg" class="thumb" onclick="openModal(2)">
+            </div>
         </div>
     </div>
-</div>
 
-<div id="image-modal" onclick="closeModal(event)">
-    <div class="modal-content" onclick="event.stopPropagation()">
-        <span class="close-btn" onclick="document.getElementById('image-modal').style.display='none'">&times;</span>
-        <button class="nav-btn prev-btn" onclick="changeModalImage(-1)">&#10094;</button>
-        <img id="modal-img" src="">
-        <div id="modal-title"></div>
-        <button class="nav-btn next-btn" onclick="changeModalImage(1)">&#10095;</button>
-    </div>
+    <div id="image-modal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="close-btn" onclick="document.getElementById('image-modal').style.display='none'">&times;</div>
+            <button class="nav-btn prev-btn" onclick="changeModalImage(-1)">&#10094;</button>
+            <img id="modal-img" src="">
+            <div id="modal-title" style="margin-top:10px; font-weight:bold; color:#B9C06D;"></div>
+            <button class="nav-btn next-btn" onclick="changeModalImage(1)">&#10095;</button>
+        </div>
     </div>
 
     <div id="guest" class="page">
@@ -288,27 +226,67 @@
         
         <div style="position: relative; display: inline-block;">
             <button class="ctrl-btn" onclick="toggleVolume()">🔊</button>
-            <div id="volume-pop" style="position: absolute; bottom: 45px; left: 50%; transform: translateX(-50%); width: 35px; height: 120px; background: white; border: 2px solid #B9C06D; border-radius: 10px; display: none; flex-direction: column; align-items: center; padding: 10px 0; z-index: 10001;">
+            <div id="volume-pop">
                 <input type="range" id="vol-control" min="0" max="1" step="0.1" value="0.5" oninput="setVolume(this.value)" style="appearance: slider-vertical; width: 8px; height: 100px; accent-color: #B9C06D;">
             </div>
         </div>
     </div>
 
-    <div id="playlist-box" class="hidden" style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #eee;">
-        <div class="list-item" style="font-size: 12px; padding: 6px; cursor: pointer;" onclick="changeTrack(0)">1. Dream Anamnesis</div>
-        <div class="list-item" style="font-size: 12px; padding: 6px; cursor: pointer;" onclick="changeTrack(1)">2. Moonlike Smile</div>
-        <div class="list-item" style="font-size: 12px; padding: 6px; cursor: pointer;" onclick="changeTrack(2)">3. Winding Through Avidya</div>
+    <div id="playlist-box" class="hidden">
+        <div class="list-item" onclick="changeTrack(0)">1. Dream Anamnesis</div>
+        <div class="list-item" onclick="changeTrack(1)">2. Moonlike Smile</div>
+        <div class="list-item" onclick="changeTrack(2)">3. Winding Through Avidya</div>
     </div>
-</div>
-<audio id="main-audio"></audio>
 </div>
 
 <audio id="main-audio"></audio>
 
 <script>
-const audio = document.getElementById('main-audio');
+    // --- 탭 전환 기능 ---
+    function showPage(pageId, event) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+
+    // --- 갤러리 기능 ---
+    const galleryData = [
+        { src: "art/cm/쭈님.jpg", title: '쭈님' },
+        { src: '이미지2_원본.jpg', title: '작품 제목 2' },
+        { src: '이미지3_원본.jpg', title: '작품 제목 3' }
+    ];
+    let currentGalleryIndex = 0;
+
+    function openModal(index) {
+        currentGalleryIndex = index;
+        updateModal();
+        document.getElementById('image-modal').style.display = 'flex';
+    }
+
+    function updateModal() {
+        const data = galleryData[currentGalleryIndex];
+        document.getElementById('modal-img').src = data.src;
+        document.getElementById('modal-title').innerText = data.title;
+    }
+
+    function changeModalImage(step) {
+        currentGalleryIndex += step;
+        if (currentGalleryIndex < 0) currentGalleryIndex = galleryData.length - 1;
+        if (currentGalleryIndex >= galleryData.length) currentGalleryIndex = 0;
+        updateModal();
+    }
+
+    function closeModal(event) {
+        if (event.target === document.getElementById('image-modal')) {
+            document.getElementById('image-modal').style.display = 'none';
+        }
+    }
+
+    // --- 음악 플레이어 기능 ---
+    const audio = document.getElementById('main-audio');
     const playBtn = document.getElementById('play-btn');
-    const songTitle = document.getElementById('song-title');
+    const songTitleDisplay = document.getElementById('song-title');
     const seekBar = document.getElementById('seek-bar');
     const recordImg = document.getElementById('record-img');
     const volPop = document.getElementById('volume-pop');
@@ -319,86 +297,81 @@ const audio = document.getElementById('main-audio');
         { src: 'Moonlike%20Smile.mp3', title: 'Moonlike Smile', img: 'archive/images/레코드판2.png' },
         { src: 'Winding%20Through%20Avidya.m4a', title: 'Winding Through Avidya', img: 'archive/images/레코드판3.png' }
     ];
+    
     let currentIndex = 0;
     let isLoop = false;
 
     function loadTrack(index) {
         audio.src = tracks[index].src;
-        songTitle.innerText = tracks[index].title;
+        songTitleDisplay.innerText = tracks[index].title;
         if(recordImg) recordImg.src = tracks[index].img;
     }
-    loadTrack(currentIndex);
+
+    loadTrack(currentIndex); // 초기 로드
 
     function togglePlay() {
         if (audio.paused) {
-            audio.play(); playBtn.innerText = "||";
-            if(recordImg) recordImg.style.animationPlayState = 'running';
+            audio.play().catch(e => console.log("재생 에러:", e));
+            playBtn.innerText = "||";
+            recordImg.style.animationPlayState = 'running';
         } else {
-            audio.pause(); playBtn.innerText = "▶";
-            if(recordImg) recordImg.style.animationPlayState = 'paused';
+            audio.pause();
+            playBtn.innerText = "▶";
+            recordImg.style.animationPlayState = 'paused';
         }
     }
 
     function changeTrack(i) {
-        currentIndex = i; loadTrack(i); audio.play();
+        currentIndex = i;
+        loadTrack(currentIndex);
+        audio.play();
         playBtn.innerText = "||";
-        if(recordImg) recordImg.style.animationPlayState = 'running';
+        recordImg.style.animationPlayState = 'running';
     }
 
-    function nextTrack() { currentIndex = (currentIndex + 1) % tracks.length; changeTrack(currentIndex); }
-    function prevTrack() { currentIndex = (currentIndex - 1 + tracks.length) % tracks.length; changeTrack(currentIndex); }
-    function toggleLoop() { isLoop = !isLoop; audio.loop = isLoop; loopBtn.classList.toggle('active-mode'); }
-    function toggleVolume() { volPop.style.display = (volPop.style.display === 'flex') ? 'none' : 'flex'; }
-    function toggleList() { document.getElementById('playlist-box').classList.toggle('hidden'); }
-    function setVolume(v) { audio.volume = v; }
-    audio.ontimeupdate = () => { if(audio.duration) seekBar.value = (audio.currentTime / audio.duration) * 100; };
-    function seek() { audio.currentTime = (seekBar.value / 100) * audio.duration; }
-    audio.onended = () => { if(!isLoop) nextTrack(); };
-
-    // 탭 전환 및 갤러리 함수 (삭제 금지)
-    function showPage(pageId, event) {
-        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        document.getElementById(pageId).classList.add('active');
-        event.currentTarget.classList.add('active');
-    }
-    
-// 갤러리 데이터 설정 (이미지 경로와 제목을 순서대로 적으세요)
-    const galleryData = [
-        { src: "art/cm/쭈님.jpg", title: '쭈님' },
-        { src: '이미지2_원본.jpg', title: '작품 제목 2' },
-        { src: '이미지3_원본.jpg', title: '작품 제목 3' }
-    ];
-    let currentGalleryIndex = 0;
-
-    // 모달 열기
-    function openModal(index) {
-        currentGalleryIndex = index;
-        updateModal();
-        document.getElementById('image-modal').style.display = 'flex';
+    function nextTrack() {
+        currentIndex = (currentIndex + 1) % tracks.length;
+        changeTrack(currentIndex);
     }
 
-    // 모달 내용 업데이트
-    function updateModal() {
-        const data = galleryData[currentGalleryIndex];
-        document.getElementById('modal-img').src = data.src;
-        document.getElementById('modal-title').innerText = data.title;
+    function prevTrack() {
+        currentIndex = (currentIndex - 1 + tracks.length) % tracks.length;
+        changeTrack(currentIndex);
     }
 
-    // 이전/다음 이동
-    function changeModalImage(step) {
-        currentGalleryIndex += step;
-        if (currentGalleryIndex < 0) currentGalleryIndex = galleryData.length - 1;
-        if (currentGalleryIndex >= galleryData.length) currentGalleryIndex = 0;
-        updateModal();
+    function toggleLoop() {
+        isLoop = !isLoop;
+        audio.loop = isLoop;
+        loopBtn.classList.toggle('active-mode');
     }
 
-    // 배경 클릭 시 닫기
-    function closeModal(event) {
-        if (event.target === document.getElementById('image-modal')) {
-            document.getElementById('image-modal').style.display = 'none';
+    function toggleVolume() {
+        volPop.style.display = (volPop.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    function setVolume(v) {
+        audio.volume = v;
+    }
+
+    function toggleList() {
+        document.getElementById('playlist-box').classList.toggle('hidden');
+    }
+
+    // 재생바 업데이트
+    audio.ontimeupdate = () => {
+        if(audio.duration) {
+            seekBar.value = (audio.currentTime / audio.duration) * 100;
         }
+    };
+
+    function seek() {
+        audio.currentTime = (seekBar.value / 100) * audio.duration;
     }
+
+    // 노래 끝나면 다음곡
+    audio.onended = () => {
+        if(!isLoop) nextTrack();
+    };
 </script>
 
 </body>
